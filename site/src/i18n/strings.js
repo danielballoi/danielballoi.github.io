@@ -40,6 +40,15 @@ export const strings = {
       episodesTitle: 'Episodi',
       architectureTitle: 'Architettura',
     },
+    experience: {
+      sectionTitle: 'Esperienza e formazione',
+      eyebrow: '// 03 — ESPERIENZA',
+      workTitle: 'Esperienza lavorativa',
+      educationTitle: 'Formazione',
+      languagesTitle: 'Lingue',
+      showMore: 'Espandi',
+      showLess: 'Comprimi',
+    },
   },
   en: {
     nav: {
@@ -81,6 +90,15 @@ export const strings = {
       backToHome: 'Back to home',
       episodesTitle: 'Episodes',
       architectureTitle: 'Architecture',
+    },
+    experience: {
+      sectionTitle: 'Experience and education',
+      eyebrow: '// 03 — EXPERIENCE',
+      workTitle: 'Work experience',
+      educationTitle: 'Education',
+      languagesTitle: 'Languages',
+      showMore: 'Expand',
+      showLess: 'Collapse',
     },
   },
 }

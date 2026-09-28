@@ -2,6 +2,7 @@ import { Head } from 'vite-react-ssg'
 import { useLanguage } from '../i18n/LanguageContext'
 import Hero from '../components/Hero'
 import ProjectsSection from '../components/ProjectsSection'
+import Timeline from '../components/Timeline'
 
 export default function Home() {
   const lang = useLanguage()
@@ -20,6 +21,7 @@ export default function Home() {
       <main>
         <Hero />
         <ProjectsSection />
+        <Timeline />
       </main>
     </>
   )

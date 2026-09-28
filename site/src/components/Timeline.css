@@ -1,0 +1,88 @@
+.timeline-section {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+  scroll-margin-top: 64px;
+}
+
+.timeline-section__eyebrow {
+  margin: 0.35rem 0 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
+.timeline-section__group {
+  margin-bottom: 1.25rem;
+}
+
+.timeline-section__group h3 {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--color-ink);
+  margin: 0 0 0.5rem;
+}
+
+.timeline-entry {
+  border: 1px solid var(--color-grid);
+  border-top: none;
+  scroll-margin-top: 64px;
+}
+
+.timeline-entry:first-of-type {
+  border-top: 1px solid var(--color-grid);
+}
+
+.timeline-entry__summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-height: 44px;
+}
+
+.timeline-entry__summary::-webkit-details-marker {
+  display: none;
+}
+
+.timeline-entry__summary::before {
+  content: '▸';
+  float: right;
+  color: var(--color-text-secondary);
+}
+
+.timeline-entry[open] .timeline-entry__summary::before {
+  content: '▾';
+}
+
+.timeline-entry__role {
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+.timeline-entry__company {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-ink);
+}
+
+.timeline-entry__meta {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+}
+
+.timeline-entry__highlights,
+.timeline-entry__projects {
+  margin: 0;
+  padding: 0 0.75rem 0.85rem 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.timeline-section__languages {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.9rem;
+}
