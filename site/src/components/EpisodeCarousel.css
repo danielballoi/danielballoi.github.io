@@ -1,0 +1,124 @@
+.episode-carousel__anchor {
+  display: block;
+  position: relative;
+  top: -70px;
+  visibility: hidden;
+}
+
+.episode-carousel__viewport {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.episode-carousel__stage {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.episode-carousel__poster,
+.episode-carousel__video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  background-color: var(--color-grid);
+  background-size: cover;
+  background-position: center;
+  border: 1px solid var(--color-grid);
+}
+
+.episode-carousel__poster {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}
+
+.episode-carousel__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-accent);
+  color: #fff;
+  font-size: 1.2rem;
+  border: 2px solid #fff;
+}
+
+.episode-carousel__meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
+.episode-carousel__title {
+  color: var(--color-text);
+}
+
+.episode-carousel__duration {
+  color: var(--color-text-secondary);
+}
+
+.episode-carousel__note {
+  margin: 0.25rem 0 0;
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+.episode-carousel__arrow {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--color-grid);
+  background: transparent;
+  color: var(--color-ink);
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.episode-carousel__arrow:hover,
+.episode-carousel__arrow:focus-visible {
+  background: var(--color-grid);
+}
+
+.episode-carousel__dots {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+}
+
+.episode-carousel__dot {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid var(--color-grid);
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.episode-carousel__dot::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: var(--color-text-secondary);
+}
+
+.episode-carousel__dot[aria-current='true']::after {
+  background: var(--color-accent);
+}

@@ -33,13 +33,13 @@ Entrambe le pagine vengono create in automatico alla build successiva (`npm run 
 
 ```json
 "architecture": {
-  "diagram": "<slug-progetto>",
   "nodes": [
-    { "id": "browser", "label": { "it": "Browser", "en": "Browser" } }
+    { "id": "browser", "label": { "it": "Browser", "en": "Browser" } },
+    { "id": "backend", "label": { "it": "Backend", "en": "Backend" } }
   ]
 }
 ```
-`diagram` è il nome del file SVG in `site/src/components/diagrams/` (uno per progetto, nello stile "blueprint"). Se il progetto non ha ancora un diagramma, lascia `"architecture": null`.
+Il componente `ArchitectureDiagram` disegna automaticamente i nodi in sequenza, in stile blueprint (nessun file SVG o componente da creare per il singolo progetto). Se il progetto non ha ancora un'architettura da mostrare, lascia `"architecture": null`.
 
 ### `episodes` (facoltativo)
 

@@ -74,6 +74,13 @@ button {
   outline-offset: 2px;
 }
 
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  margin: 0;
+  color: var(--color-text);
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
