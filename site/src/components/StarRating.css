@@ -1,0 +1,14 @@
+.star-rating {
+  display: inline-flex;
+  gap: 1px;
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.star-rating__star {
+  color: var(--color-grid);
+}
+
+.star-rating__star[data-filled='true'] {
+  color: var(--color-accent);
+}

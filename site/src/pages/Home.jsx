@@ -4,6 +4,7 @@ import Hero from '../components/Hero'
 import ProjectsSection from '../components/ProjectsSection'
 import Timeline from '../components/Timeline'
 import CertificationsSection from '../components/CertificationsSection'
+import SkillsSection from '../components/SkillsSection'
 
 export default function Home() {
   const lang = useLanguage()
@@ -24,6 +25,7 @@ export default function Home() {
         <ProjectsSection />
         <Timeline />
         <CertificationsSection />
+        <SkillsSection />
       </main>
     </>
   )

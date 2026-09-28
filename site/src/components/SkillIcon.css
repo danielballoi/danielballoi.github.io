@@ -1,0 +1,14 @@
+.skill-icon {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  color: var(--color-ink);
+}
+
+.skill-icon--generic {
+  color: var(--color-text-secondary);
+}
+
+.skill-icon:hover {
+  color: var(--brand-color, var(--color-ink));
+}
