@@ -1,20 +1,23 @@
 import { Head } from 'vite-react-ssg'
 import { useLanguage } from '../i18n/LanguageContext'
+import Hero from '../components/Hero'
 
 export default function Home() {
   const lang = useLanguage()
-  const title = lang === 'en'
-    ? 'Daniel Balloi — DevOps & Release Engineer'
-    : 'Daniel Balloi — DevOps & Release Engineer'
+  const title = 'Daniel Balloi — DevOps & Release Engineer'
+  const description =
+    lang === 'en'
+      ? 'DevOps & Release Engineer, AWS Certified Solutions Architect. 3.5 years of production releases for enterprise clients.'
+      : 'DevOps & Release Engineer, AWS Certified Solutions Architect. 3 anni e mezzo di rilasci in produzione per clienti Enterprise.'
 
   return (
     <>
       <Head>
         <title>{title}</title>
-        <html lang={lang} />
+        <meta name="description" content={description} />
       </Head>
       <main>
-        <h1>Daniel Balloi</h1>
+        <Hero />
       </main>
     </>
   )

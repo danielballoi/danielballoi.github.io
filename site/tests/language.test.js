@@ -3,6 +3,7 @@ import {
   detectBrowserLanguage,
   getAlternatePath,
   getLanguageFromPath,
+  getLocalizedPaths,
   getStoredLanguage,
   setStoredLanguage,
 } from '../src/lib/language'
@@ -50,6 +51,19 @@ describe('getAlternatePath', () => {
 
   it('tolerates a trailing slash', () => {
     expect(getAlternatePath('/progetti/balloi-immobiliare/')).toBe('/en/projects/balloi-immobiliare')
+  })
+})
+
+describe('getLocalizedPaths', () => {
+  it('returns both language variants regardless of which one is current', () => {
+    expect(getLocalizedPaths('/progetti/balloi-immobiliare')).toEqual({
+      it: '/progetti/balloi-immobiliare',
+      en: '/en/projects/balloi-immobiliare',
+    })
+    expect(getLocalizedPaths('/en/projects/balloi-immobiliare')).toEqual({
+      it: '/progetti/balloi-immobiliare',
+      en: '/en/projects/balloi-immobiliare',
+    })
   })
 })
 

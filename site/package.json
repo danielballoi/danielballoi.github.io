@@ -11,7 +11,8 @@
     "build": "vite-react-ssg build",
     "preview": "vite preview",
     "test": "vitest run",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "prepare:images": "node scripts/prepare-images.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",

@@ -1,0 +1,36 @@
+.language-prompt {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0.6rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  background: var(--color-grid);
+  font-size: 0.85rem;
+}
+
+.language-prompt p {
+  margin: 0;
+  flex: 1 1 240px;
+}
+
+.language-prompt__actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.language-prompt button {
+  min-height: 44px;
+  padding: 0 0.75rem;
+  border: 1px solid var(--color-ink);
+  background: transparent;
+  color: var(--color-ink);
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.language-prompt__dismiss {
+  border-style: dashed;
+  color: var(--color-text-secondary);
+}

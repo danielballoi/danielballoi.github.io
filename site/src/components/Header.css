@@ -1,0 +1,130 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: var(--color-paper);
+  border-bottom: 1px solid var(--color-grid);
+}
+
+.site-header__bar {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 56px;
+}
+
+.site-header__brand {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--color-ink);
+  text-decoration: none;
+  padding: 0.5rem 0;
+}
+
+.site-header__toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: 1px solid var(--color-grid);
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.site-header__toggle-icon {
+  position: relative;
+  width: 18px;
+  height: 2px;
+  background: currentColor;
+}
+
+.site-header__toggle-icon::before,
+.site-header__toggle-icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 18px;
+  height: 2px;
+  background: currentColor;
+}
+
+.site-header__toggle-icon::before {
+  top: -6px;
+}
+
+.site-header__toggle-icon::after {
+  top: 6px;
+}
+
+.site-header__nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.25rem;
+}
+
+.site-header__nav a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 0.6rem;
+  color: var(--color-text);
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.site-header__nav a:hover,
+.site-header__nav a:focus-visible {
+  color: var(--color-ink);
+}
+
+@media (min-width: 860px) {
+  .site-header__toggle {
+    display: none;
+  }
+
+  .site-header__nav {
+    display: flex !important;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .site-header__nav ul {
+    display: flex;
+  }
+}
+
+@media (max-width: 859.98px) {
+  .site-header__nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--color-paper);
+    border-bottom: 1px solid var(--color-grid);
+    padding: 0.5rem 1rem 1rem;
+  }
+
+  .site-header__nav[data-open='true'] {
+    display: block;
+  }
+
+  .site-header__nav ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .site-header__nav a {
+    width: 100%;
+  }
+}

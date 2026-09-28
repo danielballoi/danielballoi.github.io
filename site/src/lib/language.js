@@ -50,3 +50,9 @@ export function getAlternatePath(pathname) {
   if (projectMatch) return `/en/projects/${projectMatch[1]}`
   return '/en/'
 }
+
+export function getLocalizedPaths(pathname) {
+  const lang = getLanguageFromPath(pathname)
+  const alternate = getAlternatePath(pathname)
+  return lang === 'it' ? { it: pathname, en: alternate } : { it: alternate, en: pathname }
+}
