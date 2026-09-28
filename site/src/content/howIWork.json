@@ -1,0 +1,41 @@
+[
+  {
+    "id": "runbook",
+    "title": { "it": "Runbook", "en": "Runbook" },
+    "description": {
+      "it": "Procedure scritte per diagnosticare i problemi, dall'esterno verso l'interno.",
+      "en": "Written procedures to troubleshoot problems, from the outside in."
+    },
+    "example": {
+      "it": "Esempio: diagnosi di un problema reale nell'episodio 5 di Balloi.",
+      "en": "Example: troubleshooting a real problem in Balloi's episode 5."
+    },
+    "link": null
+  },
+  {
+    "id": "adr",
+    "title": { "it": "ADR", "en": "ADR" },
+    "description": {
+      "it": "Ogni scelta architetturale è motivata per iscritto, con alternative e compromessi.",
+      "en": "Every architectural choice is justified in writing, with alternatives and trade-offs."
+    },
+    "example": {
+      "it": "Esempio: le decisioni architetturali del progetto Balloi.",
+      "en": "Example: the architectural decisions of the Balloi project."
+    },
+    "link": "https://github.com/danielballoi/balloi-immobiliare/tree/main/docs/decisioni"
+  },
+  {
+    "id": "diario",
+    "title": { "it": "Diario", "en": "Journal" },
+    "description": {
+      "it": "Ogni giornata di lavoro documentata: cosa, perché, cosa ho imparato.",
+      "en": "Every working day documented: what, why, what I learned."
+    },
+    "example": {
+      "it": "Esempio: il diario di bordo del progetto Balloi.",
+      "en": "Example: the Balloi project journal."
+    },
+    "link": "https://github.com/danielballoi/balloi-immobiliare/blob/main/docs/PORTFOLIO.md"
+  }
+]

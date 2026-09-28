@@ -5,6 +5,9 @@ import ProjectsSection from '../components/ProjectsSection'
 import Timeline from '../components/Timeline'
 import CertificationsSection from '../components/CertificationsSection'
 import SkillsSection from '../components/SkillsSection'
+import HowIWorkSection from '../components/HowIWorkSection'
+import BeyondWork from '../components/BeyondWork'
+import ContactSection from '../components/ContactSection'
 
 export default function Home() {
   const lang = useLanguage()
@@ -26,6 +29,9 @@ export default function Home() {
         <Timeline />
         <CertificationsSection />
         <SkillsSection />
+        <HowIWorkSection />
+        <BeyondWork />
+        <ContactSection />
       </main>
     </>
   )

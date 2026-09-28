@@ -1,0 +1,64 @@
+.contact-section {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+.contact-section__eyebrow {
+  margin: 0.35rem 0 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
+.contact-section__intro {
+  margin: 0 0 1rem;
+  max-width: 55ch;
+}
+
+.contact-section__fallback p {
+  margin: 0 0 0.6rem;
+  color: var(--color-text-secondary);
+}
+
+.contact-section__fallback-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.contact-section__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 1rem;
+  border: 1px solid var(--color-ink);
+  color: var(--color-ink);
+  background: transparent;
+  text-decoration: none;
+  font-family: var(--font-mono);
+  cursor: pointer;
+}
+
+.contact-section__cta--ghost {
+  border-style: dashed;
+}
+
+.contact-section__links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--color-grid);
+  padding-top: 1rem;
+}
+
+.contact-section__links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--color-ink);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  text-decoration: underline;
+}
