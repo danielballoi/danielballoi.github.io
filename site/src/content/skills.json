@@ -1,0 +1,207 @@
+{
+  "legend": {
+    "it": "★ basi teoriche · ★★ lo uso con una guida · ★★★ lo uso da solo nei casi comuni · ★★★★ ci ho costruito un progetto completo · ★★★★★ lo uso in produzione da anni",
+    "en": "★ theory · ★★ with guidance · ★★★ on my own for common tasks · ★★★★ built a complete project with it · ★★★★★ used in production for years"
+  },
+  "groups": [
+    {
+      "id": "release",
+      "name": { "it": "Release", "en": "Release" },
+      "skills": [
+        {
+          "id": "rilasci-produzione",
+          "name": { "it": "Rilasci in produzione", "en": "Production releases" },
+          "level": 5,
+          "icons": [],
+          "evidence": [{ "label": { "it": "Esperienza Stackhouse (Mooney)", "en": "Stackhouse experience (Mooney)" }, "href": "/#esperienza-stackhouse" }]
+        },
+        {
+          "id": "pipeline-cicd",
+          "name": { "it": "Esecuzione e monitoraggio pipeline CI/CD", "en": "Running and monitoring CI/CD pipelines" },
+          "level": 4,
+          "icons": [],
+          "evidence": [
+            { "label": { "it": "Stackhouse", "en": "Stackhouse" }, "href": "/#esperienza-stackhouse" },
+            { "label": { "it": "Balloi, episodio 3", "en": "Balloi, episode 3" }, "href": "/progetti/balloi-immobiliare#episodio-3" }
+          ]
+        },
+        {
+          "id": "rilasci-mysql",
+          "name": { "it": "Rilasci su database MySQL", "en": "MySQL database releases" },
+          "level": 4,
+          "icons": ["mysql"],
+          "evidence": [{ "label": { "it": "Stackhouse (Mooney)", "en": "Stackhouse (Mooney)" }, "href": "/#esperienza-stackhouse" }]
+        },
+        {
+          "id": "change-management",
+          "name": { "it": "Change Management", "en": "Change Management" },
+          "level": 4,
+          "icons": [],
+          "evidence": [
+            { "label": { "it": "Stackhouse", "en": "Stackhouse" }, "href": "/#esperienza-stackhouse" },
+            { "label": { "it": "Certificazione CAPM", "en": "CAPM certification" }, "href": "/#certificazione-capm" }
+          ]
+        },
+        {
+          "id": "jira-servicenow",
+          "name": { "it": "Jira · ServiceNow", "en": "Jira · ServiceNow" },
+          "level": 4,
+          "icons": ["jira"],
+          "evidence": [{ "label": { "it": "Stackhouse", "en": "Stackhouse" }, "href": "/#esperienza-stackhouse" }]
+        }
+      ]
+    },
+    {
+      "id": "devops",
+      "name": { "it": "DevOps", "en": "DevOps" },
+      "skills": [
+        {
+          "id": "github-actions",
+          "name": { "it": "GitHub Actions", "en": "GitHub Actions" },
+          "level": 3,
+          "icons": ["githubactions"],
+          "evidence": [
+            { "label": { "it": "Balloi, episodio 3", "en": "Balloi, episode 3" }, "href": "/progetti/balloi-immobiliare#episodio-3" },
+            { "label": { "it": "Balloi, episodio 7", "en": "Balloi, episode 7" }, "href": "/progetti/balloi-immobiliare#episodio-7" }
+          ]
+        },
+        {
+          "id": "docker",
+          "name": { "it": "Docker · Docker Compose", "en": "Docker · Docker Compose" },
+          "level": 3,
+          "icons": ["docker"],
+          "evidence": [{ "label": { "it": "Balloi, episodio 2", "en": "Balloi, episode 2" }, "href": "/progetti/balloi-immobiliare#episodio-2" }]
+        },
+        {
+          "id": "git",
+          "name": { "it": "Git", "en": "Git" },
+          "level": 3,
+          "icons": ["git"],
+          "evidence": [{ "label": { "it": "Repository Balloi", "en": "Balloi repository" }, "href": "https://github.com/danielballoi/balloi-immobiliare" }]
+        }
+      ]
+    },
+    {
+      "id": "cloud",
+      "name": { "it": "Cloud", "en": "Cloud" },
+      "skills": [
+        {
+          "id": "aws-core",
+          "name": { "it": "AWS (EC2, S3, IAM)", "en": "AWS (EC2, S3, IAM)" },
+          "level": 3,
+          "icons": ["amazonwebservices"],
+          "evidence": [
+            { "label": { "it": "Balloi, episodio 4", "en": "Balloi, episode 4" }, "href": "/progetti/balloi-immobiliare#episodio-4" },
+            { "label": { "it": "Certificazione AWS SAA", "en": "AWS SAA certification" }, "href": "/#certificazione-aws-saa" }
+          ]
+        },
+        {
+          "id": "terraform",
+          "name": { "it": "Terraform", "en": "Terraform" },
+          "level": 3,
+          "icons": ["terraform"],
+          "evidence": [{ "label": { "it": "Balloi, episodio 4", "en": "Balloi, episode 4" }, "href": "/progetti/balloi-immobiliare#episodio-4" }]
+        },
+        {
+          "id": "lambda-eventbridge",
+          "name": { "it": "AWS Lambda · EventBridge", "en": "AWS Lambda · EventBridge" },
+          "level": 2,
+          "icons": ["awslambda"],
+          "evidence": [{ "label": { "it": "Questo sito (fase 2)", "en": "This site (phase 2)" }, "href": "/progetti/questo-sito" }]
+        }
+      ]
+    },
+    {
+      "id": "sistemi",
+      "name": { "it": "Sistemi", "en": "Systems" },
+      "skills": [
+        {
+          "id": "linux-bash",
+          "name": { "it": "Linux · Bash", "en": "Linux · Bash" },
+          "level": 3,
+          "icons": ["linux", "gnubash"],
+          "evidence": [{ "label": { "it": "Balloi, episodio 5", "en": "Balloi, episode 5" }, "href": "/progetti/balloi-immobiliare#episodio-5" }]
+        },
+        {
+          "id": "nginx",
+          "name": { "it": "Nginx", "en": "Nginx" },
+          "level": 2,
+          "icons": ["nginx"],
+          "evidence": [{ "label": { "it": "Balloi, episodio 2", "en": "Balloi, episode 2" }, "href": "/progetti/balloi-immobiliare#episodio-2" }]
+        }
+      ]
+    },
+    {
+      "id": "dati",
+      "name": { "it": "Dati", "en": "Data" },
+      "skills": [
+        {
+          "id": "sql-plsql",
+          "name": { "it": "SQL · PL/SQL", "en": "SQL · PL/SQL" },
+          "level": 3,
+          "icons": [],
+          "evidence": [
+            { "label": { "it": "Stackhouse (EdenRed)", "en": "Stackhouse (EdenRed)" }, "href": "/#esperienza-stackhouse" },
+            { "label": { "it": "Balloi", "en": "Balloi" }, "href": "/progetti/balloi-immobiliare" }
+          ]
+        },
+        {
+          "id": "mongodb",
+          "name": { "it": "MongoDB", "en": "MongoDB" },
+          "level": 2,
+          "icons": ["mongodb"],
+          "evidence": [{ "label": { "it": "Stackhouse (Alcor)", "en": "Stackhouse (Alcor)" }, "href": "/#esperienza-stackhouse" }]
+        }
+      ]
+    },
+    {
+      "id": "sviluppo",
+      "name": { "it": "Sviluppo", "en": "Development" },
+      "skills": [
+        {
+          "id": "java-spring",
+          "name": { "it": "Java · Spring Boot", "en": "Java · Spring Boot" },
+          "level": 3,
+          "icons": ["openjdk", "springboot"],
+          "evidence": [
+            { "label": { "it": "Stackhouse (Sisal)", "en": "Stackhouse (Sisal)" }, "href": "/#esperienza-stackhouse" },
+            { "label": { "it": "Stage Televideocom", "en": "Televideocom internship" }, "href": "/#esperienza-televideocom" }
+          ]
+        },
+        {
+          "id": "js-react",
+          "name": { "it": "JavaScript · React", "en": "JavaScript · React" },
+          "level": 3,
+          "icons": ["javascript", "react"],
+          "evidence": [
+            { "label": { "it": "Stackhouse (Alcor)", "en": "Stackhouse (Alcor)" }, "href": "/#esperienza-stackhouse" },
+            { "label": { "it": "Balloi", "en": "Balloi" }, "href": "/progetti/balloi-immobiliare" }
+          ]
+        },
+        {
+          "id": "node-express",
+          "name": { "it": "Node.js · Express", "en": "Node.js · Express" },
+          "level": 2,
+          "icons": ["nodedotjs", "express"],
+          "evidence": [{ "label": { "it": "Balloi", "en": "Balloi" }, "href": "/progetti/balloi-immobiliare" }]
+        }
+      ]
+    },
+    {
+      "id": "metodo",
+      "name": { "it": "Metodo", "en": "Method" },
+      "skills": [
+        {
+          "id": "project-management",
+          "name": { "it": "Project management", "en": "Project management" },
+          "level": 4,
+          "icons": [],
+          "evidence": [
+            { "label": { "it": "Stackhouse (PMO)", "en": "Stackhouse (PMO)" }, "href": "/#esperienza-stackhouse" },
+            { "label": { "it": "Certificazione CAPM", "en": "CAPM certification" }, "href": "/#certificazione-capm" }
+          ]
+        }
+      ]
+    }
+  ]
+}

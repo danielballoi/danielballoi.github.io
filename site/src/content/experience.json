@@ -1,0 +1,82 @@
+{
+  "work": [
+    {
+      "id": "stackhouse",
+      "role": { "it": "Release Specialist | Software Developer", "en": "Release Specialist | Software Developer" },
+      "company": "Stackhouse S.r.l. (gruppo Spindox)",
+      "location": { "it": "Cagliari", "en": "Cagliari, Italy" },
+      "period": { "it": "gen 2023 – giu 2026 (3 anni e 6 mesi)", "en": "Jan 2023 – Jun 2026 (3 years 6 months)" },
+      "open": true,
+      "highlights": {
+        "it": [
+          "Esecuzione dei rilasci in produzione: lancio delle pipeline CI/CD e rilascio su database MySQL on-premise, con verifica post-rilascio (progetto Mooney).",
+          "Presidio e censimento dei rilasci; gestione delle Change Request e valutazione dei rischi con Dev, QA e Ops.",
+          "Coordinamento, come PMO (non esecutivo), delle attività cloud AWS svolte dai team tecnici (progetto Mooney).",
+          "Sviluppo end-to-end in JavaScript/React con Flowerbase e MongoDB, assistito da AI (progetto Alcor); Application Maintenance in Java/Spring Boot (Sisal) e su database SQL/PL-SQL (EdenRed).",
+          "Pianificazione e project management (Jira, ServiceNow, Excel); PMO sulla delivery di un software end-to-end (Italgas)."
+        ],
+        "en": [
+          "Carried out production releases: ran CI/CD pipelines and released to on-premise MySQL databases, with post-release checks (Mooney project).",
+          "Tracked and oversaw releases; managed Change Requests and risk assessment with Dev, QA and Ops.",
+          "Coordinated, as PMO (non-executive), the AWS cloud activities carried out by the engineering teams (Mooney project).",
+          "Built end-to-end software in JavaScript/React with Flowerbase and MongoDB, using AI-assisted development (Alcor project); application maintenance in Java/Spring Boot (Sisal) and on SQL/PL-SQL databases (EdenRed).",
+          "Planning and project management (Jira, ServiceNow, Excel); PMO for the delivery of end-to-end software (Italgas)."
+        ]
+      },
+      "projects": [
+        { "name": "Mooney", "role": { "it": "Release e PMO", "en": "Release and PMO" }, "period": { "it": "apr 2023 – mag 2026", "en": "Apr 2023 – May 2026" } },
+        { "name": "Alcor", "role": { "it": "Developer", "en": "Developer" }, "period": { "it": "feb 2026 – giu 2026", "en": "Feb 2026 – Jun 2026" } },
+        { "name": "Italgas", "role": { "it": "PMO", "en": "PMO" }, "period": { "it": "dic 2024 – giu 2025", "en": "Dec 2024 – Jun 2025" } },
+        { "name": "Sisal", "role": { "it": "Developer", "en": "Developer" }, "period": { "it": "feb 2023 – mag 2023", "en": "Feb 2023 – May 2023" } },
+        { "name": "EdenRed", "role": { "it": "Developer", "en": "Developer" }, "period": { "it": "gen 2023 – mar 2023", "en": "Jan 2023 – Mar 2023" } }
+      ],
+      "skills": ["JavaScript", "Java", "CI/CD", "AWS", "MySQL", "Release management", "Change management"]
+    },
+    {
+      "id": "televideocom",
+      "role": { "it": "Stage Sviluppatore Software Backend", "en": "Backend Software Developer Intern" },
+      "company": "Televideocom Srl",
+      "location": { "it": "Cagliari", "en": "Cagliari, Italy" },
+      "period": { "it": "ott 2022 – dic 2022 (3 mesi)", "en": "Oct 2022 – Dec 2022 (3 months)" },
+      "open": false,
+      "highlights": {
+        "it": ["Progetto backend end-to-end sviluppato in autonomia: progettazione logica, implementazione, gestione del ciclo di sviluppo. Java e Spring."],
+        "en": ["Independently built an end-to-end backend project: logical design, implementation and development lifecycle. Java and Spring."]
+      },
+      "projects": [],
+      "skills": ["Java", "Spring"]
+    },
+    {
+      "id": "stonegate",
+      "role": { "it": "Bartender", "en": "Bartender" },
+      "company": "Stonegate Group",
+      "location": { "it": "Londra, Regno Unito", "en": "London, United Kingdom" },
+      "period": { "it": "apr 2018 – mag 2019 (1 anno e 2 mesi)", "en": "Apr 2018 – May 2019 (1 year 2 months)" },
+      "open": false,
+      "highlights": {
+        "it": ["Lavoro in un contesto internazionale ad alto ritmo: inglese quotidiano, gestione della pressione, lavoro di squadra."],
+        "en": ["Fast-paced international environment: daily English, working under pressure, teamwork."]
+      },
+      "projects": [],
+      "skills": []
+    }
+  ],
+  "education": [
+    {
+      "id": "diploma-ragioneria",
+      "role": { "it": "Diploma di Ragioneria – indirizzo turistico", "en": "High School Diploma in Accounting – Tourism specialisation" },
+      "company": "ITC \"Pietro Martini\"",
+      "location": { "it": "Cagliari", "en": "Cagliari, Italy" },
+      "period": { "it": "", "en": "" },
+      "open": false,
+      "highlights": { "it": [], "en": [] },
+      "projects": [],
+      "skills": []
+    }
+  ],
+  "languages": [
+    { "name": { "it": "Italiano", "en": "Italian" }, "level": { "it": "madrelingua", "en": "native" } },
+    { "name": { "it": "Inglese", "en": "English" }, "level": { "it": "B2 (13 mesi di lavoro a Londra)", "en": "B2 (13 months working in London)" } },
+    { "name": { "it": "Spagnolo", "en": "Spanish" }, "level": { "it": "base", "en": "basic" } }
+  ]
+}

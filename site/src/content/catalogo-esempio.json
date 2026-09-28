@@ -1,0 +1,24 @@
+{
+  "projects": [
+    {
+      "slug": "balloi-immobiliare",
+      "episodes": [
+        { "id": 1, "title": { "it": "L'app", "en": "The app" }, "duration": "0:33", "videoUrl": "/video/balloi-ep1.mp4", "posterUrl": "/video/balloi-ep1-copertina.jpg" },
+        { "id": 2, "title": { "it": "Docker", "en": "Docker" }, "duration": "0:30", "videoUrl": "/video/balloi-ep2.mp4", "posterUrl": "/video/balloi-ep2-copertina.jpg" }
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "id": "aws-saa",
+      "name": "AWS Certified Solutions Architect – Associate",
+      "issuer": "Amazon Web Services",
+      "issuedAt": "2026-09-18",
+      "expiresAt": "2029-09-18",
+      "pdfUrl": "/certificazioni/aws-solutions-architect-associate.pdf",
+      "previewUrl": "/certificazioni/aws-solutions-architect-associate-preview.jpg",
+      "verifyUrl": "https://aws.amazon.com/verification",
+      "status": "issued"
+    }
+  ]
+}

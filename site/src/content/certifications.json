@@ -1,0 +1,44 @@
+[
+  {
+    "id": "aws-saa",
+    "name": "AWS Certified Solutions Architect – Associate",
+    "issuer": "Amazon Web Services",
+    "issued": { "it": "18 set 2026", "en": "Sep 18, 2026" },
+    "expires": { "it": "18 set 2029", "en": "Sep 18, 2029" },
+    "status": "issued",
+    "pdf": "/certificazioni/aws-solutions-architect-associate.pdf",
+    "preview": "/certificazioni/aws-solutions-architect-associate-preview.jpg",
+    "verifyUrl": "https://aws.amazon.com/verification",
+    "verifyNote": {
+      "it": "Codice di convalida: 0db041925ffa4c3ba6b39006d739b0f5",
+      "en": "Validation code: 0db041925ffa4c3ba6b39006d739b0f5"
+    }
+  },
+  {
+    "id": "capm",
+    "name": "Certified Associate in Project Management (CAPM)",
+    "issuer": "Project Management Institute",
+    "issued": { "it": "4 mag 2026", "en": "May 4, 2026" },
+    "expires": { "it": "4 mag 2029", "en": "May 4, 2029" },
+    "status": "issued",
+    "pdf": "/certificazioni/capm.pdf",
+    "preview": "/certificazioni/capm-preview.jpg",
+    "verifyUrl": "https://www.pmi.org/certifications/certification-resources/registry",
+    "verifyNote": {
+      "it": "N. registro PMI: 4370486 · \"Above Target\" in tutti i domini",
+      "en": "PMI registry no.: 4370486 · \"Above Target\" in all domains"
+    }
+  },
+  {
+    "id": "qualifica-java",
+    "name": { "it": "Qualifica professionale \"Tecnico di Sviluppo Software\" (EQF 5)", "en": "Vocational qualification \"Software Development Technician\" (EQF 5)" },
+    "issuer": { "it": "Regione Autonoma della Sardegna (agenzia formativa ABACONS)", "en": "Autonomous Region of Sardinia (training agency ABACONS)" },
+    "issued": { "it": "7 dic 2022", "en": "Dec 7, 2022" },
+    "expires": null,
+    "status": "issued",
+    "pdf": "/certificazioni/qualifica-tecnico-sviluppo-software.pdf",
+    "preview": "/certificazioni/qualifica-tecnico-sviluppo-software-preview.jpg",
+    "verifyUrl": null,
+    "verifyNote": { "it": null, "en": null }
+  }
+]

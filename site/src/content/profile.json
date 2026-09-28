@@ -1,0 +1,43 @@
+{
+  "name": "Daniel Balloi",
+  "title": {
+    "it": "DevOps & Release Engineer · AWS Certified Solutions Architect",
+    "en": "DevOps & Release Engineer · AWS Certified Solutions Architect"
+  },
+  "experienceLine": {
+    "it": "3 anni e mezzo di rilasci in produzione per clienti Enterprise",
+    "en": "3.5 years of production releases for enterprise clients"
+  },
+  "valueProp": {
+    "it": "Porto le applicazioni dal codice alla produzione in modo affidabile: pipeline CI/CD, cloud AWS, infrastruttura come codice e rilasci controllati.",
+    "en": "I take applications from code to production, reliably: CI/CD pipelines, AWS cloud, infrastructure as code and controlled releases."
+  },
+  "availability": {
+    "it": "Cagliari · in sede, ibrido o full remote",
+    "en": "Cagliari, Italy · on-site, hybrid or fully remote"
+  },
+  "badges": [
+    { "it": "AWS Certified Solutions Architect – Associate", "en": "AWS Certified Solutions Architect – Associate" }
+  ],
+  "photo": {
+    "portrait": "/img/foto.jpg",
+    "square": "/img/foto-quadrata.jpg",
+    "alt": { "it": "Ritratto di Daniel Balloi", "en": "Portrait of Daniel Balloi" }
+  },
+  "cv": {
+    "it": "/cv/cv-daniel-balloi-it.pdf",
+    "en": "/cv/cv-daniel-balloi-en.pdf"
+  },
+  "links": {
+    "github": "https://github.com/danielballoi",
+    "linkedin": "https://linkedin.com/in/danielballoi",
+    "email": "danielballoi1995@outlook.it"
+  },
+  "beyondWork": {
+    "text": {
+      "it": "[SEGNAPOSTO — testo da fornire: 2-3 righe su cosa fai fuori dal lavoro]",
+      "en": "[PLACEHOLDER — text to be provided: 2-3 lines about life outside work]"
+    },
+    "photo": null
+  }
+}
