@@ -3,6 +3,7 @@ import { useLanguage } from '../i18n/LanguageContext'
 import Hero from '../components/Hero'
 import ProjectsSection from '../components/ProjectsSection'
 import Timeline from '../components/Timeline'
+import CertificationsSection from '../components/CertificationsSection'
 
 export default function Home() {
   const lang = useLanguage()
@@ -22,6 +23,7 @@ export default function Home() {
         <Hero />
         <ProjectsSection />
         <Timeline />
+        <CertificationsSection />
       </main>
     </>
   )

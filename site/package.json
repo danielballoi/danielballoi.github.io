@@ -12,7 +12,8 @@
     "preview": "vite preview",
     "test": "vitest run",
     "lint": "eslint .",
-    "prepare:images": "node scripts/prepare-images.mjs"
+    "prepare:images": "node scripts/prepare-images.mjs",
+    "prepare:certifications": "node scripts/prepare-certification-previews.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",

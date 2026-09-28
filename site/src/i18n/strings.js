@@ -49,6 +49,17 @@ export const strings = {
       showMore: 'Espandi',
       showLess: 'Comprimi',
     },
+    certifications: {
+      sectionTitle: 'Certificazioni',
+      eyebrow: '// 04 — CERTIFICAZIONI',
+      openPdf: 'Apri il PDF',
+      download: 'Scarica',
+      verify: 'Verifica',
+      verifyUnavailable: 'Verifica non disponibile',
+      issued: 'Rilasciata:',
+      expires: 'Scadenza:',
+      inPreparation: 'In preparazione',
+    },
   },
   en: {
     nav: {
@@ -99,6 +110,17 @@ export const strings = {
       languagesTitle: 'Languages',
       showMore: 'Expand',
       showLess: 'Collapse',
+    },
+    certifications: {
+      sectionTitle: 'Certifications',
+      eyebrow: '// 04 — CERTIFICATIONS',
+      openPdf: 'Open PDF',
+      download: 'Download',
+      verify: 'Verify',
+      verifyUnavailable: 'Verification not available',
+      issued: 'Issued:',
+      expires: 'Expires:',
+      inPreparation: 'In preparation',
     },
   },
 }

@@ -1,0 +1,101 @@
+.certification-card {
+  border: 1px solid var(--color-grid);
+  display: flex;
+  flex-direction: column;
+  scroll-margin-top: 64px;
+}
+
+.certification-card__preview {
+  display: block;
+  border-bottom: 1px solid var(--color-grid);
+  background: var(--color-grid);
+}
+
+.certification-card__preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.certification-card__preview-placeholder {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--color-grid),
+    var(--color-grid) 10px,
+    var(--color-paper) 10px,
+    var(--color-paper) 20px
+  );
+}
+
+.certification-card__body {
+  padding: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.certification-card__status {
+  margin: 0;
+  align-self: flex-start;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  padding: 0.15rem 0.4rem;
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+}
+
+.certification-card__name {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+}
+
+.certification-card__issuer {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--color-text-secondary);
+}
+
+.certification-card__dates {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-text-secondary);
+}
+
+.certification-card__note {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--color-text-secondary);
+}
+
+.certification-card__actions {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.9rem;
+}
+
+.certification-card__actions a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--color-ink);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  text-decoration: underline;
+}
+
+.certification-card__verify-placeholder {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
