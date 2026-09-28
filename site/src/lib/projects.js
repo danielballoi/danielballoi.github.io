@@ -1,0 +1,28 @@
+const modules = import.meta.glob('../content/progetti/*.json', { eager: true })
+
+const projects = Object.values(modules)
+  .map((mod) => mod.default ?? mod)
+  .sort((a, b) => {
+    if (a.featured !== b.featured) return a.featured ? -1 : 1
+    return a.slug.localeCompare(b.slug)
+  })
+
+export function getAllProjects() {
+  return projects
+}
+
+export function getFeaturedProject() {
+  return projects.find((project) => project.featured) ?? null
+}
+
+export function getOtherProjects() {
+  return projects.filter((project) => !project.featured)
+}
+
+export function getProjectSlugs() {
+  return projects.map((project) => project.slug)
+}
+
+export function getProjectBySlug(slug) {
+  return projects.find((project) => project.slug === slug) ?? null
+}

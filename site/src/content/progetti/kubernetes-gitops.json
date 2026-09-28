@@ -1,0 +1,18 @@
+{
+  "slug": "kubernetes-gitops",
+  "status": "in-progress",
+  "featured": false,
+  "title": { "it": "Kubernetes e GitOps", "en": "Kubernetes and GitOps" },
+  "type": { "it": "Kubernetes · GitOps", "en": "Kubernetes · GitOps" },
+  "summary": {
+    "it": "Microservizi su Kubernetes con rilasci GitOps tramite Argo CD, promozione e rollback.",
+    "en": "Microservices on Kubernetes with GitOps releases via Argo CD, promotion and rollback."
+  },
+  "problem": { "it": null, "en": null },
+  "solution": { "it": null, "en": null },
+  "results": { "it": [], "en": [] },
+  "technologies": ["Kubernetes", "Argo CD", "GitOps", "Helm"],
+  "links": { "github": null, "diario": null, "adr": null },
+  "architecture": null,
+  "episodes": []
+}

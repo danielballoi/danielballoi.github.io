@@ -1,0 +1,18 @@
+{
+  "slug": "automazione-linux",
+  "status": "in-progress",
+  "featured": false,
+  "title": { "it": "Automazione di server Linux", "en": "Linux server automation" },
+  "type": { "it": "Configuration management", "en": "Configuration management" },
+  "summary": {
+    "it": "Una flotta di server configurata e messa in sicurezza con Ansible.",
+    "en": "A fleet of servers configured and hardened with Ansible."
+  },
+  "problem": { "it": null, "en": null },
+  "solution": { "it": null, "en": null },
+  "results": { "it": [], "en": [] },
+  "technologies": ["Ansible", "Linux", "Bash"],
+  "links": { "github": null, "diario": null, "adr": null },
+  "architecture": null,
+  "episodes": []
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "questo-sito",
+  "status": "in-progress",
+  "featured": false,
+  "title": { "it": "Questo sito", "en": "This site" },
+  "type": { "it": "Event-driven · Serverless", "en": "Event-driven · Serverless" },
+  "summary": {
+    "it": "Portfolio event-driven e serverless: video e certificazioni pubblicati da soli con eventi, code e Lambda.",
+    "en": "Event-driven, serverless portfolio: videos and certifications published automatically through events, queues and Lambda."
+  },
+  "problem": { "it": null, "en": null },
+  "solution": { "it": null, "en": null },
+  "results": { "it": [], "en": [] },
+  "technologies": ["AWS Lambda", "EventBridge", "SQS", "DynamoDB", "S3", "CloudFront", "Terraform"],
+  "links": { "github": null, "diario": null, "adr": null },
+  "architecture": null,
+  "episodes": []
+}

@@ -1,0 +1,53 @@
+{
+  "slug": "balloi-immobiliare",
+  "status": "online",
+  "featured": true,
+  "title": { "it": "Balloi immobiliare", "en": "Balloi real estate" },
+  "type": { "it": "Server singolo · API REST", "en": "Single server · REST API" },
+  "summary": {
+    "it": "Una dashboard di investimenti immobiliari su Cagliari da portare in produzione in modo professionale, a costo quasi zero.",
+    "en": "A real-estate investment dashboard for Cagliari, to be taken to production professionally at near-zero cost."
+  },
+  "problem": {
+    "it": "Una dashboard di investimenti immobiliari su Cagliari da portare in produzione in modo professionale, a costo quasi zero.",
+    "en": "A real-estate investment dashboard for Cagliari, to be taken to production professionally at near-zero cost."
+  },
+  "solution": {
+    "it": "Container Docker, CI/CD con GitHub Actions, release versionate, infrastruttura AWS in Terraform, avvio automatico con cloud-init, backup su S3, sicurezza della supply chain.",
+    "en": "Docker containers, CI/CD with GitHub Actions, versioned releases, AWS infrastructure in Terraform, automatic boot with cloud-init, S3 backups, supply chain security."
+  },
+  "results": {
+    "it": ["nuovo server online da solo in 2 minuti", "93 → 0 vulnerabilità", "2 incidenti reali risolti"],
+    "en": ["new server online by itself in 2 minutes", "93 → 0 vulnerabilities", "2 real incidents solved"]
+  },
+  "technologies": ["Docker", "GitHub Actions", "Terraform", "AWS EC2", "AWS S3", "AWS IAM", "Node.js", "React", "MySQL"],
+  "links": {
+    "github": "https://github.com/danielballoi/balloi-immobiliare",
+    "diario": "https://github.com/danielballoi/balloi-immobiliare/blob/main/docs/PORTFOLIO.md",
+    "adr": "https://github.com/danielballoi/balloi-immobiliare/tree/main/docs/decisioni"
+  },
+  "architecture": {
+    "diagram": "balloi-immobiliare",
+    "nodes": [
+      { "id": "browser", "label": { "it": "Browser", "en": "Browser" } },
+      { "id": "nginx", "label": { "it": "Nginx", "en": "Nginx" } },
+      { "id": "backend", "label": { "it": "Backend (Node.js)", "en": "Backend (Node.js)" } },
+      { "id": "mysql", "label": { "it": "MySQL (EC2)", "en": "MySQL (EC2)" } },
+      { "id": "s3", "label": { "it": "S3 (backup)", "en": "S3 (backup)" } },
+      { "id": "ghcr", "label": { "it": "GitHub Container Registry", "en": "GitHub Container Registry" } }
+    ]
+  },
+  "episodes": [
+    { "id": 1, "title": { "it": "L'app", "en": "The app" }, "duration": "0:33", "video": "/video/balloi-ep1.mp4", "poster": "/video/balloi-ep1-copertina.jpg" },
+    { "id": 2, "title": { "it": "Docker", "en": "Docker" }, "duration": "0:30", "video": "/video/balloi-ep2.mp4", "poster": "/video/balloi-ep2-copertina.jpg" },
+    { "id": 3, "title": { "it": "La pipeline CI/CD", "en": "The CI/CD pipeline" }, "duration": "0:28", "video": "/video/balloi-ep3.mp4", "poster": "/video/balloi-ep3-copertina.jpg" },
+    { "id": 4, "title": { "it": "Infrastruttura come codice", "en": "Infrastructure as code" }, "duration": "0:36", "video": "/video/balloi-ep4.mp4", "poster": "/video/balloi-ep4-copertina.jpg" },
+    { "id": 5, "title": { "it": "Diagnosi di un problema reale", "en": "Troubleshooting a real problem" }, "duration": "0:38", "video": "/video/balloi-ep5.mp4", "poster": "/video/balloi-ep5-copertina.jpg" },
+    { "id": 6, "title": { "it": "Sicurezza", "en": "Security" }, "duration": "0:31", "video": "/video/balloi-ep6.mp4", "poster": "/video/balloi-ep6-copertina.jpg" },
+    { "id": 7, "title": { "it": "Le release", "en": "Releases" }, "duration": "0:31", "video": "/video/balloi-ep7.mp4", "poster": "/video/balloi-ep7-copertina.jpg" }
+  ],
+  "subtitlesNote": {
+    "it": null,
+    "en": "Voice and subtitles in Italian"
+  }
+}

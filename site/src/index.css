@@ -1,0 +1,59 @@
+:root {
+  --color-paper: #f4f7fb;
+  --color-grid: #dce5f2;
+  --color-ink: #1e3a8a;
+  --color-text: #16213a;
+  --color-text-secondary: #5a6a86;
+  --color-accent: #e0582f;
+
+  --font-heading: 'IBM Plex Sans Condensed', 'Arial Narrow', sans-serif;
+  --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+
+  --touch-target: 44px;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-paper: #0d1a33;
+    --color-grid: #1e3159;
+    --color-ink: #8fb3ff;
+    --color-text: #e6edf8;
+    --color-text-secondary: #a9b8d6;
+    --color-accent: #e0582f;
+    color-scheme: dark;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
