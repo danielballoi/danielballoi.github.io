@@ -1,8 +1,8 @@
 import { Link, useParams } from 'react-router-dom'
-import { Head } from 'vite-react-ssg'
 import { pick, useLanguage } from '../i18n/LanguageContext'
 import { useStrings } from '../i18n/strings'
 import { getProjectBySlug } from '../lib/projects'
+import SeoHead from '../components/SeoHead'
 import ArchitectureDiagram from '../components/ArchitectureDiagram'
 import EpisodeCarousel from '../components/EpisodeCarousel'
 import TechTag from '../components/TechTag'
@@ -22,13 +22,11 @@ export default function ProjectDetail() {
   const results = pick(project.results, lang) ?? []
   const statusLabel = project.status === 'online' ? t.projects.statusOnline : t.projects.statusInProgress
   const homePath = lang === 'en' ? '/en/' : '/'
+  const path = lang === 'en' ? `/en/projects/${project.slug}` : `/progetti/${project.slug}`
 
   return (
     <>
-      <Head>
-        <title>{title} — Daniel Balloi</title>
-        <meta name="description" content={summary ?? title} />
-      </Head>
+      <SeoHead title={`${title} — Daniel Balloi`} description={summary ?? title} path={path} />
       <main className="project-detail">
         <Link to={homePath} className="project-detail__back">
           ← {t.projects.backToHome}

@@ -9,11 +9,13 @@
   "scripts": {
     "dev": "vite-react-ssg dev",
     "build": "vite-react-ssg build",
+    "postbuild": "node scripts/generate-sitemap.mjs",
     "preview": "vite preview",
     "test": "vitest run",
     "lint": "eslint .",
     "prepare:images": "node scripts/prepare-images.mjs",
-    "prepare:certifications": "node scripts/prepare-certification-previews.mjs"
+    "prepare:certifications": "node scripts/prepare-certification-previews.mjs",
+    "prepare:og": "node scripts/prepare-og-image.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",

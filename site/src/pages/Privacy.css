@@ -1,0 +1,41 @@
+.privacy {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 1.25rem 1rem 3rem;
+}
+
+.privacy__back {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--color-ink);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.privacy h1 {
+  font-family: var(--font-heading);
+  margin: 0.5rem 0 0;
+}
+
+.privacy__updated {
+  color: var(--color-text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+.privacy h2 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--color-ink);
+  margin: 1.5rem 0 0.4rem;
+}
+
+.privacy p {
+  line-height: 1.5;
+}
+
+.privacy a {
+  color: var(--color-ink);
+}

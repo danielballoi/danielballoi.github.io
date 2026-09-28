@@ -1,5 +1,5 @@
-import { Head } from 'vite-react-ssg'
 import { useLanguage } from '../i18n/LanguageContext'
+import SeoHead from '../components/SeoHead'
 import Hero from '../components/Hero'
 import ProjectsSection from '../components/ProjectsSection'
 import Timeline from '../components/Timeline'
@@ -16,13 +16,11 @@ export default function Home() {
     lang === 'en'
       ? 'DevOps & Release Engineer, AWS Certified Solutions Architect. 3.5 years of production releases for enterprise clients.'
       : 'DevOps & Release Engineer, AWS Certified Solutions Architect. 3 anni e mezzo di rilasci in produzione per clienti Enterprise.'
+  const path = lang === 'en' ? '/en/' : '/'
 
   return (
     <>
-      <Head>
-        <title>{title}</title>
-        <meta name="description" content={description} />
-      </Head>
+      <SeoHead title={title} description={description} path={path} />
       <main>
         <Hero />
         <ProjectsSection />
