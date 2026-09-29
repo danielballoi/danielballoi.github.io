@@ -1,16 +1,20 @@
 {
   "name": "Daniel Balloi",
   "title": {
-    "it": "DevOps & Release Engineer · AWS Certified Solutions Architect",
-    "en": "DevOps & Release Engineer · AWS Certified Solutions Architect"
+    "it": "DevOps & Release Engineer",
+    "en": "DevOps & Release Engineer"
+  },
+  "titleSecondary": {
+    "it": "Release Manager · CAPM",
+    "en": "Release Manager · CAPM"
   },
   "experienceLine": {
-    "it": "3 anni e mezzo di rilasci in produzione per clienti Enterprise",
-    "en": "3.5 years of production releases for enterprise clients"
+    "it": "3 anni di rilasci in produzione per clienti Enterprise",
+    "en": "3 years of production releases for enterprise clients"
   },
   "valueProp": {
-    "it": "Porto le applicazioni dal codice alla produzione in modo affidabile: pipeline CI/CD, cloud AWS, infrastruttura come codice e rilasci controllati.",
-    "en": "I take applications from code to production, reliably: CI/CD pipelines, AWS cloud, infrastructure as code and controlled releases."
+    "it": "Porto le applicazioni dal codice alla produzione in modo affidabile e faccio da punto di connessione tra team tecnici e management: pipeline CI/CD, cloud AWS, infrastruttura come codice e rilasci controllati.",
+    "en": "I take applications from code to production reliably and act as the bridge between engineering teams and management: CI/CD pipelines, AWS cloud, infrastructure as code and controlled releases."
   },
   "availability": {
     "it": "Cagliari · in sede, ibrido o full remote",
