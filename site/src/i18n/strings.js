@@ -64,10 +64,6 @@ export const strings = {
       linkLabel: 'Vedi su GitHub',
       linkMissing: 'Link da fornire',
     },
-    beyondWork: {
-      sectionTitle: 'Fuori dal lavoro',
-      eyebrow: '// 06 — FUORI DAL LAVORO',
-    },
     contact: {
       sectionTitle: 'Contatti',
       eyebrow: '// 07 — CONTATTI',
@@ -155,10 +151,6 @@ export const strings = {
       eyebrow: '// 05 — METHOD',
       linkLabel: 'See on GitHub',
       linkMissing: 'Link to be provided',
-    },
-    beyondWork: {
-      sectionTitle: 'Beyond work',
-      eyebrow: '// 06 — BEYOND WORK',
     },
     contact: {
       sectionTitle: 'Contact',

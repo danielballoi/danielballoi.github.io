@@ -14,8 +14,8 @@
           "role": { "it": "Release Manager", "en": "Release Manager" },
           "period": { "it": "apr 2023 – mag 2026", "en": "Apr 2023 – May 2026" },
           "description": {
-            "it": "Esecuzione dei rilasci in produzione: lancio delle pipeline CI/CD e rilascio su database MySQL on-premise, con verifica post-rilascio. Presidio e censimento dei rilasci in produzione, gestione delle Change Request e valutazione dei rischi con i team Dev, QA e Ops. Pianificazione delle attività con Jira, ServiceNow ed Excel e Application Management. Coordinamento, come PMO, delle attività cloud AWS svolte dai team tecnici.",
-            "en": "Carried out production releases: ran CI/CD pipelines and released to on-premise MySQL databases, with post-release checks. Tracked and oversaw production releases, managed Change Requests and risk assessment with Dev, QA and Ops teams. Planned activities with Jira, ServiceNow and Excel, and handled application management. Coordinated, as PMO, the AWS cloud activities carried out by the engineering teams."
+            "it": "Esecuzione dei rilasci in produzione: lancio delle pipeline CI/CD e rilascio su database MySQL on-premise, con verifica post-rilascio. Allineamento degli ambienti inferiori (test e preprod) alla produzione. Presidio e censimento dei rilasci in produzione, gestione delle Change Request e valutazione dei rischi con i team Dev, QA e Ops. Pianificazione delle attività con Jira, ServiceNow ed Excel e Application Management. Coordinamento, come PMO, delle attività cloud AWS svolte dai team tecnici.",
+            "en": "Carried out production releases: ran CI/CD pipelines and released to on-premise MySQL databases, with post-release checks. Aligned lower environments (test and pre-production) with production. Tracked and oversaw production releases, managed Change Requests and risk assessment with Dev, QA and Ops teams. Planned activities with Jira, ServiceNow and Excel, and handled application management. Coordinated, as PMO, the AWS cloud activities carried out by the engineering teams."
           }
         },
         {
