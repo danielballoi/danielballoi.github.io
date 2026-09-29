@@ -27,13 +27,16 @@ function TimelineEntry({ entry }) {
       )}
 
       {entry.projects?.length > 0 && (
-        <ul className="timeline-entry__projects">
+        <div className="timeline-entry__projects">
           {entry.projects.map((p) => (
-            <li key={p.name}>
-              <strong>{p.name}</strong> — {pick(p.role, lang)} · {pick(p.period, lang)}
-            </li>
+            <div key={p.name} className="timeline-entry__project">
+              <p className="timeline-entry__project-heading">
+                <strong>{p.name}</strong> — {pick(p.role, lang)} · {pick(p.period, lang)}
+              </p>
+              {p.description && <p className="timeline-entry__project-description">{pick(p.description, lang)}</p>}
+            </div>
           ))}
-        </ul>
+        </div>
       )}
     </details>
   )

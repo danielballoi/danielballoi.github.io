@@ -7,28 +7,35 @@
       "location": { "it": "Cagliari", "en": "Cagliari, Italy" },
       "period": { "it": "gen 2023 – giu 2026 (3 anni e 6 mesi)", "en": "Jan 2023 – Jun 2026 (3 years 6 months)" },
       "open": true,
-      "highlights": {
-        "it": [
-          "Esecuzione dei rilasci in produzione: lancio delle pipeline CI/CD e rilascio su database MySQL on-premise, con verifica post-rilascio (progetto Mooney).",
-          "Presidio e censimento dei rilasci; gestione delle Change Request e valutazione dei rischi con Dev, QA e Ops.",
-          "Coordinamento, come PMO (non esecutivo), delle attività cloud AWS svolte dai team tecnici (progetto Mooney).",
-          "Sviluppo end-to-end in JavaScript/React con Flowerbase e MongoDB, assistito da AI (progetto Alcor); Application Maintenance in Java/Spring Boot (Sisal) e su database SQL/PL-SQL (EdenRed).",
-          "Pianificazione e project management (Jira, ServiceNow, Excel); PMO sulla delivery di un software end-to-end (Italgas)."
-        ],
-        "en": [
-          "Carried out production releases: ran CI/CD pipelines and released to on-premise MySQL databases, with post-release checks (Mooney project).",
-          "Tracked and oversaw releases; managed Change Requests and risk assessment with Dev, QA and Ops.",
-          "Coordinated, as PMO (non-executive), the AWS cloud activities carried out by the engineering teams (Mooney project).",
-          "Built end-to-end software in JavaScript/React with Flowerbase and MongoDB, using AI-assisted development (Alcor project); application maintenance in Java/Spring Boot (Sisal) and on SQL/PL-SQL databases (EdenRed).",
-          "Planning and project management (Jira, ServiceNow, Excel); PMO for the delivery of end-to-end software (Italgas)."
-        ]
-      },
+      "highlights": { "it": [], "en": [] },
       "projects": [
-        { "name": "Mooney", "role": { "it": "Release e PMO", "en": "Release and PMO" }, "period": { "it": "apr 2023 – mag 2026", "en": "Apr 2023 – May 2026" } },
-        { "name": "Alcor", "role": { "it": "Developer", "en": "Developer" }, "period": { "it": "feb 2026 – giu 2026", "en": "Feb 2026 – Jun 2026" } },
-        { "name": "Italgas", "role": { "it": "PMO", "en": "PMO" }, "period": { "it": "dic 2024 – giu 2025", "en": "Dec 2024 – Jun 2025" } },
-        { "name": "Sisal", "role": { "it": "Developer", "en": "Developer" }, "period": { "it": "feb 2023 – mag 2023", "en": "Feb 2023 – May 2023" } },
-        { "name": "EdenRed", "role": { "it": "Developer", "en": "Developer" }, "period": { "it": "gen 2023 – mar 2023", "en": "Jan 2023 – Mar 2023" } }
+        {
+          "name": "Mooney",
+          "role": { "it": "Release Manager", "en": "Release Manager" },
+          "period": { "it": "apr 2023 – mag 2026", "en": "Apr 2023 – May 2026" },
+          "description": {
+            "it": "Esecuzione dei rilasci in produzione: lancio delle pipeline CI/CD e rilascio su database MySQL on-premise, con verifica post-rilascio. Presidio e censimento dei rilasci in produzione, gestione delle Change Request e valutazione dei rischi con i team Dev, QA e Ops. Pianificazione delle attività con Jira, ServiceNow ed Excel e Application Management. Coordinamento, come PMO, delle attività cloud AWS svolte dai team tecnici.",
+            "en": "Carried out production releases: ran CI/CD pipelines and released to on-premise MySQL databases, with post-release checks. Tracked and oversaw production releases, managed Change Requests and risk assessment with Dev, QA and Ops teams. Planned activities with Jira, ServiceNow and Excel, and handled application management. Coordinated, as PMO, the AWS cloud activities carried out by the engineering teams."
+          }
+        },
+        {
+          "name": "Sisal",
+          "role": { "it": "Backend Developer Junior", "en": "Backend Developer Junior" },
+          "period": { "it": "feb 2023 – mag 2023", "en": "Feb 2023 – May 2023" },
+          "description": {
+            "it": "Analisi e Application Maintenance in Java / Spring Boot.",
+            "en": "Analysis and application maintenance in Java / Spring Boot."
+          }
+        },
+        {
+          "name": "EdenRed",
+          "role": { "it": "Backend Developer Junior", "en": "Backend Developer Junior" },
+          "period": { "it": "gen 2023 – mar 2023", "en": "Jan 2023 – Mar 2023" },
+          "description": {
+            "it": "Application Maintenance su database con SQL e PL/SQL.",
+            "en": "Database application maintenance with SQL and PL/SQL."
+          }
+        }
       ],
       "skills": ["JavaScript", "Java", "CI/CD", "AWS", "MySQL", "Release management", "Change management"]
     },

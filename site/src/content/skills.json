@@ -144,13 +144,6 @@
             { "label": { "it": "Stackhouse (EdenRed)", "en": "Stackhouse (EdenRed)" }, "href": "/#esperienza-stackhouse" },
             { "label": { "it": "Balloi", "en": "Balloi" }, "href": "/progetti/balloi-immobiliare" }
           ]
-        },
-        {
-          "id": "mongodb",
-          "name": { "it": "MongoDB", "en": "MongoDB" },
-          "level": 2,
-          "icons": ["mongodb"],
-          "evidence": [{ "label": { "it": "Stackhouse (Alcor)", "en": "Stackhouse (Alcor)" }, "href": "/#esperienza-stackhouse" }]
         }
       ]
     },
@@ -173,10 +166,7 @@
           "name": { "it": "JavaScript · React", "en": "JavaScript · React" },
           "level": 3,
           "icons": ["javascript", "react"],
-          "evidence": [
-            { "label": { "it": "Stackhouse (Alcor)", "en": "Stackhouse (Alcor)" }, "href": "/#esperienza-stackhouse" },
-            { "label": { "it": "Balloi", "en": "Balloi" }, "href": "/progetti/balloi-immobiliare" }
-          ]
+          "evidence": [{ "label": { "it": "Balloi", "en": "Balloi" }, "href": "/progetti/balloi-immobiliare" }]
         },
         {
           "id": "node-express",
