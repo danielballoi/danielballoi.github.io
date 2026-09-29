@@ -2,7 +2,7 @@
   "slug": "questo-sito",
   "status": "in-progress",
   "featured": false,
-  "title": { "it": "Questo sito", "en": "This site" },
+  "title": { "it": "Portfolio CV (Questo sito)", "en": "CV Portfolio (This site)" },
   "type": { "it": "Event-driven · Serverless", "en": "Event-driven · Serverless" },
   "summary": {
     "it": "Portfolio event-driven e serverless: video e certificazioni pubblicati da soli con eventi, code e Lambda.",
