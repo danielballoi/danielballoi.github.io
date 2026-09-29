@@ -14,8 +14,8 @@
           "role": { "it": "Release Manager", "en": "Release Manager" },
           "period": { "it": "apr 2023 – mag 2026", "en": "Apr 2023 – May 2026" },
           "description": {
-            "it": "Esecuzione dei rilasci in produzione: lancio delle pipeline CI/CD e rilascio su database MySQL on-premise, con verifica post-rilascio. Allineamento degli ambienti inferiori (test e preprod) alla produzione. Presidio e censimento dei rilasci in produzione, gestione delle Change Request e valutazione dei rischi con i team Dev, QA e Ops. Pianificazione delle attività con Jira, ServiceNow ed Excel e Application Management. Coordinamento, come PMO, delle attività cloud AWS svolte dai team tecnici.",
-            "en": "Carried out production releases: ran CI/CD pipelines and released to on-premise MySQL databases, with post-release checks. Aligned lower environments (test and pre-production) with production. Tracked and oversaw production releases, managed Change Requests and risk assessment with Dev, QA and Ops teams. Planned activities with Jira, ServiceNow and Excel, and handled application management. Coordinated, as PMO, the AWS cloud activities carried out by the engineering teams."
+            "it": "Per 3 anni ho gestito i rilasci in produzione per il cliente Mooney, in ambito banking enterprise, ed eseguito in prima persona i rilasci negli ambienti inferiori (test e preprod), mantenendoli allineati alla produzione. Il mio lavoro comprendeva rilasci su database MySQL, lancio delle pipeline CI/CD, censimento e monitoraggio dei rilasci in produzione, gestione delle Change Request, partecipazione attiva al CAB (Change Advisory Board) e gestione end-to-end dei bug fix. Pianificavo le attività con Jira, ServiceNow ed Excel e coordinavo, come PMO, le attività cloud AWS svolte dai team tecnici.",
+            "en": "For 3 years I managed production releases for Mooney, a banking enterprise client, and personally carried out releases to lower environments (test and pre-production), keeping them aligned with production. My work covered MySQL database releases, running CI/CD pipelines, tracking and monitoring production releases, managing Change Requests, actively taking part in the CAB (Change Advisory Board) and handling bug fixes end to end. I planned activities with Jira, ServiceNow and Excel and coordinated, as PMO, the AWS cloud activities carried out by the engineering teams."
           }
         },
         {
@@ -23,8 +23,8 @@
           "role": { "it": "Backend Developer Junior", "en": "Backend Developer Junior" },
           "period": { "it": "feb 2023 – mag 2023", "en": "Feb 2023 – May 2023" },
           "description": {
-            "it": "Analisi e Application Maintenance in Java / Spring Boot.",
-            "en": "Analysis and application maintenance in Java / Spring Boot."
+            "it": "Analisi e risoluzione di bug su applicazioni Java / Spring Boot con database MySQL, dalla riproduzione del problema alla correzione del codice.",
+            "en": "Analysed and fixed bugs in Java / Spring Boot applications backed by MySQL, from reproducing the issue to fixing the code."
           }
         },
         {
@@ -32,8 +32,8 @@
           "role": { "it": "Backend Developer Junior", "en": "Backend Developer Junior" },
           "period": { "it": "gen 2023 – mar 2023", "en": "Jan 2023 – Mar 2023" },
           "description": {
-            "it": "Application Maintenance su database con SQL e PL/SQL.",
-            "en": "Database application maintenance with SQL and PL/SQL."
+            "it": "Gestione dei ticket di bug sulla fatturazione elettronica: analisi e recupero dei dati tramite query SQL e ripristino dei dati mancanti con script PL/SQL.",
+            "en": "Handled bug tickets on electronic invoicing: analysed and retrieved data with SQL queries and restored missing data with PL/SQL scripts."
           }
         }
       ],
