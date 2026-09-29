@@ -22,7 +22,12 @@ export default function ProjectDetail() {
   const title = pick(project.title, lang)
   const summary = pick(project.summary, lang)
   const results = pick(project.results, lang) ?? []
-  const statusLabel = project.status === 'online' ? t.projects.statusOnline : t.projects.statusInProgress
+  const statusLabels = {
+    online: t.projects.statusOnline,
+    'in-progress': t.projects.statusInProgress,
+    planned: t.projects.statusPlanned,
+  }
+  const statusLabel = statusLabels[project.status] ?? project.status
   const homePath = lang === 'en' ? '/en/' : '/'
   const path = lang === 'en' ? `/en/projects/${project.slug}` : `/progetti/${project.slug}`
 

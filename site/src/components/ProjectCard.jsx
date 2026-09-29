@@ -9,7 +9,12 @@ export default function ProjectCard({ project }) {
   const lang = useLanguage()
   const t = useStrings(lang)
   const prefix = lang === 'en' ? '/en/projects' : '/progetti'
-  const statusLabel = project.status === 'online' ? t.projects.statusOnline : t.projects.statusInProgress
+  const statusLabels = {
+    online: t.projects.statusOnline,
+    'in-progress': t.projects.statusInProgress,
+    planned: t.projects.statusPlanned,
+  }
+  const statusLabel = statusLabels[project.status] ?? project.status
 
   return (
     <li className={`project-card ${project.featured ? 'project-card--featured' : ''}`}>

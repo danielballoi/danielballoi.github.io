@@ -1,0 +1,18 @@
+{
+  "slug": "frigochef",
+  "status": "planned",
+  "featured": false,
+  "title": { "it": "FrigoChef", "en": "FrigoChef" },
+  "type": { "it": "App AI · Container · Kubernetes", "en": "AI app · Container · Kubernetes" },
+  "summary": {
+    "it": "App che riconosce gli ingredienti da una foto dell'interno del frigo e suggerisce cosa cucinare, usando un modello di intelligenza artificiale open source e gratuito integrato nel codice.",
+    "en": "An app that recognises the ingredients in a photo of your fridge and suggests what to cook, using a free, open-source AI model built into the code."
+  },
+  "problem": { "it": null, "en": null },
+  "solution": { "it": null, "en": null },
+  "results": { "it": [], "en": [] },
+  "technologies": ["AI open source", "Docker", "Kubernetes", "GitOps"],
+  "links": { "github": null, "diario": null, "adr": null },
+  "architecture": null,
+  "episodes": []
+}

@@ -16,7 +16,7 @@ Entrambe le pagine vengono create in automatico alla build successiva (`npm run 
 | Campo | Tipo | Obbligatorio | Note |
 |---|---|---|---|
 | `slug` | stringa | sì | deve combaciare con il nome del file, solo lettere minuscole/numeri/trattini |
-| `status` | `"online"` \| `"in-progress"` | sì | mostrato come etichetta di stato nella scheda |
+| `status` | `"online"` \| `"in-progress"` \| `"planned"` | sì | mostrato come etichetta di stato nella scheda ("Online" · "In lavorazione" · "In progettazione") |
 | `featured` | booleano | sì | `true` solo per il progetto in evidenza (uno solo); gli altri `false` |
 | `title.it` / `title.en` | stringa | sì | titolo del progetto |
 | `type.it` / `type.en` | stringa | sì | tipo di architettura, es. "Server singolo · API REST" |
