@@ -115,8 +115,8 @@
 }
 
 .hero__cta--primary {
-  background: var(--color-accent);
-  border-color: var(--color-accent);
+  background: var(--color-accent-contrast-bg);
+  border-color: var(--color-accent-contrast-bg);
   color: #fff;
   font-weight: 600;
 }
@@ -132,8 +132,8 @@
 
 .hero__cta--primary:hover,
 .hero__cta--primary:focus-visible {
-  background: var(--color-accent);
-  filter: brightness(1.08);
+  background: var(--color-accent-contrast-bg);
+  filter: brightness(1.04);
 }
 
 @media (min-width: 640px) {

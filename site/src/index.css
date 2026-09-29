@@ -5,6 +5,13 @@
   --color-text: #16213a;
   --color-text-secondary: #5a6a86;
   --color-accent: #e0582f;
+  /* Testo/bordi color accento su sfondo carta: nel chiaro serve piu' scuro
+     dell'accento base per il contrasto AA; nel notturno l'accento base
+     basta gia' (sfondo molto scuro). */
+  --color-accent-text: #c14a26;
+  /* Sfondo dei pulsanti principali con testo bianco: stessa coppia in
+     entrambi i temi, non dipende dal colore della pagina. */
+  --color-accent-contrast-bg: #c14a26;
 
   --font-heading: 'IBM Plex Sans Condensed', 'Arial Narrow', sans-serif;
   --font-body: 'IBM Plex Sans', system-ui, sans-serif;
@@ -22,6 +29,7 @@
     --color-text: #e6edf8;
     --color-text-secondary: #a9b8d6;
     --color-accent: #e0582f;
+    --color-accent-text: #e0582f;
     color-scheme: dark;
   }
 }

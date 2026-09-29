@@ -8,6 +8,16 @@ export default defineConfig({
     script: 'async',
     formatting: 'none',
     dirStyle: 'nested',
+    onPageRendered: (_route, renderedHTML) => {
+      // react-helmet raggruppa i tag per tipo (title, poi meta, poi link),
+      // cosi' <meta charset> finisce dopo <title>. Lo spostiamo subito dopo
+      // <head> perche' la dichiarazione della codifica deve venire prima di
+      // qualunque contenuto non-ASCII (es. gli accenti nei testi IT).
+      const match = renderedHTML.match(/<meta[^>]*charset="UTF-8"[^>]*>/i)
+      if (!match) return renderedHTML
+      const withoutCharset = renderedHTML.replace(match[0], '')
+      return withoutCharset.replace('<head>', `<head>${match[0]}`)
+    },
     onFinished: async (dir) => {
       const fs = await import('node:fs/promises')
       const path = await import('node:path')

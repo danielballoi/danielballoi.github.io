@@ -8,6 +8,8 @@
     "status": "issued",
     "pdf": "/certificazioni/aws-solutions-architect-associate.pdf",
     "preview": "/certificazioni/aws-solutions-architect-associate-preview.jpg",
+    "previewWidth": 480,
+    "previewHeight": 371,
     "verifyUrl": "https://aws.amazon.com/verification",
     "verifyNote": {
       "it": "Codice di convalida: 0db041925ffa4c3ba6b39006d739b0f5",
@@ -23,6 +25,8 @@
     "status": "issued",
     "pdf": "/certificazioni/capm.pdf",
     "preview": "/certificazioni/capm-preview.jpg",
+    "previewWidth": 480,
+    "previewHeight": 371,
     "verifyUrl": "https://www.pmi.org/certifications/certification-resources/registry",
     "verifyNote": {
       "it": "N. registro PMI: 4370486 · \"Above Target\" in tutti i domini",
@@ -38,6 +42,8 @@
     "status": "issued",
     "pdf": "/certificazioni/qualifica-tecnico-sviluppo-software.pdf",
     "preview": "/certificazioni/qualifica-tecnico-sviluppo-software-preview.jpg",
+    "previewWidth": 480,
+    "previewHeight": 679,
     "verifyUrl": null,
     "verifyNote": { "it": null, "en": null }
   }

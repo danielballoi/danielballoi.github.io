@@ -11,6 +11,7 @@ export default function Layout() {
   return (
     <LanguageContext.Provider value={lang}>
       <Head>
+        <meta charSet="UTF-8" />
         <html lang={lang} />
       </Head>
       <div className="app-shell">

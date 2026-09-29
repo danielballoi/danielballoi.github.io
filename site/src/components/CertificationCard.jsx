@@ -22,7 +22,13 @@ export default function CertificationCard({ certification }) {
         aria-label={`${t.certifications.openPdf}: ${name}`}
       >
         {certification.preview ? (
-          <img src={certification.preview} alt="" loading="lazy" width="480" />
+          <img
+            src={certification.preview}
+            alt=""
+            loading="lazy"
+            width={certification.previewWidth}
+            height={certification.previewHeight}
+          />
         ) : (
           <span className="certification-card__preview-placeholder" aria-hidden="true" />
         )}
