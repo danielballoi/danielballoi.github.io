@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   base: '/',
   ssgOptions: {
-    script: 'async',
+    script: 'sync',
     formatting: 'none',
     dirStyle: 'nested',
     onPageRendered: (_route, renderedHTML) => {
