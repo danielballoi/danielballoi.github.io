@@ -1,5 +1,5 @@
 .language-prompt {
-  max-width: 72rem;
+  max-width: var(--container-max);
   margin: 0 auto;
   padding: 0.6rem 1rem;
   display: flex;

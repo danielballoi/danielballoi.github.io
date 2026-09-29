@@ -1,4 +1,5 @@
 :root {
+  --container-max: 75rem;
   --color-paper: #f4f7fb;
   --color-grid: #dce5f2;
   --color-ink: #1e3a8a;
@@ -48,11 +49,13 @@ body {
 body {
   background-color: var(--color-paper);
   background-image:
-    linear-gradient(var(--color-grid) 1px, transparent 1px),
-    linear-gradient(90deg, var(--color-grid) 1px, transparent 1px);
-  background-size: 24px 24px;
+    linear-gradient(color-mix(in srgb, var(--color-grid) 45%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--color-grid) 45%, transparent) 1px, transparent 1px);
+  background-size: 32px 32px;
   color: var(--color-text);
   font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -82,11 +85,24 @@ button {
   outline-offset: 2px;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.2;
+}
+
 .section-title {
   font-family: var(--font-heading);
-  font-size: 1.4rem;
-  margin: 0;
+  font-size: 1.6rem;
+  margin: 0 0 0.35rem;
   color: var(--color-text);
+}
+
+@media (min-width: 640px) {
+  .section-title {
+    font-size: 2rem;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
