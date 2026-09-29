@@ -6,6 +6,10 @@ const CUSTOM_PATHS = {
   copy: 'M9 9h10v10H9z M6 15H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1v1',
 }
 
+const FILLED_PATHS = {
+  play: 'M7 4l13 8-13 8z',
+}
+
 /**
  * Icona monocromatica che segue il colore del testo (currentColor), pensata
  * per stare dentro un pulsante: niente colore di marchio al passaggio del
@@ -18,6 +22,15 @@ export default function Icon({ name, className }) {
     return (
       <svg className={className} viewBox="0 0 24 24" aria-hidden="true">
         <path d={brand.path} fill="currentColor" />
+      </svg>
+    )
+  }
+
+  const filled = FILLED_PATHS[name]
+  if (filled) {
+    return (
+      <svg className={className} viewBox="0 0 24 24" aria-hidden="true">
+        <path d={filled} fill="currentColor" />
       </svg>
     )
   }

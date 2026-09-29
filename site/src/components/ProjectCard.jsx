@@ -44,7 +44,8 @@ export default function ProjectCard({ project }) {
           </a>
         )}
         <Link className="project-card__link" to={`${prefix}/${project.slug}`}>
-          {t.projects.dettaglio} →
+          <Icon name="play" className="project-card__link-icon" />
+          {t.projects.dettaglio}
         </Link>
       </div>
     </li>

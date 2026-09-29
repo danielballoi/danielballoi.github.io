@@ -66,9 +66,9 @@
 
 .project-card__actions {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: 0.6rem;
-  margin-top: 0.25rem;
+  margin-top: 0.5rem;
 }
 
 .project-card__github {
@@ -96,9 +96,27 @@
 .project-card__link {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  flex: 1;
   min-height: 44px;
-  color: var(--color-ink);
+  padding: 0 1rem;
+  border: 1px solid var(--color-ink);
+  background: var(--color-ink);
+  color: #fff;
   font-family: var(--font-mono);
   font-size: 0.85rem;
-  text-decoration: underline;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project-card__link:hover,
+.project-card__link:focus-visible {
+  filter: brightness(1.15);
+}
+
+.project-card__link-icon {
+  width: 16px;
+  height: 16px;
+  flex: none;
 }
