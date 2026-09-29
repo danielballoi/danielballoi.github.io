@@ -15,10 +15,6 @@ export function getFeaturedProject() {
   return projects.find((project) => project.featured) ?? null
 }
 
-export function getOtherProjects() {
-  return projects.filter((project) => !project.featured)
-}
-
 export function getProjectSlugs() {
   return projects.map((project) => project.slug)
 }

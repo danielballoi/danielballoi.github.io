@@ -20,6 +20,11 @@
     "it": ["nuovo server online da solo in 2 minuti", "93 → 0 vulnerabilità", "2 incidenti reali risolti"],
     "en": ["new server online by itself in 2 minutes", "93 → 0 vulnerabilities", "2 real incidents solved"]
   },
+  "resultsStats": [
+    { "value": "2 min", "label": { "it": "nuovo server online da solo", "en": "new server online by itself" } },
+    { "value": "93 → 0", "label": { "it": "vulnerabilità", "en": "vulnerabilities" } },
+    { "value": "2", "label": { "it": "incidenti reali risolti", "en": "real incidents solved" } }
+  ],
   "technologies": ["Docker", "GitHub Actions", "Terraform", "AWS EC2", "AWS S3", "AWS IAM", "Node.js", "React", "MySQL"],
   "links": {
     "github": "https://github.com/danielballoi/balloi-immobiliare",

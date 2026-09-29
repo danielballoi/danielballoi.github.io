@@ -5,7 +5,9 @@ import { getProjectBySlug } from '../lib/projects'
 import SeoHead from '../components/SeoHead'
 import ArchitectureDiagram from '../components/ArchitectureDiagram'
 import EpisodeCarousel from '../components/EpisodeCarousel'
+import ProjectStats from '../components/ProjectStats'
 import TechTag from '../components/TechTag'
+import Icon from '../components/Icon'
 import NotFound from './NotFound'
 import '../components/ProjectDetail.css'
 
@@ -39,6 +41,13 @@ export default function ProjectDetail() {
         <p className="project-detail__type">{pick(project.type, lang)}</p>
         {summary && <p className="project-detail__summary">{summary}</p>}
 
+        {project.episodes.length > 0 && (
+          <section id="episodi" className="project-detail__section">
+            <h2>{t.projects.episodesTitle}</h2>
+            <EpisodeCarousel episodes={project.episodes} subtitlesNote={project.subtitlesNote} />
+          </section>
+        )}
+
         {project.architecture?.nodes && (
           <section aria-labelledby="architettura-titolo" className="project-detail__section">
             <h2 id="architettura-titolo">{t.projects.architectureTitle}</h2>
@@ -46,7 +55,7 @@ export default function ProjectDetail() {
           </section>
         )}
 
-        {(pick(project.problem, lang) || pick(project.solution, lang) || results.length > 0) && (
+        {(pick(project.problem, lang) || pick(project.solution, lang)) && (
           <section className="project-detail__section">
             {pick(project.problem, lang) && (
               <>
@@ -60,17 +69,25 @@ export default function ProjectDetail() {
                 <p>{pick(project.solution, lang)}</p>
               </>
             )}
-            {results.length > 0 && (
-              <>
-                <h2>{t.projects.results}</h2>
-                <ul>
-                  {results.map((line) => (
-                    <li key={line}>{line}</li>
-                  ))}
-                </ul>
-              </>
-            )}
           </section>
+        )}
+
+        {project.resultsStats?.length > 0 ? (
+          <section className="project-detail__section">
+            <h2>{t.projects.results}</h2>
+            <ProjectStats stats={project.resultsStats} />
+          </section>
+        ) : (
+          results.length > 0 && (
+            <section className="project-detail__section">
+              <h2>{t.projects.results}</h2>
+              <ul>
+                {results.map((line) => (
+                  <li key={line}>{line}</li>
+                ))}
+              </ul>
+            </section>
+          )
         )}
 
         <section className="project-detail__section">
@@ -88,6 +105,7 @@ export default function ProjectDetail() {
           <section className="project-detail__section project-detail__links">
             {project.links.github && (
               <a href={project.links.github} target="_blank" rel="noreferrer">
+                <Icon name="github" className="project-detail__link-icon" />
                 {t.projects.repository}
               </a>
             )}
@@ -101,13 +119,6 @@ export default function ProjectDetail() {
                 {t.projects.adr}
               </a>
             )}
-          </section>
-        )}
-
-        {project.episodes.length > 0 && (
-          <section id="episodi" className="project-detail__section">
-            <h2>{t.projects.episodesTitle}</h2>
-            <EpisodeCarousel episodes={project.episodes} subtitlesNote={project.subtitlesNote} />
           </section>
         )}
       </main>

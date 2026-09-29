@@ -58,88 +58,90 @@ export default function EpisodeCarousel({ episodes, subtitlesNote }) {
       {episodes.map((ep) => (
         <span key={ep.id} id={`episodio-${ep.id}`} className="episode-carousel__anchor" aria-hidden="true" />
       ))}
-      <div
-        className="episode-carousel__viewport"
-        onKeyDown={handleKeyDown}
-        onTouchStart={handleTouchStart}
-        onTouchEnd={handleTouchEnd}
-      >
-        <button
-          type="button"
-          className="episode-carousel__arrow episode-carousel__arrow--prev"
-          onClick={() => goTo(index - 1)}
-          aria-label={lang === 'en' ? 'Previous episode' : 'Episodio precedente'}
+
+      <div className="episode-carousel__frame">
+        <div
+          className="episode-carousel__viewport"
+          onKeyDown={handleKeyDown}
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
         >
-          ‹
-        </button>
+          <button
+            type="button"
+            className="episode-carousel__arrow episode-carousel__arrow--prev"
+            onClick={() => goTo(index - 1)}
+            aria-label={lang === 'en' ? 'Previous episode' : 'Episodio precedente'}
+          >
+            ‹
+          </button>
 
-        <div className="episode-carousel__stage">
-          {playing ? (
-            <video
-              key={episode.id}
-              className="episode-carousel__video"
-              src={episode.video}
-              poster={episode.poster}
-              controls
-              autoPlay
-              muted={muted}
-              preload="none"
-              onVolumeChange={(e) => setMuted(e.currentTarget.muted)}
-            >
-              <track kind="captions" />
-            </video>
-          ) : (
-            <button
-              type="button"
-              className="episode-carousel__poster"
-              style={{ backgroundImage: `url(${episode.poster})` }}
-              onClick={() => setPlaying(true)}
-            >
-              <span className="episode-carousel__play" aria-hidden="true">
-                ►
-              </span>
-              <span className="visually-hidden">
-                {lang === 'en' ? 'Play episode' : 'Riproduci episodio'} {episode.id}: {pick(episode.title, lang)}
-              </span>
-            </button>
-          )}
-
-          <div className="episode-carousel__meta">
-            <span className="episode-carousel__title">
-              {episode.id}. {pick(episode.title, lang)}
-            </span>
-            <span className="episode-carousel__duration">{episode.duration}</span>
+          <div className="episode-carousel__stage">
+            {playing ? (
+              <video
+                key={episode.id}
+                className="episode-carousel__video"
+                src={episode.video}
+                poster={episode.poster}
+                controls
+                autoPlay
+                muted={muted}
+                preload="none"
+                onVolumeChange={(e) => setMuted(e.currentTarget.muted)}
+              >
+                <track kind="captions" />
+              </video>
+            ) : (
+              <button
+                type="button"
+                className="episode-carousel__poster"
+                style={{ backgroundImage: `url(${episode.poster})` }}
+                onClick={() => setPlaying(true)}
+              >
+                <span className="episode-carousel__play" aria-hidden="true">
+                  ►
+                </span>
+                <span className="visually-hidden">
+                  {lang === 'en' ? 'Play episode' : 'Riproduci episodio'} {episode.id}: {pick(episode.title, lang)}
+                </span>
+              </button>
+            )}
           </div>
-          {note && <p className="episode-carousel__note">{note}</p>}
+
+          <button
+            type="button"
+            className="episode-carousel__arrow episode-carousel__arrow--next"
+            onClick={() => goTo(index + 1)}
+            aria-label={lang === 'en' ? 'Next episode' : 'Episodio successivo'}
+          >
+            ›
+          </button>
         </div>
 
-        <button
-          type="button"
-          className="episode-carousel__arrow episode-carousel__arrow--next"
-          onClick={() => goTo(index + 1)}
-          aria-label={lang === 'en' ? 'Next episode' : 'Episodio successivo'}
-        >
-          ›
-        </button>
+        <div className="episode-carousel__meta">
+          <span className="episode-carousel__title">
+            {episode.id}. {pick(episode.title, lang)}
+          </span>
+          <span className="episode-carousel__duration">{episode.duration}</span>
+        </div>
+        {note && <p className="episode-carousel__note">{note}</p>}
       </div>
 
-      <div className="episode-carousel__dots" role="tablist" aria-label={lang === 'en' ? 'Episodes' : 'Episodi'}>
+      <ol className="episode-carousel__list">
         {episodes.map((ep, i) => (
-          <button
-            key={ep.id}
-            type="button"
-            role="tab"
-            aria-selected={i === index}
-            aria-current={i === index ? 'true' : undefined}
-            className="episode-carousel__dot"
-            onClick={() => goTo(i)}
-          >
-            <span className="visually-hidden">
-              {ep.id}. {pick(ep.title, lang)}
-            </span>
-          </button>
+          <li key={ep.id}>
+            <button
+              type="button"
+              className="episode-carousel__list-item"
+              aria-current={i === index ? 'true' : undefined}
+              onClick={() => goTo(i)}
+            >
+              <span className="episode-carousel__list-number">{ep.id}</span>
+              <span className="episode-carousel__list-title">{pick(ep.title, lang)}</span>
+              <span className="episode-carousel__list-duration">{ep.duration}</span>
+            </button>
+          </li>
         ))}
-      </div>
+      </ol>
     </div>
   )
 }

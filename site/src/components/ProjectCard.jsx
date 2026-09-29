@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { pick, useLanguage } from '../i18n/LanguageContext'
 import { useStrings } from '../i18n/strings'
 import TechTag from './TechTag'
+import Icon from './Icon'
 import './ProjectCard.css'
 
 export default function ProjectCard({ project }) {
@@ -11,11 +12,11 @@ export default function ProjectCard({ project }) {
   const statusLabel = project.status === 'online' ? t.projects.statusOnline : t.projects.statusInProgress
 
   return (
-    <li className="project-card">
+    <li className={`project-card ${project.featured ? 'project-card--featured' : ''}`}>
       <p className="project-card__status" data-status={project.status}>
         {statusLabel}
       </p>
-      <h4 className="project-card__title">{pick(project.title, lang)}</h4>
+      <h3 className="project-card__title">{pick(project.title, lang)}</h3>
       <p className="project-card__type">{pick(project.type, lang)}</p>
       <p className="project-card__summary">{pick(project.summary, lang)}</p>
       <ul className="project-card__tags">
@@ -25,9 +26,22 @@ export default function ProjectCard({ project }) {
           </li>
         ))}
       </ul>
-      <Link className="project-card__link" to={`${prefix}/${project.slug}`}>
-        {t.projects.dettaglio} →
-      </Link>
+      <div className="project-card__actions">
+        {project.links.github && (
+          <a
+            className="project-card__github"
+            href={project.links.github}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub"
+          >
+            <Icon name="github" className="project-card__github-icon" />
+          </a>
+        )}
+        <Link className="project-card__link" to={`${prefix}/${project.slug}`}>
+          {t.projects.dettaglio} →
+        </Link>
+      </div>
     </li>
   )
 }
