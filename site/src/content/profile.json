@@ -5,23 +5,31 @@
     "en": "DevOps & Release Engineer"
   },
   "titleSecondary": {
-    "it": "Release Manager · CAPM",
-    "en": "Release Manager · CAPM"
+    "it": "Release Manager",
+    "en": "Release Manager"
   },
   "experienceLine": {
-    "it": "3 anni di rilasci in produzione per clienti Enterprise",
-    "en": "3 years of production releases for enterprise clients"
+    "it": "3 anni di rilasci e pipeline CI/CD in ambito banking enterprise",
+    "en": "3 years of releases and CI/CD pipelines in banking enterprise"
   },
   "valueProp": {
-    "it": "Porto le applicazioni dal codice alla produzione in modo affidabile e faccio da punto di connessione tra team tecnici e management: pipeline CI/CD, cloud AWS, infrastruttura come codice e rilasci controllati.",
-    "en": "I take applications from code to production reliably and act as the bridge between engineering teams and management: CI/CD pipelines, AWS cloud, infrastructure as code and controlled releases."
+    "it": "Porto le applicazioni dal codice alla produzione in modo affidabile: pipeline CI/CD, container, infrastruttura come codice su AWS e rilasci controllati. Unisco la pratica tecnica alla visione di processo di chi ha gestito per anni i rilasci di un cliente bancario.",
+    "en": "I take applications from code to production reliably: CI/CD pipelines, containers, infrastructure as code on AWS and controlled releases. I combine hands-on technical work with the process view of someone who managed a banking client's releases for years."
   },
   "availability": {
     "it": "Cagliari · in sede, ibrido o full remote",
     "en": "Cagliari, Italy · on-site, hybrid or fully remote"
   },
   "badges": [
-    { "it": "AWS Certified Solutions Architect – Associate", "en": "AWS Certified Solutions Architect – Associate" }
+    {
+      "icon": "amazonwebservices",
+      "text": { "it": "AWS Certified Solutions Architect – Associate", "en": "AWS Certified Solutions Architect – Associate" }
+    },
+    {
+      "icon": null,
+      "iconText": "PMI",
+      "text": { "it": "Certified Associate in Project Management (CAPM)", "en": "Certified Associate in Project Management (CAPM)" }
+    }
   ],
   "photo": {
     "portrait": "/img/foto.jpg",

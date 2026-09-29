@@ -17,3 +17,9 @@
   flex: none;
   color: var(--color-ink);
 }
+
+.badge__icon-text {
+  flex: none;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}

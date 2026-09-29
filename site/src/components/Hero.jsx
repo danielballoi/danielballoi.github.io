@@ -40,7 +40,13 @@ export default function Hero() {
           <h1 className="hero__name">{profile.name}</h1>
           <p className="hero__title">{pick(profile.title, lang)}</p>
           <p className="hero__title-secondary">{pick(profile.titleSecondary, lang)}</p>
-          <Badge icon="amazonwebservices">{pick(profile.badges[0], lang)}</Badge>
+          <div className="hero__badges">
+            {profile.badges.map((badge) => (
+              <Badge key={pick(badge.text, lang)} icon={badge.icon} iconText={badge.iconText}>
+                {pick(badge.text, lang)}
+              </Badge>
+            ))}
+          </div>
         </div>
       </div>
 
