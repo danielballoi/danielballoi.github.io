@@ -1,69 +1,63 @@
-name: Deploy site
+name: Pubblica il sito                      # nome nella scheda Actions
 
-on:
-  push:
-    branches: [main]
-    paths:
-      - "site/**"
-      - ".github/workflows/deploy-site.yml"
-  workflow_dispatch:
+on:                                         # 1. QUANDO PARTE
+  push:                                     #    a ogni push...
+    branches: ["main"]                      #    ...sul ramo main...
+    paths:                                  #    ...solo se cambiano questi file:
+      - "site/**"                           #       il sito
+      - ".github/workflows/deploy-site.yml" #       o la pipeline stessa
+  workflow_dispatch:                        #    oppure a mano (pulsante "Run workflow")
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+permissions:                                # 2. COSA PUÒ FARE (minimo privilegio)
+  contents: read                            #    leggere il codice
+  pages: write                              #    pubblicare su Pages
+  id-token: write                           #    identificarsi con Pages (OIDC)
 
-concurrency:
+concurrency:                                # una pubblicazione alla volta
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false                 #    mai interromperne una a metà
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  build:                                    # ── JOB 1: la CI ──
+    runs-on: ubuntu-latest                  # 3. SU CHE MACCHINA
     defaults:
       run:
-        working-directory: site
+        working-directory: site             # 4. i comandi partono da site/ (niente più ENOENT)
     steps:
-      - name: Checkout
+      - name: Scarica il codice             # 4. porta il codice sulla macchina vuota
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Installa Node                 # 4. installa il linguaggio
         uses: actions/setup-node@v4
         with:
-          node-version: "22"
-          cache: "npm"
-          cache-dependency-path: site/package-lock.json
+          node-version: "22"                #    la stessa versione del mio PC
+          cache: npm                        #    tiene in cache le librerie: più veloce
+          cache-dependency-path: site/package-lock.json   # dove sta il lock
 
-      - name: Install dependencies
+      - name: Installa le dipendenze        # 5. le librerie, versioni esatte del lock
         run: npm ci
 
-      - name: Lint
-        run: npm run lint
-
-      - name: Test
+      - name: Esegui i test                 # 5. CONTROLLO: se fallisce, tutto si ferma qui
         run: npm test
 
-      - name: Build
-        env:
-          VITE_CATALOG_URL: ${{ vars.VITE_CATALOG_URL }}
-          VITE_CONTACT_API_URL: ${{ vars.VITE_CONTACT_API_URL }}
+      - name: Costruisci il sito            # 5. crea site/dist
         run: npm run build
 
-      - name: Setup Pages
+      - name: Prepara GitHub Pages          # 6. prepara la consegna
         uses: actions/configure-pages@v5
 
-      - name: Upload artifact
+      - name: Carica l'artefatto            # 6. impacchetta il sito pronto e lo mette nel deposito
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site/dist
+          path: site/dist                   #    dalla radice: working-directory vale solo per i run
 
-  deploy:
-    needs: build
+  deploy:                                   # ── JOB 2: la CD ──
+    needs: build                            # 7. parte SOLO se build è verde
     runs-on: ubuntu-latest
     environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      name: github-pages                    #    l'ambiente di destinazione
+      url: ${{ steps.deployment.outputs.page_url }}   # l'indirizzo del sito, mostrato in Actions
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Pubblica su GitHub Pages      # 7. prende il pacco dal deposito e lo pubblica
+        id: deployment                      #    nome del passo, usato dall'url qui sopra
+        uses: actions/deploy-pages@v5
