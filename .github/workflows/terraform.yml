@@ -1,0 +1,59 @@
+name: Infrastruttura (Terraform)
+
+on:
+  pull_request:
+    branches: ["main"]
+    paths:
+      - "infra/main/**"
+      - ".github/workflows/terraform.yml"
+  push:
+    branches: ["main"]
+    paths:
+      - "infra/main/**"
+      - ".github/workflows/terraform.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: terraform
+  cancel-in-progress: false
+
+jobs:
+  terraform:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: infra/main
+    steps:
+      - name: Scarica il codice
+        uses: actions/checkout@v4
+
+      - name: Entra in AWS con OIDC
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          aws-region: eu-south-1
+
+      - name: Installa Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: "1.16.4"
+
+      - name: Init
+        run: terraform init
+
+      - name: Controllo formattazione
+        run: terraform fmt -check
+
+      - name: Validazione
+        run: terraform validate
+
+      - name: Plan
+        run: terraform plan -out=tfplan
+
+      - name: Apply (solo su main)
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        run: terraform apply -auto-approve tfplan
