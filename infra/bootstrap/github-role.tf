@@ -1,6 +1,7 @@
 locals {
-  github_repo = "danielballoi/danielballoi.github.io"
-  state_key   = "main/terraform.tfstate"
+  github_repo    = "danielballoi/danielballoi.github.io"
+  github_repo_id = "danielballoi@88150270/danielballoi.github.io@1392908825"
+  state_key      = "main/terraform.tfstate"
 }
 
 data "aws_iam_policy_document" "github_trust" {
@@ -23,6 +24,8 @@ data "aws_iam_policy_document" "github_trust" {
       test     = "StringLike"
       variable = "token.actions.githubusercontent.com:sub"
       values = [
+        "repo:${local.github_repo_id}:ref:refs/heads/main",
+        "repo:${local.github_repo_id}:pull_request",
         "repo:${local.github_repo}:ref:refs/heads/main",
         "repo:${local.github_repo}:pull_request",
       ]
