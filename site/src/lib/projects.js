@@ -1,7 +1,17 @@
+import { mediaUrl } from './media'
+
 const modules = import.meta.glob('../content/progetti/*.json', { eager: true })
 
 const projects = Object.values(modules)
   .map((mod) => mod.default ?? mod)
+  .map((project) => ({
+    ...project,
+    episodes: (project.episodes ?? []).map((episode) => ({
+      ...episode,
+      video: mediaUrl(episode.video),
+      poster: mediaUrl(episode.poster),
+    })),
+  }))
   .sort((a, b) => {
     if (a.featured !== b.featured) return a.featured ? -1 : 1
     return a.slug.localeCompare(b.slug)
