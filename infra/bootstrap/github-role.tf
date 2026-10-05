@@ -60,6 +60,36 @@ data "aws_iam_policy_document" "github_permissions" {
       "${aws_s3_bucket.state.arn}/${local.state_key}.tflock",
     ]
   }
+  statement {
+    sid     = "GestioneBucketMedia"
+    actions = ["s3:*"]
+    resources = [
+      "arn:aws:s3:::danielballoi-portfolio-media-576134963750",
+      "arn:aws:s3:::danielballoi-portfolio-media-576134963750/*",
+    ]
+  }
+
+  statement {
+    sid = "GestioneCloudFront"
+    actions = [
+      "cloudfront:CreateDistribution",
+      "cloudfront:GetDistribution",
+      "cloudfront:GetDistributionConfig",
+      "cloudfront:UpdateDistribution",
+      "cloudfront:DeleteDistribution",
+      "cloudfront:TagResource",
+      "cloudfront:UntagResource",
+      "cloudfront:ListTagsForResource",
+      "cloudfront:CreateOriginAccessControl",
+      "cloudfront:GetOriginAccessControl",
+      "cloudfront:UpdateOriginAccessControl",
+      "cloudfront:DeleteOriginAccessControl",
+      "cloudfront:ListCachePolicies",
+      "cloudfront:GetCachePolicy",
+      "cloudfront:CreateInvalidation",
+    ]
+    resources = ["*"]
+  }
 }
 
 resource "aws_iam_role_policy" "github_actions" {
