@@ -9,6 +9,7 @@ CV online di Daniel Balloi — DevOps & Release Engineer. Sito React pre-renderi
 - **Hosting**: GitHub Pages, repository pubblico `danielballoi.github.io`, pubblicato automaticamente da `.github/workflows/deploy-site.yml` a ogni push su `main` che tocca `site/`.
 - **Nessun cookie di tracciamento**, nessuna libreria di analytics.
 - **Pronto per la fase 2** (infrastruttura AWS, cartelle `functions/` e `infra/`): il sito legge `VITE_CATALOG_URL` per un catalogo remoto di video/certificazioni e `VITE_CONTACT_API_URL` per il modulo contatti, con fallback automatico ai dati locali se non sono definite o la rete non risponde (`docs/catalogo.schema.md`).
+- **Video e copertine degli episodi** sono serviti da CloudFront (bucket S3 privato in `infra/`): i contenuti in `site/src/content/progetti/` contengono solo il percorso (es. `/video/balloi-ep1.mp4`) e `site/src/lib/media.js` lo unisce all'origine dei media, `https://d1vd6l24zt7s8o.cloudfront.net` per impostazione predefinita, modificabile con `VITE_MEDIA_BASE_URL`.
 
 ```
 site/        pagine React + Vite (questa fase)
