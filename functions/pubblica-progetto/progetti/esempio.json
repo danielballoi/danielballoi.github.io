@@ -1,0 +1,18 @@
+{
+  "slug": "esempio",
+  "status": "planned",
+  "featured": false,
+  "title": { "it": "Progetto di esempio", "en": "Example project" },
+  "type": { "it": "Serverless · Event-driven", "en": "Serverless · Event-driven" },
+  "summary": {
+    "it": "Progetto di prova pubblicato dalla Lambda pubblica-progetto a partire da un file caricato su S3.",
+    "en": "Test project published by the pubblica-progetto Lambda from a file uploaded to S3."
+  },
+  "problem": { "it": null, "en": null },
+  "solution": { "it": null, "en": null },
+  "results": { "it": [], "en": [] },
+  "technologies": ["AWS Lambda", "S3", "SSM Parameter Store"],
+  "links": { "github": null, "diario": null, "adr": null },
+  "architecture": null,
+  "episodes": []
+}
