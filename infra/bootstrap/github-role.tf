@@ -90,6 +90,81 @@ data "aws_iam_policy_document" "github_permissions" {
     ]
     resources = ["*"]
   }
+
+  # ═════════ STEP 6: Lambda pubblica-progetto ═════════
+  statement {
+    sid     = "GestioneBucketUpload"
+    actions = ["s3:*"]
+    resources = [
+      "arn:aws:s3:::danielballoi-portfolio-upload-576134963750",
+      "arn:aws:s3:::danielballoi-portfolio-upload-576134963750/*",
+    ]
+  }
+
+  statement {
+    sid = "GestioneRuoloLambda"
+    actions = [
+      "iam:CreateRole",
+      "iam:GetRole",
+      "iam:DeleteRole",
+      "iam:UpdateRole",
+      "iam:UpdateAssumeRolePolicy",
+      "iam:TagRole",
+      "iam:UntagRole",
+      "iam:ListRoleTags",
+      "iam:PutRolePolicy",
+      "iam:GetRolePolicy",
+      "iam:DeleteRolePolicy",
+      "iam:ListRolePolicies",
+      "iam:ListAttachedRolePolicies",
+      "iam:ListInstanceProfilesForRole",
+    ]
+    resources = ["arn:aws:iam::576134963750:role/pubblica-progetto-lambda"]
+  }
+
+  statement {
+    sid       = "PassaRuoloSoloALambda"
+    actions   = ["iam:PassRole"]
+    resources = ["arn:aws:iam::576134963750:role/pubblica-progetto-lambda"]
+
+    condition {
+      test     = "StringEquals"
+      variable = "iam:PassedToService"
+      values   = ["lambda.amazonaws.com"]
+    }
+  }
+
+  statement {
+    sid       = "GestioneLambda"
+    actions   = ["lambda:*"]
+    resources = ["arn:aws:lambda:eu-south-1:576134963750:function:pubblica-progetto"]
+  }
+
+  statement {
+    sid = "GestioneLogLambda"
+    actions = [
+      "logs:CreateLogGroup",
+      "logs:DeleteLogGroup",
+      "logs:PutRetentionPolicy",
+      "logs:DeleteRetentionPolicy",
+      "logs:TagResource",
+      "logs:UntagResource",
+      "logs:ListTagsForResource",
+      "logs:TagLogGroup",
+      "logs:UntagLogGroup",
+      "logs:ListTagsLogGroup",
+    ]
+    resources = [
+      "arn:aws:logs:eu-south-1:576134963750:log-group:/aws/lambda/pubblica-progetto",
+      "arn:aws:logs:eu-south-1:576134963750:log-group:/aws/lambda/pubblica-progetto:*",
+    ]
+  }
+
+  statement {
+    sid       = "ElencoLogGroup"
+    actions   = ["logs:DescribeLogGroups"]
+    resources = ["*"]
+  }
 }
 
 resource "aws_iam_role_policy" "github_actions" {
