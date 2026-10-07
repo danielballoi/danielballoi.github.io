@@ -26,6 +26,8 @@ concurrency:
 jobs:
   terraform:
     runs-on: ubuntu-latest
+    env: 
+      TF_VAR_alert_email: ${{ secrets.ALERT_EMAIL }}
     defaults:
       run:
         working-directory: infra/main
