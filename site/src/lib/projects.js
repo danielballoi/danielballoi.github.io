@@ -14,6 +14,9 @@ const projects = Object.values(modules)
   }))
   .sort((a, b) => {
     if (a.featured !== b.featured) return a.featured ? -1 : 1
+    const orderA = typeof a.order === 'number' ? a.order : Infinity
+    const orderB = typeof b.order === 'number' ? b.order : Infinity
+    if (orderA !== orderB) return orderA - orderB
     return a.slug.localeCompare(b.slug)
   })
 

@@ -1,7 +1,8 @@
 {
   "slug": "questo-sito",
   "status": "online",
-  "featured": true,
+  "featured": false,
+  "order": 1,
   "title": { "it": "Portfolio CV (Questo sito)", "en": "CV Portfolio (This site)" },
   "type": { "it": "Event-driven · Serverless", "en": "Event-driven · Serverless" },
   "summary": {
