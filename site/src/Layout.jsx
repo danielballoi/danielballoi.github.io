@@ -3,6 +3,7 @@ import { Head } from 'vite-react-ssg'
 import { LanguageContext } from './i18n/LanguageContext'
 import Header from './components/Header'
 import LanguagePrompt from './components/LanguagePrompt'
+import ScrollToHash from './components/ScrollToHash'
 
 export default function Layout() {
   const location = useLocation()
@@ -15,6 +16,7 @@ export default function Layout() {
         <html lang={lang} />
       </Head>
       <div className="app-shell">
+        <ScrollToHash />
         <Header />
         <LanguagePrompt />
         <Outlet />

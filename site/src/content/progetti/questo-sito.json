@@ -14,5 +14,8 @@
   "technologies": ["AWS Lambda", "EventBridge", "SQS", "DynamoDB", "S3", "CloudFront", "Terraform"],
   "links": { "github": null, "diario": null, "adr": null },
   "architecture": null,
-  "episodes": []
+  "episodes": [
+    { "id": 1, "title": { "it": "Com'è fatto questo sito", "en": "How this site is built" }, "duration": "1:27", "video": "/video/questo-sito-ep1.mp4", "poster": "/video/questo-sito-ep1-copertina.jpg" }
+  ],
+  "subtitlesNote": { "it": null, "en": "Voce e sottotitoli in italiano" }
 }
