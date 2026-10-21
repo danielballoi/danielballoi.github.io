@@ -7,7 +7,7 @@ output "cloudfront_domain" {
   value       = aws_cloudfront_distribution.media.domain_name
 }
 output "upload_bucket" {
-  value = aws_s3_bucket.upload.id # il nome del bucket, per caricare i file di prova
+  value = aws_s3_bucket.upload.id
 }
 
 output "lambda_name" {

@@ -1,63 +1,63 @@
-name: Pubblica il sito                      # nome nella scheda Actions
+name: Pubblica il sito
 
-on:                                         # 1. QUANDO PARTE
-  push:                                     #    a ogni push...
-    branches: ["main"]                      #    ...sul ramo main...
-    paths:                                  #    ...solo se cambiano questi file:
-      - "site/**"                           #       il sito
-      - ".github/workflows/deploy-site.yml" #       o la pipeline stessa
-  workflow_dispatch:                        #    oppure a mano (pulsante "Run workflow")
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "site/**"
+      - ".github/workflows/deploy-site.yml"
+  workflow_dispatch:
 
-permissions:                                # 2. COSA PUÒ FARE (minimo privilegio)
-  contents: read                            #    leggere il codice
-  pages: write                              #    pubblicare su Pages
-  id-token: write                           #    identificarsi con Pages (OIDC)
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
-concurrency:                                # una pubblicazione alla volta
+concurrency:
   group: pages
-  cancel-in-progress: false                 #    mai interromperne una a metà
+  cancel-in-progress: false
 
 jobs:
-  build:                                    # ── JOB 1: la CI ──
-    runs-on: ubuntu-latest                  # 3. SU CHE MACCHINA
+  build:
+    runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: site             # 4. i comandi partono da site/ (niente più ENOENT)
+        working-directory: site
     steps:
-      - name: Scarica il codice             # 4. porta il codice sulla macchina vuota
+      - name: Scarica il codice
         uses: actions/checkout@v4
 
-      - name: Installa Node                 # 4. installa il linguaggio
+      - name: Installa Node
         uses: actions/setup-node@v4
         with:
-          node-version: "22"                #    la stessa versione del mio PC
-          cache: npm                        #    tiene in cache le librerie: più veloce
-          cache-dependency-path: site/package-lock.json   # dove sta il lock
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: site/package-lock.json
 
-      - name: Installa le dipendenze        # 5. le librerie, versioni esatte del lock
+      - name: Installa le dipendenze
         run: npm ci
 
-      - name: Esegui i test                 # 5. CONTROLLO: se fallisce, tutto si ferma qui
+      - name: Esegui i test
         run: npm test
 
-      - name: Costruisci il sito            # 5. crea site/dist
+      - name: Costruisci il sito
         run: npm run build
 
-      - name: Prepara GitHub Pages          # 6. prepara la consegna
+      - name: Prepara GitHub Pages
         uses: actions/configure-pages@v5
 
       - name: Carica l'artefatto            # 6. impacchetta il sito pronto e lo mette nel deposito
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site/dist                   #    dalla radice: working-directory vale solo per i run
+          path: site/dist
 
-  deploy:                                   # ── JOB 2: la CD ──
-    needs: build                            # 7. parte SOLO se build è verde
+  deploy:
+    needs: build
     runs-on: ubuntu-latest
     environment:
-      name: github-pages                    #    l'ambiente di destinazione
-      url: ${{ steps.deployment.outputs.page_url }}   # l'indirizzo del sito, mostrato in Actions
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Pubblica su GitHub Pages      # 7. prende il pacco dal deposito e lo pubblica
-        id: deployment                      #    nome del passo, usato dall'url qui sopra
+      - name: Pubblica su GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v5

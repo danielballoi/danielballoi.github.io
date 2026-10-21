@@ -91,7 +91,6 @@ data "aws_iam_policy_document" "github_permissions" {
     resources = ["*"]
   }
 
-  # ═════════ STEP 6: Lambda pubblica-progetto ═════════
   statement {
     sid     = "GestioneBucketUpload"
     actions = ["s3:*"]

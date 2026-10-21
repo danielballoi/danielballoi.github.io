@@ -1,10 +1,10 @@
 terraform {
   backend "s3" {
-    bucket       = "danielballoi-portfolio-tfstate-576134963750" # il bucket creato al passo 2
-    key          = "bootstrap/terraform.tfstate"                 # "percorso" del file dentro il bucket
+    bucket       = "danielballoi-portfolio-tfstate-576134963750"
+    key          = "bootstrap/terraform.tfstate"
     region       = "eu-south-1"
-    use_lockfile = true # lock nativo su S3 (Terraform ≥ 1.10)
-    encrypt      = true # lo state viene salvato cifrato
+    use_lockfile = true
+    encrypt      = true
   }
 }
 

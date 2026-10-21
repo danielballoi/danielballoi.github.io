@@ -11,5 +11,5 @@ variable "budget_email" {
 variable "budget_limit_usd" {
   description = "Spesa mensile massima prevista, in dollari"
   type        = string
-  default     = "1.0" # valore predefinito: 1 dollaro al mese
+  default     = "1.0"
 }
