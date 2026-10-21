@@ -96,4 +96,3 @@ I sottotitoli sono in italiano; per la versione inglese mostra gli stessi video 
 - Il PDF della qualifica è già privo della pagina con i dati personali: **non** cercare né pubblicare altre versioni.
 - Anteprima: genera un'immagine della prima pagina di ogni PDF in fase di build (o una volta, come file statico).
 - Se Daniel fornirà i link "Mostra credenziale" di LinkedIn/Credly, sostituiranno quelli sopra.
-- Le formazioni Anthropic/Claude **non** vanno nel sito.
