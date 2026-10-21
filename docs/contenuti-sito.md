@@ -49,7 +49,7 @@ Da rivedere con Daniel. Testi pensati per essere brevi e concreti. Da copiare ne
 | Certified Associate in Project Management (CAPM) | Project Management Institute | mag 2026 | mag 2029 |
 | Qualifica professionale Sviluppatore Software – Java | Regione Autonoma della Sardegna | nov 2022 | — |
 
-Note: CAPM con risultato "Above Target" in tutti e 5 i domini. Link di verifica: da copiare da LinkedIn ("Mostra credenziale"). Le certificazioni Anthropic non vanno pubblicate (scelta di Daniel).
+Note: CAPM con risultato "Above Target" in tutti e 5 i domini. Link di verifica: da copiare da LinkedIn ("Mostra credenziale").
 
 ## Progetto in evidenza: Balloi immobiliare
 

@@ -210,7 +210,7 @@ Blog; statistiche delle visite; area riservata con login; dominio a pagamento (m
 
 ## 12. Piano di costruzione
 
-1. **Sito** con Claude Code (prompt 1): pagine, contenuti, stile, lingue, pubblicazione su GitHub Pages. Funziona subito con dati di esempio.
+1. **Sito**: pagine, contenuti, stile, lingue, pubblicazione su GitHub Pages. Funziona subito con dati di esempio.
 2. **Infrastruttura** (prompt 2), passo per passo e spiegata: Terraform, bucket, CloudFront, pipeline a eventi, modulo contatti, OIDC.
 3. **Collegamento**: il sito legge il catalogo da CloudFront e invia il modulo ad API Gateway.
 4. **Contenuti veri**: foto, CV, certificazioni, video.
