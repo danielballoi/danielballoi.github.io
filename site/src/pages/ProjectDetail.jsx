@@ -22,6 +22,7 @@ export default function ProjectDetail() {
   const title = pick(project.title, lang)
   const summary = pick(project.summary, lang)
   const results = pick(project.results, lang) ?? []
+  const limits = pick(project.limits, lang) ?? []
   const statusLabels = {
     online: t.projects.statusOnline,
     'in-progress': t.projects.statusInProgress,
@@ -93,6 +94,17 @@ export default function ProjectDetail() {
               </ul>
             </section>
           )
+        )}
+
+        {limits.length > 0 && (
+          <section className="project-detail__section">
+            <h2>{t.projects.limits}</h2>
+            <ul>
+              {limits.map((line) => (
+                <li key={line}>{line}</li>
+              ))}
+            </ul>
+          </section>
         )}
 
         <section className="project-detail__section">

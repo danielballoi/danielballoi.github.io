@@ -23,6 +23,9 @@ Entrambe le pagine vengono create in automatico alla build successiva (`npm run 
 | `summary.it` / `summary.en` | stringa | sì | una riga per la scheda |
 | `problem.it/en`, `solution.it/en` | stringa | no (può essere `null`) | usati nella pagina di dettaglio; se `null` la sezione non viene mostrata |
 | `results.it` / `results.en` | array di stringhe | no | numeri/risultati, mostrati come elenco |
+| `resultsStats` | array di `{ value, label.it/en }` | no | se presente, i risultati vengono mostrati come numeri in evidenza al posto dell'elenco `results` |
+| `limits.it` / `limits.en` | array di stringhe | no | limiti noti, mostrati nella sezione "Limiti noti" / "Known limits" dopo i risultati |
+| `order` | numero | no | posizione tra i progetti non `featured` (più basso = più in alto); senza `order` si va in fondo, in ordine di slug |
 | `technologies` | array di stringhe | sì | etichette tecnologie (nomi semplici, es. `"Docker"`) |
 | `links.github` / `links.diario` / `links.adr` | stringa URL o `null` | sì (anche se `null`) | link esterni nella pagina di dettaglio |
 | `architecture` | oggetto o `null` | no | vedi sotto — diagramma SVG del progetto |
@@ -76,7 +79,7 @@ dist/progetti/<slug-progetto>/index.html
 dist/en/projects/<slug-progetto>/index.html
 ```
 
-Non serve altro: la scheda del progetto compare da sola nella sezione "Progetti" della home (in ordine: prima il progetto `featured`, poi gli altri in ordine alfabetico di slug), in entrambe le lingue.
+Non serve altro: la scheda del progetto compare da sola nella sezione "Progetti" della home (in ordine: prima il progetto `featured`, poi quelli con `order`, poi gli altri in ordine alfabetico di slug), in entrambe le lingue.
 
 ## Esempio completo
 

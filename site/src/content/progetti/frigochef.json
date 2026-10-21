@@ -1,18 +1,64 @@
 {
   "slug": "frigochef",
-  "status": "planned",
+  "status": "online",
   "featured": false,
+  "order": 2,
   "title": { "it": "FrigoChef", "en": "FrigoChef" },
-  "type": { "it": "App AI · Container · Kubernetes", "en": "AI app · Container · Kubernetes" },
+  "type": { "it": "Container · Kubernetes · GitOps", "en": "Containers · Kubernetes · GitOps" },
   "summary": {
-    "it": "App che riconosce gli ingredienti da una foto dell'interno del frigo e suggerisce cosa cucinare, usando un modello di intelligenza artificiale open source e gratuito integrato nel codice.",
-    "en": "An app that recognises the ingredients in a photo of your fridge and suggests what to cook, using a free, open-source AI model built into the code."
+    "it": "Web app per telefono: fotografi i ripiani del frigo, un modello di visione riconosce gli ingredienti e l'app propone ricette. Rilasciata su Kubernetes in locale con GitOps e Argo CD.",
+    "en": "A mobile web app: take photos of your fridge shelves, a vision model recognises the ingredients and the app suggests recipes. Deployed on local Kubernetes with GitOps and Argo CD."
   },
-  "problem": { "it": null, "en": null },
-  "solution": { "it": null, "en": null },
-  "results": { "it": [], "en": [] },
-  "technologies": ["AI open source", "Docker", "Kubernetes", "GitOps"],
-  "links": { "github": null, "diario": null, "adr": null },
-  "architecture": null,
-  "episodes": []
+  "problem": {
+    "it": "Un'app web per telefono che fotografa i ripiani del frigo, riconosce gli ingredienti con un modello di visione (Gemini) e propone ricette da un archivio locale: da impacchettare, testare e rilasciare in modo ripetibile, con Kubernetes e GitOps.",
+    "en": "A mobile web app that photographs the fridge shelves, recognises the ingredients with a vision model (Gemini) and suggests recipes from a local archive: to be packaged, tested and released in a repeatable way, with Kubernetes and GitOps."
+  },
+  "solution": {
+    "it": "Immagini Docker multi-stage per frontend (Nginx) e backend (Node.js), con utente non root e HEALTHCHECK; Docker Compose in locale. GitHub Actions esegue test e lint a ogni push e, da un tag di versione, costruisce e pubblica le immagini su GHCR (provato con v0.1.0). Cluster Kubernetes in locale su k3d con Kustomize: Deployment, Service, Ingress Traefik, ConfigMap e Secret (fuori da Git); il backend gira con 2 repliche, probe di readiness e liveness e limiti di risorse. GitOps con Argo CD: sincronizzazione automatica, prune e self-heal; rollback con git revert, provato rompendo apposta la readiness. Un tunnel Cloudflare protetto da PIN via email serve solo per provare l'app dal telefono.",
+    "en": "Multi-stage Docker images for the frontend (Nginx) and backend (Node.js), with a non-root user and HEALTHCHECK; Docker Compose locally. GitHub Actions runs tests and lint on every push and, from a version tag, builds and pushes the images to GHCR (tested with v0.1.0). Local Kubernetes cluster on k3d with Kustomize: Deployment, Service, Traefik Ingress, ConfigMap and Secret (kept out of Git); the backend runs with 2 replicas, readiness and liveness probes and resource limits. GitOps with Argo CD: automatic sync, prune and self-heal; rollback with git revert, tested by breaking the readiness probe on purpose. A Cloudflare tunnel protected by an email PIN is used only to try the app from my phone."
+  },
+  "results": {
+    "it": ["backend a 2 repliche con probe e limiti di risorse", "prima release v0.1.0 pubblicata su GHCR da un tag", "rollback GitOps provato con git revert"],
+    "en": ["backend with 2 replicas, probes and resource limits", "first release v0.1.0 pushed to GHCR from a tag", "GitOps rollback tested with git revert"]
+  },
+  "resultsStats": [
+    { "value": "2", "label": { "it": "repliche del backend con probe e limiti", "en": "backend replicas with probes and limits" } },
+    { "value": "v0.1.0", "label": { "it": "release da tag, immagini su GHCR", "en": "release from a tag, images on GHCR" } },
+    { "value": "git revert", "label": { "it": "rollback GitOps provato con Argo CD", "en": "GitOps rollback tested with Argo CD" } }
+  ],
+  "limits": {
+    "it": [
+      "il cluster usa ancora immagini locali, non quelle pubblicate su GHCR",
+      "il Secret si crea a mano",
+      "manca il monitoraggio"
+    ],
+    "en": [
+      "the cluster still uses local images, not the ones published on GHCR",
+      "the Secret is created by hand",
+      "there is no monitoring yet"
+    ]
+  },
+  "technologies": ["Docker", "Kubernetes", "Argo CD", "GitOps", "GitHub Actions", "GHCR", "k3d", "Kustomize", "Traefik", "Nginx", "Node.js", "Gemini", "Cloudflare Tunnel"],
+  "links": {
+    "github": "https://github.com/danielballoi/frigochef",
+    "diario": null,
+    "adr": null
+  },
+  "architecture": {
+    "nodes": [
+      { "id": "phone", "label": { "it": "Telefono", "en": "Phone" } },
+      { "id": "tunnel", "label": { "it": "Tunnel Cloudflare (PIN)", "en": "Cloudflare tunnel (PIN)" } },
+      { "id": "ingress", "label": { "it": "Ingress Traefik (k3d)", "en": "Traefik Ingress (k3d)" } },
+      { "id": "nginx", "label": { "it": "Frontend (Nginx)", "en": "Frontend (Nginx)" } },
+      { "id": "backend", "label": { "it": "Backend Node.js ×2", "en": "Node.js backend ×2" } },
+      { "id": "gemini", "label": { "it": "Gemini (visione)", "en": "Gemini (vision)" } }
+    ]
+  },
+  "episodes": [
+    { "id": 1, "title": { "it": "Come funziona dietro le quinte", "en": "How it works behind the scenes" }, "duration": "2:05", "video": "/video/frigochef-ep1.mp4", "poster": "/video/frigochef-ep1-copertina.jpg" }
+  ],
+  "subtitlesNote": {
+    "it": null,
+    "en": "Voice and burned-in subtitles in Italian"
+  }
 }
