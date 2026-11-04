@@ -38,11 +38,12 @@
   },
   "cv": {
     "it": "/cv/cv-daniel-balloi-it.pdf",
-    "en": "/cv/cv-daniel-balloi-en.pdf"
+    "en": "/cv/cv-daniel-balloi-it.pdf"
   },
   "links": {
     "github": "https://github.com/danielballoi",
     "linkedin": "https://linkedin.com/in/danielballoi",
-    "email": "danielballoi1995@outlook.it"
+    "email": "danielballoi1995@outlook.it",
+    "phone": "+39 327 615 2894"
   }
 }

@@ -42,6 +42,7 @@ export default function ContactSection() {
         <a href={profile.links.linkedin} target="_blank" rel="noreferrer">
           LinkedIn
         </a>
+        <a href={`tel:${profile.links.phone.replace(/\s/g, '')}`}>{profile.links.phone}</a>
       </div>
     </section>
   )

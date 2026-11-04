@@ -1,0 +1,18 @@
+{
+  "slug": "monitoraggio-prometheus-grafana",
+  "status": "in-progress",
+  "featured": false,
+  "title": { "it": "Monitoraggio con Prometheus e Grafana", "en": "Monitoring with Prometheus and Grafana" },
+  "type": { "it": "Monitoraggio · Osservabilità", "en": "Monitoring · Observability" },
+  "summary": {
+    "it": "Metriche, dashboard e allarmi su un'applicazione già esistente, per accorgersi dei problemi prima degli utenti.",
+    "en": "Metrics, dashboards and alerts on an existing application, to notice problems before users do."
+  },
+  "problem": { "it": null, "en": null },
+  "solution": { "it": null, "en": null },
+  "results": { "it": [], "en": [] },
+  "technologies": ["Prometheus", "Grafana", "Docker"],
+  "links": { "github": null, "diario": null, "adr": null },
+  "architecture": null,
+  "episodes": []
+}
