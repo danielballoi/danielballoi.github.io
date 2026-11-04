@@ -14,8 +14,8 @@
           "role": { "it": "Release Manager", "en": "Release Manager" },
           "period": { "it": "apr 2023 – mag 2026", "en": "Apr 2023 – May 2026" },
           "description": {
-            "it": "Ho eseguito in prima persona i rilasci negli ambienti di test e preprod: lancio e monitoraggio delle pipeline CI/CD, rilasci su database MySQL e verifica post-rilascio, mantenendo gli ambienti inferiori allineati alla produzione. Ho gestito end-to-end i bug fix, dall'analisi con i team Dev e QA fino al rilascio in produzione, e il processo di rilascio in produzione per un cliente banking enterprise: censimento e monitoraggio dei rilasci, Change Request e partecipazione attiva al CAB (Change Advisory Board). Pianificavo le attività con Jira e ServiceNow e coordinavo, come PMO, le attività cloud AWS svolte dai team tecnici.",
-            "en": "I personally carried out releases to test and pre-production environments: running and monitoring CI/CD pipelines, MySQL database releases and post-release checks, keeping lower environments aligned with production. I managed bug fixes end to end, from analysis with Dev and QA teams to production release, and the production release process for a banking enterprise client: release tracking and monitoring, Change Requests and active participation in the CAB (Change Advisory Board). I planned activities with Jira and ServiceNow and coordinated, as PMO, the AWS cloud activities carried out by the engineering teams."
+            "it": "Ho eseguito in prima persona i rilasci negli ambienti di test e preprod: lancio e monitoraggio delle pipeline CI/CD, rilasci su database MySQL e verifica post-rilascio, mantenendo gli ambienti inferiori allineati alla produzione. Ho gestito end-to-end i bug fix, dall'analisi con i team Dev e QA fino al rilascio in produzione, e il processo di rilascio in produzione per un cliente banking enterprise: censimento e monitoraggio dei rilasci, Change Request e partecipazione attiva al CAB (Change Advisory Board). Pianificavo le attività con Jira e ServiceNow e coordinavo le attività di sviluppo software con i team tecnici.",
+            "en": "I personally carried out releases to test and pre-production environments: running and monitoring CI/CD pipelines, MySQL database releases and post-release checks, keeping lower environments aligned with production. I managed bug fixes end to end, from analysis with Dev and QA teams to production release, and the production release process for a banking enterprise client: release tracking and monitoring, Change Requests and active participation in the CAB (Change Advisory Board). I planned activities with Jira and ServiceNow and coordinated software development activities with the technical teams."
           }
         },
         {
@@ -83,7 +83,7 @@
   ],
   "languages": [
     { "name": { "it": "Italiano", "en": "Italian" }, "level": { "it": "madrelingua", "en": "native" } },
-    { "name": { "it": "Inglese", "en": "English" }, "level": { "it": "B2 (13 mesi di lavoro a Londra)", "en": "B2 (13 months working in London)" } },
+    { "name": { "it": "Inglese", "en": "English" }, "level": { "it": "B2 (16 mesi di lavoro a Londra)", "en": "B2 (16 months working in London)" } },
     { "name": { "it": "Spagnolo", "en": "Spanish" }, "level": { "it": "base", "en": "basic" } }
   ]
 }
