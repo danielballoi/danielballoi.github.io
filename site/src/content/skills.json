@@ -78,6 +78,20 @@
           "level": 3,
           "icons": ["git"],
           "evidence": [{ "label": { "it": "Repository Balloi", "en": "Balloi repository" }, "href": "https://github.com/danielballoi/balloi-immobiliare" }]
+        },
+        {
+          "id": "kubernetes",
+          "name": { "it": "Kubernetes", "en": "Kubernetes" },
+          "level": 2,
+          "icons": [],
+          "evidence": [{ "label": { "it": "FrigoChef", "en": "FrigoChef" }, "href": "/progetti/frigochef" }]
+        },
+        {
+          "id": "argo-cd",
+          "name": { "it": "Argo CD", "en": "Argo CD" },
+          "level": 2,
+          "icons": [],
+          "evidence": [{ "label": { "it": "FrigoChef", "en": "FrigoChef" }, "href": "/progetti/frigochef" }]
         }
       ]
     },
@@ -117,9 +131,16 @@
       "skills": [
         {
           "id": "linux-bash",
-          "name": { "it": "Linux · Bash", "en": "Linux · Bash" },
+          "name": { "it": "Linux", "en": "Linux" },
           "level": 3,
-          "icons": ["linux", "gnubash"],
+          "icons": ["linux"],
+          "evidence": [{ "label": { "it": "Balloi, episodio 5", "en": "Balloi, episode 5" }, "href": "/progetti/balloi-immobiliare#episodio-5" }]
+        },
+        {
+          "id": "bash",
+          "name": { "it": "Bash", "en": "Bash" },
+          "level": 1,
+          "icons": ["gnubash"],
           "evidence": [{ "label": { "it": "Balloi, episodio 5", "en": "Balloi, episode 5" }, "href": "/progetti/balloi-immobiliare#episodio-5" }]
         },
         {
