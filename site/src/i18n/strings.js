@@ -11,7 +11,8 @@ export const strings = {
       menuChiudi: 'Chiudi il menu',
     },
     hero: {
-      scaricaCv: 'Scarica CV',
+      scaricaCv: 'Scarica CV Tecnico',
+      scaricaCvPm: 'Scarica CV Project Manager',
       email: 'Email',
       copiaEmail: 'Copia indirizzo',
       emailCopiata: 'Copiato',
@@ -101,7 +102,8 @@ export const strings = {
       menuChiudi: 'Close menu',
     },
     hero: {
-      scaricaCv: 'Download CV',
+      scaricaCv: 'Download CV – Technical',
+      scaricaCvPm: 'Download CV – Project Manager',
       email: 'Email',
       copiaEmail: 'Copy address',
       emailCopiata: 'Copied',

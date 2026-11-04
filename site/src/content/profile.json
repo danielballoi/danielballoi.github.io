@@ -5,8 +5,8 @@
     "en": "DevOps & Release Engineer"
   },
   "titleSecondary": {
-    "it": "Release Manager",
-    "en": "Release Manager"
+    "it": "Release Manager · Project Manager",
+    "en": "Release Manager · Project Manager"
   },
   "experienceLine": {
     "it": "3 anni di rilasci e pipeline CI/CD in ambito banking enterprise",
@@ -39,6 +39,10 @@
   "cv": {
     "it": "/cv/cv-daniel-balloi-it.pdf",
     "en": "/cv/cv-daniel-balloi-it.pdf"
+  },
+  "cvPm": {
+    "it": "/cv/cv-daniel-balloi-pm-it.pdf",
+    "en": "/cv/cv-daniel-balloi-pm-it.pdf"
   },
   "links": {
     "github": "https://github.com/danielballoi",
