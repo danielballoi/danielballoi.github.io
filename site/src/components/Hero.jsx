@@ -59,6 +59,10 @@ export default function Hero() {
           <Icon name="download" className="hero__cta-icon" />
           {t.hero.scaricaCv}
         </a>
+        <a className="hero__cta hero__cta--primary" href={pick(profile.cvPm, lang)} download>
+          <Icon name="download" className="hero__cta-icon" />
+          {t.hero.scaricaCvPm}
+        </a>
         <a className="hero__cta" href={profile.links.github} target="_blank" rel="noreferrer">
           <Icon name="github" className="hero__cta-icon" />
           GitHub
