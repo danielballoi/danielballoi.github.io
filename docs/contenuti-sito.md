@@ -13,7 +13,7 @@ Da rivedere con Daniel. Testi pensati per essere brevi e concreti. Da copiare ne
 
 ## Esperienza
 
-### Release Specialist | Software Developer — Stackhouse
+### Release Manager | Software Developer — Stackhouse
 - Cagliari · a tempo pieno · gen 2023 – giu 2026 (3 anni e 6 mesi)
 - IT:
   - Coordinamento dell'intero ciclo di release (build, test, deploy) per applicazioni mission-critical di clienti Enterprise e Banking.

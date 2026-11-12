@@ -36,7 +36,7 @@ Dove questo file contraddice `analisi-funzionale-portfolio-v1.md` o `contenuti-s
 
 ## 2. Esperienza — Stackhouse (sostituisce il testo in contenuti-sito)
 
-**Release Specialist | Software Developer — Stackhouse S.r.l. (gruppo Spindox)** · Cagliari · gen 2023 – giu 2026
+**Release Manager | Software Developer — Stackhouse S.r.l. (gruppo Spindox)** · Cagliari · gen 2023 – giu 2026
 
 Importante: l'esperienza **pratica** è su rilasci, pipeline CI/CD (lancio e monitoraggio) e rilasci su database MySQL **on-premise**. Sul cloud AWS Daniel ha avuto un ruolo di **coordinamento come PMO**, non esecutivo. Non scrivere mai che ha gestito in prima persona AWS o il cloud a Stackhouse.
 

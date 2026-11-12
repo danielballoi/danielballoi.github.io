@@ -17,7 +17,7 @@ Obiettivi misurabili:
 
 ## 2. Profilo da comunicare
 
-- **3 anni e mezzo come Release Specialist e Software Developer** (Stackhouse, gen 2023 – giu 2026), su applicazioni mission-critical per clienti Enterprise e Banking: ciclo di release, pipeline CI/CD su AWS, deployment su infrastrutture ibride (on-premise + AWS), database MySQL, Change Request, coordinamento Dev, QA e Ops.
+- **3 anni e mezzo come Release Manager e Software Developer** (Stackhouse, gen 2023 – giu 2026), su applicazioni mission-critical per clienti Enterprise e Banking: ciclo di release, pipeline CI/CD su AWS, deployment su infrastrutture ibride (on-premise + AWS), database MySQL, Change Request, coordinamento Dev, QA e Ops.
 - **AWS Certified Solutions Architect – Associate** (set 2026) e **CAPM** del Project Management Institute (mag 2026).
 - Progetti personali che dimostrano le competenze DevOps end-to-end (Balloi immobiliare e i successivi).
 - Titolo proposto: **"DevOps & Release Engineer · AWS Certified Solutions Architect"** (non "junior": 3,5 anni di esperienza su release e deployment reali).
