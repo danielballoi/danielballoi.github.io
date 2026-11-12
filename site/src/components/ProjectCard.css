@@ -55,6 +55,28 @@
   flex: 1;
 }
 
+.project-card__story {
+  margin: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.project-card__story dt {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--color-ink);
+}
+
+.project-card__story dd {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--color-text-secondary);
+}
+
 .project-card__tags {
   list-style: none;
   margin: 0;

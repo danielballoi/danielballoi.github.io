@@ -1,6 +1,6 @@
 # danielballoi.github.io
 
-CV online di Daniel Balloi — DevOps & Release Engineer. Sito React pre-renderizzato staticamente, pubblicato su GitHub Pages, disponibile in italiano e inglese.
+CV online di Daniel Balloi — IT Project & Release Manager. Sito React pre-renderizzato staticamente, pubblicato su GitHub Pages, disponibile in italiano e inglese.
 
 ## Architettura (fase 1)
 

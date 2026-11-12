@@ -9,9 +9,10 @@ export default function SkillsSection() {
   const t = useStrings(lang)
 
   return (
-    <section id="competenze" className="skills-section">
-      <h2 className="section-title">{t.nav.competenze}</h2>
-      <p className="skills-section__legend">{pick(skills.legend, lang)}</p>
+    <section id="competenze-tecniche" className="skills-section">
+      <h2 className="section-title">{t.techSkills.sectionTitle}</h2>
+      <p className="skills-section__eyebrow">{t.techSkills.eyebrow}</p>
+      <p className="skills-section__intro">{t.techSkills.intro}</p>
 
       {skills.groups.map((group) => (
         <div key={group.id} className="skills-section__group">

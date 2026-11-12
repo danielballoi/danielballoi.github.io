@@ -1,0 +1,16 @@
+{
+  "intro": {
+    "it": "Release & Delivery Manager con oltre 3 anni di esperienza in progetti bancari e di pagamento. Ho guidato il rollout di una nuova piattaforma su una rete nazionale di oltre 25.000 punti vendita e la gestione di oltre 1.000 rilasci fino alla messa a regime, coordinando team tecnici, business e stakeholder. Vengo dallo sviluppo software (qualifica regionale di sviluppatore Java).",
+    "en": null
+  },
+  "highlights": {
+    "it": [
+      "Gestito end-to-end il ciclo di vita dei bug fix: dalla segnalazione su ServiceNow ai task su Jira, alla richiesta di rilascio al CAB, fino al rilascio con DevOps e DBA e al monitoraggio nei giorni successivi tramite control room.",
+      "Pianificato e seguito i rilasci su più ambienti (test, pre-produzione, produzione) per backend, frontend, app mobile e firmware, con rollout graduali (canary release) e piani di mitigazione dei rischi.",
+      "Fatto da raccordo tra team tecnici, business, stakeholder e supporto L1/L2, rispettando scadenze e milestone con pianificazione waterfall.",
+      "Preparato report e grafici in Excel per gli stakeholder, per analizzare l'andamento delle fix e la qualità dei rilasci.",
+      "Lavorato a stretto contatto con i DevOps, interpretando in prima persona le pipeline CI/CD e l'integrazione con change management e Jira."
+    ],
+    "en": null
+  }
+}

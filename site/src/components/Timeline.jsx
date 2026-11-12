@@ -6,16 +6,14 @@ import './Timeline.css'
 function TimelineEntry({ entry }) {
   const lang = useLanguage()
   const highlights = pick(entry.highlights, lang) ?? []
+  const meta = [pick(entry.location, lang), pick(entry.period, lang)].filter(Boolean).join(' · ')
 
   return (
     <details id={`esperienza-${entry.id}`} className="timeline-entry" open={entry.open}>
       <summary className="timeline-entry__summary">
         <span className="timeline-entry__role">{pick(entry.role, lang)}</span>
-        <span className="timeline-entry__company">{entry.company}</span>
-        <span className="timeline-entry__meta">
-          {pick(entry.location, lang)}
-          {pick(entry.period, lang) ? ` · ${pick(entry.period, lang)}` : ''}
-        </span>
+        <span className="timeline-entry__company">{pick(entry.company, lang)}</span>
+        {meta && <span className="timeline-entry__meta">{meta}</span>}
       </summary>
 
       {highlights.length > 0 && (
@@ -29,9 +27,9 @@ function TimelineEntry({ entry }) {
       {entry.projects?.length > 0 && (
         <div className="timeline-entry__projects">
           {entry.projects.map((p) => (
-            <div key={p.name} className="timeline-entry__project">
+            <div key={pick(p.name, 'it')} className="timeline-entry__project">
               <p className="timeline-entry__project-heading">
-                <strong>{p.name}</strong> — {pick(p.role, lang)} · {pick(p.period, lang)}
+                <strong>{pick(p.name, lang)}</strong> — {pick(p.role, lang)} · {pick(p.period, lang)}
               </p>
               {p.description && <p className="timeline-entry__project-description">{pick(p.description, lang)}</p>}
             </div>

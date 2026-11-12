@@ -1,0 +1,74 @@
+[
+  {
+    "id": "release-management",
+    "title": { "it": "Release management", "en": "Release management" },
+    "description": {
+      "it": "Pianificazione e coordinamento dei rilasci su test, pre-produzione e produzione per backend, frontend, app mobile e firmware.",
+      "en": null
+    }
+  },
+  {
+    "id": "change-management",
+    "title": { "it": "Change management (CAB)", "en": "Change management (CAB)" },
+    "description": {
+      "it": "Richieste di rilascio al CAB e rilascio coordinato con DevOps e DBA.",
+      "en": null
+    }
+  },
+  {
+    "id": "risk-management",
+    "title": { "it": "Gestione dei rischi", "en": "Risk management" },
+    "description": {
+      "it": "Rollout graduali (canary release) e piani di mitigazione dei rischi.",
+      "en": null
+    }
+  },
+  {
+    "id": "stakeholder-management",
+    "title": { "it": "Stakeholder management", "en": "Stakeholder management" },
+    "description": {
+      "it": "Raccordo tra team tecnici, business, stakeholder e supporto L1/L2.",
+      "en": null
+    }
+  },
+  {
+    "id": "waterfall",
+    "title": { "it": "Pianificazione waterfall", "en": "Waterfall planning" },
+    "description": {
+      "it": "Scadenze e milestone rispettate con una pianificazione waterfall.",
+      "en": null
+    }
+  },
+  {
+    "id": "incident-bugfix",
+    "title": { "it": "Incident e bug fix", "en": "Incidents and bug fixes" },
+    "description": {
+      "it": "Ciclo di vita completo: segnalazione, task, rilascio e monitoraggio nei giorni successivi tramite control room.",
+      "en": null
+    }
+  },
+  {
+    "id": "reporting",
+    "title": { "it": "Reporting con Excel", "en": "Reporting with Excel" },
+    "description": {
+      "it": "Report e grafici per gli stakeholder sull'andamento delle fix e sulla qualità dei rilasci.",
+      "en": null
+    }
+  },
+  {
+    "id": "jira-servicenow",
+    "title": { "it": "Jira e ServiceNow", "en": "Jira and ServiceNow" },
+    "description": {
+      "it": "Segnalazioni su ServiceNow, task su Jira e integrazione con il change management.",
+      "en": null
+    }
+  },
+  {
+    "id": "itil",
+    "title": { "it": "Processi ITIL-like", "en": "ITIL-like processes" },
+    "description": {
+      "it": "Change, incident e rilasci gestiti con processi ispirati a ITIL.",
+      "en": null
+    }
+  }
+]

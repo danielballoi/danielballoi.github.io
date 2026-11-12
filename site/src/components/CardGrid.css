@@ -1,18 +1,25 @@
-.how-i-work {
+/* Sezioni a schede (competenze PM, documenti, referenze): stesso stile
+   della vecchia sezione "Come lavoro". */
+.card-section {
   max-width: var(--container-max);
   margin: 0 auto;
   background: var(--color-paper);
   padding: 3.5rem 1.5rem;
 }
 
-.how-i-work__eyebrow {
+.card-section__eyebrow {
   margin: 0.35rem 0 1rem;
   font-family: var(--font-mono);
   font-size: 0.75rem;
   color: var(--color-text-secondary);
 }
 
-.how-i-work__grid {
+.card-section__intro {
+  margin: 0 0 1.25rem;
+  max-width: 62ch;
+}
+
+.card-grid {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -22,12 +29,12 @@
 }
 
 @media (min-width: 720px) {
-  .how-i-work__grid {
+  .card-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.how-i-work__card {
+.card-grid__card {
   border: 1px solid var(--color-grid);
   padding: 0.9rem;
   display: flex;
@@ -35,24 +42,19 @@
   gap: 0.4rem;
 }
 
-.how-i-work__card h3 {
+.card-grid__card h3 {
   margin: 0;
   font-family: var(--font-heading);
   font-size: 1.05rem;
   color: var(--color-ink);
 }
 
-.how-i-work__card p {
+.card-grid__card p {
   margin: 0;
   font-size: 0.9rem;
 }
 
-.how-i-work__example {
-  color: var(--color-text-secondary);
-  font-style: italic;
-}
-
-.how-i-work__card a {
+.card-grid__card a {
   display: inline-flex;
   align-items: center;
   min-height: 44px;
@@ -63,9 +65,22 @@
   align-self: flex-start;
 }
 
-.how-i-work__link-missing {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
+.card-grid__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.card-grid__secondary {
   color: var(--color-text-secondary);
+}
+
+.references__quote {
+  margin: 0 0 0.4rem;
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--color-accent);
   font-style: italic;
 }

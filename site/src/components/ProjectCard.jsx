@@ -15,6 +15,13 @@ export default function ProjectCard({ project }) {
     planned: t.projects.statusPlanned,
   }
   const statusLabel = statusLabels[project.status] ?? project.status
+  const card = project.card
+    ? [
+        [t.projects.problem, pick(project.card.problem, lang)],
+        [t.projects.choice, pick(project.card.choice, lang)],
+        [t.projects.result, pick(project.card.result, lang)],
+      ].filter(([, text]) => text)
+    : []
 
   return (
     <li className={`project-card ${project.featured ? 'project-card--featured' : ''}`}>
@@ -23,7 +30,18 @@ export default function ProjectCard({ project }) {
       </p>
       <h3 className="project-card__title">{pick(project.title, lang)}</h3>
       <p className="project-card__type">{pick(project.type, lang)}</p>
-      <p className="project-card__summary">{pick(project.summary, lang)}</p>
+      {card.length > 0 ? (
+        <dl className="project-card__story">
+          {card.map(([label, text]) => (
+            <div key={label}>
+              <dt>{label}</dt>
+              <dd>{text}</dd>
+            </div>
+          ))}
+        </dl>
+      ) : (
+        <p className="project-card__summary">{pick(project.summary, lang)}</p>
+      )}
       <ul className="project-card__tags">
         {project.technologies.slice(0, 4).map((tech) => (
           <li key={tech}>

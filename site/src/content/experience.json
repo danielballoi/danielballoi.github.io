@@ -10,7 +10,7 @@
       "highlights": { "it": [], "en": [] },
       "projects": [
         {
-          "name": "Mooney",
+          "name": { "it": "Cliente del settore pagamenti e banking", "en": "Payments and banking client" },
           "role": { "it": "Release Manager", "en": "Release Manager" },
           "period": { "it": "apr 2023 – mag 2026", "en": "Apr 2023 – May 2026" },
           "description": {
@@ -19,7 +19,25 @@
           }
         },
         {
-          "name": "Sisal",
+          "name": { "it": "Cliente del settore energia", "en": "Energy sector client" },
+          "role": { "it": "Project Manager", "en": "Project Manager" },
+          "period": { "it": "dic 2024 – giu 2025", "en": "Dec 2024 – Jun 2025" },
+          "description": {
+            "it": "Gestione della realizzazione di un software end-to-end: pianificazione, monitoraggio dell'avanzamento e coordinamento del team.",
+            "en": null
+          }
+        },
+        {
+          "name": { "it": "Progetto per un cliente esterno", "en": "Project for an external client" },
+          "role": { "it": "Developer", "en": "Developer" },
+          "period": { "it": "feb 2026 – giu 2026", "en": "Feb 2026 – Jun 2026" },
+          "description": {
+            "it": "Sviluppo di un software end-to-end in JavaScript e React con MongoDB, con sviluppo assistito da AI.",
+            "en": null
+          }
+        },
+        {
+          "name": { "it": "Cliente del settore gaming", "en": "Gaming sector client" },
           "role": { "it": "Backend Developer Junior", "en": "Backend Developer Junior" },
           "period": { "it": "feb 2023 – mag 2023", "en": "Feb 2023 – May 2023" },
           "description": {
@@ -28,7 +46,7 @@
           }
         },
         {
-          "name": "EdenRed",
+          "name": { "it": "Cliente del settore welfare aziendale", "en": "Corporate welfare client" },
           "role": { "it": "Backend Developer Junior", "en": "Backend Developer Junior" },
           "period": { "it": "gen 2023 – mar 2023", "en": "Jan 2023 – Mar 2023" },
           "description": {
@@ -69,6 +87,17 @@
     }
   ],
   "education": [
+    {
+      "id": "qualifica-sviluppo-software",
+      "role": { "it": "Qualifica professionale \"Tecnico di Sviluppo Software\" (EQF 5)", "en": "Vocational qualification \"Software Development Technician\" (EQF 5)" },
+      "company": { "it": "Regione Autonoma della Sardegna (agenzia formativa ABACONS)", "en": "Autonomous Region of Sardinia (training agency ABACONS)" },
+      "location": null,
+      "period": { "it": "dic 2022", "en": "Dec 2022" },
+      "open": false,
+      "highlights": { "it": [], "en": [] },
+      "projects": [],
+      "skills": []
+    },
     {
       "id": "diploma-ragioneria",
       "role": { "it": "Diploma di Ragioneria – indirizzo turistico", "en": "High School Diploma in Accounting – Tourism specialisation" },

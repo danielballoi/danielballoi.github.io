@@ -1,0 +1,29 @@
+{
+  "types": {
+    "charter": { "it": "Charter e perimetro", "en": "Charter and scope" },
+    "analisi-funzionale": { "it": "Analisi funzionale", "en": "Functional analysis" },
+    "roadmap": { "it": "Roadmap e Gantt", "en": "Roadmap and Gantt" },
+    "rischi": { "it": "Registro dei rischi", "en": "Risk register" },
+    "previsioni": { "it": "Previsioni", "en": "Forecasts" },
+    "lessons-learned": { "it": "Lessons learned", "en": "Lessons learned" },
+    "adr": { "it": "Decisioni (ADR)", "en": "Decisions (ADR)" },
+    "runbook": { "it": "Runbook", "en": "Runbook" }
+  },
+  "projects": [
+    {
+      "id": "balloi-immobiliare",
+      "title": { "it": "Balloi immobiliare", "en": "Balloi real estate" },
+      "documents": []
+    },
+    {
+      "id": "frigochef",
+      "title": { "it": "FrigoChef", "en": "FrigoChef" },
+      "documents": []
+    },
+    {
+      "id": "questo-sito",
+      "title": { "it": "Questo sito", "en": "This site" },
+      "documents": []
+    }
+  ]
+}

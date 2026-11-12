@@ -2,24 +2,17 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useLanguage } from '../i18n/LanguageContext'
 import { useStrings } from '../i18n/strings'
+import { getNavSections } from '../lib/sections'
 import LanguageSwitch from './LanguageSwitch'
 import './Header.css'
 
-const SECTIONS = ['progetti', 'esperienza', 'certificazioni', 'competenze', 'come-lavoro', 'contatti']
+const SECTIONS = getNavSections()
 
 export default function Header() {
   const lang = useLanguage()
   const t = useStrings(lang)
   const [open, setOpen] = useState(false)
   const prefix = lang === 'en' ? '/en' : ''
-  const navKeyBySection = {
-    progetti: 'progetti',
-    esperienza: 'esperienza',
-    certificazioni: 'certificazioni',
-    competenze: 'competenze',
-    'come-lavoro': 'comeLavoro',
-    contatti: 'contatti',
-  }
 
   return (
     <header className="site-header">
@@ -44,7 +37,7 @@ export default function Header() {
             {SECTIONS.map((section) => (
               <li key={section}>
                 <Link to={`${prefix}/#${section}`} onClick={() => setOpen(false)}>
-                  {t.nav[navKeyBySection[section]]}
+                  {t.nav[section]}
                 </Link>
               </li>
             ))}
