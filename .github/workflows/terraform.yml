@@ -25,7 +25,7 @@ concurrency:
 
 jobs:
   terraform:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     env: 
       TF_VAR_alert_email: ${{ secrets.ALERT_EMAIL }}
     defaults:
@@ -33,16 +33,16 @@ jobs:
         working-directory: infra/main
     steps:
       - name: Scarica il codice
-        uses: actions/checkout@v7
+        uses: actions/checkout@v4
 
       - name: Entra in AWS con OIDC
-        uses: aws-actions/configure-aws-credentials@v6
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ vars.AWS_ROLE_ARN }}
           aws-region: eu-south-1
 
       - name: Installa Terraform
-        uses: hashicorp/setup-terraform@v4
+        uses: hashicorp/setup-terraform@v3
         with:
           terraform_version: "1.16.4"
 
