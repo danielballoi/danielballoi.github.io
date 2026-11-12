@@ -5,13 +5,6 @@
   padding: 3.5rem 1.5rem 4rem;
 }
 
-.contact-section__eyebrow {
-  margin: 0.35rem 0 1rem;
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--color-text-secondary);
-}
-
 .contact-section__intro {
   margin: 0 0 1rem;
   max-width: 55ch;

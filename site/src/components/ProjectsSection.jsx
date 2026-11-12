@@ -13,7 +13,6 @@ export default function ProjectsSection() {
   return (
     <section id="progetti" className="projects-section">
       <h2 className="section-title">{t.projects.sectionTitle}</h2>
-      <p className="projects-section__eyebrow">{t.projects.eyebrow}</p>
 
       <div className="projects-section__block" id="documenti-pm">
         <h3 className="projects-section__block-title">{t.projects.pmDocumentsTitle}</h3>

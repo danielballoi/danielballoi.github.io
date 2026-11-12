@@ -11,7 +11,6 @@ export default function SkillsSection() {
   return (
     <section id="competenze-tecniche" className="skills-section">
       <h2 className="section-title">{t.techSkills.sectionTitle}</h2>
-      <p className="skills-section__eyebrow">{t.techSkills.eyebrow}</p>
       <p className="skills-section__intro">{t.techSkills.intro}</p>
 
       {skills.groups.map((group) => (

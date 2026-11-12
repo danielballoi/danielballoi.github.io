@@ -47,7 +47,6 @@ export default function Timeline() {
   return (
     <section id="esperienza" className="timeline-section">
       <h2 className="section-title">{t.experience.sectionTitle}</h2>
-      <p className="timeline-section__eyebrow">{t.experience.eyebrow}</p>
 
       <div className="timeline-section__group">
         <h3>{t.experience.workTitle}</h3>

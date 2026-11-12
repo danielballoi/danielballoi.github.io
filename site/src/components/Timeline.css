@@ -6,13 +6,6 @@
   scroll-margin-top: 64px;
 }
 
-.timeline-section__eyebrow {
-  margin: 0.35rem 0 1rem;
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--color-text-secondary);
-}
-
 .timeline-section__group {
   margin-bottom: 1.25rem;
 }
