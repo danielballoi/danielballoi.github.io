@@ -89,7 +89,7 @@
   "education": [
     {
       "id": "qualifica-sviluppo-software",
-      "role": { "it": "Qualifica professionale \"Tecnico di Sviluppo Software\" (EQF 5)", "en": "Vocational qualification \"Software Development Technician\" (EQF 5)" },
+      "role": { "it": "Qualifica professionale \"Tecnico di Sviluppo Software\" (EQF 5)", "en": "Vocational qualification \"Tecnico di Sviluppo Software\" (Software Development Technician, EQF 5)" },
       "company": { "it": "Regione Autonoma della Sardegna (agenzia formativa ABACONS)", "en": "Autonomous Region of Sardinia (training agency ABACONS)" },
       "location": null,
       "period": { "it": "dic 2022", "en": "Dec 2022" },
@@ -112,7 +112,7 @@
   ],
   "languages": [
     { "name": { "it": "Italiano", "en": "Italian" }, "level": { "it": "madrelingua", "en": "native" } },
-    { "name": { "it": "Inglese", "en": "English" }, "level": { "it": "B2 (16 mesi di lavoro a Londra)", "en": "B2 (16 months working in London)" } },
+    { "name": { "it": "Inglese", "en": "English" }, "level": { "it": "B2 (esperienza di lavoro a Londra)", "en": "B2 (work experience in London)" } },
     { "name": { "it": "Spagnolo", "en": "Spanish" }, "level": { "it": "base", "en": "basic" } }
   ]
 }
