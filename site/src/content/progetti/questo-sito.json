@@ -9,14 +9,32 @@
     "it": "Portfolio event-driven e serverless: video e certificazioni pubblicati da soli con eventi, code e Lambda.",
     "en": "Event-driven, serverless portfolio: videos and certifications published automatically through events, queues and Lambda."
   },
-  "problem": { "it": null, "en": null },
-  "solution": { "it": null, "en": null },
-  "results": { "it": [], "en": [] },
-  "technologies": ["AWS Lambda", "EventBridge", "SQS", "DynamoDB", "S3", "CloudFront", "Terraform"],
-  "links": { "github": null, "diario": null, "adr": null },
+  "card": {
+    "problem": { "it": "Un CV online in italiano e inglese, da aggiornare senza toccare il codice e da pubblicare in automatico.", "en": null },
+    "choice": { "it": "React e Vite con pre-rendering statico di ogni pagina, contenuti in file JSON, pubblicazione su GitHub Pages e video su CloudFront.", "en": null },
+    "result": { "it": "Ogni push su main esegue test, build e pubblicazione; un nuovo progetto si aggiunge con un solo file JSON.", "en": null }
+  },
+  "problem": {
+    "it": "Un CV online in italiano e inglese, da aggiornare senza toccare il codice e da pubblicare in automatico.",
+    "en": null
+  },
+  "solution": {
+    "it": "React e Vite con pre-rendering statico: ogni pagina e ogni lingua diventa un file HTML completo al momento della build. I contenuti stanno in file JSON separati dal codice. GitHub Actions pubblica il sito su GitHub Pages a ogni push su main. Video e copertine sono serviti da CloudFront, con un bucket S3 privato gestito in Terraform.",
+    "en": null
+  },
+  "results": {
+    "it": [
+      "test, build e pubblicazione automatici a ogni push su main",
+      "un nuovo progetto si aggiunge con un solo file JSON, senza toccare componenti o rotte",
+      "nessun cookie di tracciamento e nessuna libreria di analytics"
+    ],
+    "en": null
+  },
+  "technologies": ["React", "Vite", "GitHub Actions", "CloudFront", "S3", "Terraform", "AWS Lambda", "EventBridge", "SQS", "DynamoDB"],
+  "links": { "github": "https://github.com/danielballoi/danielballoi.github.io", "diario": null, "adr": null },
   "architecture": null,
   "episodes": [
     { "id": 1, "title": { "it": "Com'è fatto questo sito", "en": "How this site is built" }, "duration": "1:27", "video": "/video/questo-sito-ep1.mp4", "poster": "/video/questo-sito-ep1-copertina.jpg" }
   ],
-  "subtitlesNote": { "it": null, "en": "Voce e sottotitoli in italiano" }
+  "subtitlesNote": { "it": null, "en": "Voice and subtitles in Italian" }
 }

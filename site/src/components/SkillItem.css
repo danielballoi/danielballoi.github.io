@@ -1,6 +1,6 @@
 .skill-item {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto 1fr;
   align-items: center;
   gap: 0.4rem 0.6rem;
   padding: 0.55rem 0.25rem;
@@ -16,6 +16,13 @@
 .skill-item__name {
   grid-row: 1;
   font-size: 0.92rem;
+}
+
+.skill-item__context {
+  grid-column: 1 / -1;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-ink);
 }
 
 .skill-item__evidence {
@@ -37,6 +44,11 @@
 @media (min-width: 560px) {
   .skill-item {
     grid-template-columns: auto 1fr auto auto;
+  }
+
+  .skill-item__context {
+    grid-column: auto;
+    grid-row: 1;
   }
 
   .skill-item__evidence {

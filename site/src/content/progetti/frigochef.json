@@ -9,6 +9,11 @@
     "it": "Web app per telefono: fotografi i ripiani del frigo, un modello di visione riconosce gli ingredienti e l'app propone ricette. Rilasciata su Kubernetes in locale con GitOps e Argo CD.",
     "en": "A mobile web app: take photos of your fridge shelves, a vision model recognises the ingredients and the app suggests recipes. Deployed on local Kubernetes with GitOps and Argo CD."
   },
+  "card": {
+    "problem": { "it": "Rilasciare in modo ripetibile un'app web per telefono con frontend, backend e un modello di visione.", "en": null },
+    "choice": { "it": "Immagini Docker, release da tag su GHCR, Kubernetes in locale (k3d) e GitOps con Argo CD.", "en": null },
+    "result": { "it": "Backend a 2 repliche con probe e limiti di risorse, rollback GitOps provato con git revert.", "en": null }
+  },
   "problem": {
     "it": "Un'app web per telefono che fotografa i ripiani del frigo, riconosce gli ingredienti con un modello di visione (Gemini) e propone ricette da un archivio locale: da impacchettare, testare e rilasciare in modo ripetibile, con Kubernetes e GitOps.",
     "en": "A mobile web app that photographs the fridge shelves, recognises the ingredients with a vision model (Gemini) and suggests recipes from a local archive: to be packaged, tested and released in a repeatable way, with Kubernetes and GitOps."

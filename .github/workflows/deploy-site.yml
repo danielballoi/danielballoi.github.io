@@ -19,13 +19,13 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     defaults:
       run:
         working-directory: site
     steps:
       - name: Scarica il codice
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Installa Node
         uses: actions/setup-node@v4
@@ -46,14 +46,14 @@ jobs:
       - name: Prepara GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Carica l'artefatto            # 6. impacchetta il sito pronto e lo mette nel deposito
+      - name: Carica l'artefatto
         uses: actions/upload-pages-artifact@v3
         with:
           path: site/dist
 
   deploy:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

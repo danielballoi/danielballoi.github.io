@@ -76,14 +76,6 @@
   font-weight: 600;
 }
 
-.hero__title-secondary {
-  margin: 0;
-  font-family: var(--font-heading);
-  font-size: 1.1rem;
-  color: var(--color-ink);
-  font-weight: 600;
-}
-
 .hero__badges {
   display: flex;
   flex-direction: column;
@@ -198,8 +190,7 @@
     font-size: 3rem;
   }
 
-  .hero__title,
-  .hero__title-secondary {
+  .hero__title {
     font-size: 1.4rem;
   }
 }

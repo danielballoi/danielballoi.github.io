@@ -39,7 +39,6 @@ export default function Hero() {
         <div className="hero__heading">
           <h1 className="hero__name">{profile.name}</h1>
           <p className="hero__title">{pick(profile.title, lang)}</p>
-          <p className="hero__title-secondary">{pick(profile.titleSecondary, lang)}</p>
           <div className="hero__badges">
             {profile.badges.map((badge) => (
               <Badge key={pick(badge.text, lang)} icon={badge.icon} iconText={badge.iconText}>
@@ -55,17 +54,13 @@ export default function Hero() {
       <p className="hero__value-prop">{pick(profile.valueProp, lang)}</p>
 
       <div className="hero__actions">
-        <a className="hero__cta hero__cta--primary" href={pick(profile.cv, lang)} download>
-          <Icon name="download" className="hero__cta-icon" />
-          {t.hero.scaricaCv}
-        </a>
         <a className="hero__cta hero__cta--primary" href={pick(profile.cvPm, lang)} download>
           <Icon name="download" className="hero__cta-icon" />
           {t.hero.scaricaCvPm}
         </a>
-        <a className="hero__cta" href={profile.links.github} target="_blank" rel="noreferrer">
-          <Icon name="github" className="hero__cta-icon" />
-          GitHub
+        <a className="hero__cta" href={pick(profile.cv, lang)} download>
+          <Icon name="download" className="hero__cta-icon" />
+          {t.hero.scaricaCv}
         </a>
         <a className="hero__cta" href={profile.links.linkedin} target="_blank" rel="noreferrer">
           <Icon name="linkedin" className="hero__cta-icon" />

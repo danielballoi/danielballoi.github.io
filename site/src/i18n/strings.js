@@ -1,14 +1,41 @@
 export const strings = {
   it: {
     nav: {
-      progetti: 'Progetti',
+      'chi-sono': 'Chi sono',
       esperienza: 'Esperienza',
-      certificazioni: 'Certificazioni',
       competenze: 'Competenze',
-      comeLavoro: 'Come lavoro',
+      documenti: 'Documenti',
+      progetti: 'Progetti',
+      certificazioni: 'Certificazioni',
+      referenze: 'Referenze',
       contatti: 'Contatti',
       menuApri: 'Apri il menu',
       menuChiudi: 'Chiudi il menu',
+    },
+    about: {
+      sectionTitle: 'Chi sono',
+      eyebrow: '// CHI SONO',
+    },
+    pmSkills: {
+      sectionTitle: 'Competenze da Project & Release Manager',
+      eyebrow: '// COMPETENZE',
+    },
+    pmDocuments: {
+      sectionTitle: 'Documenti di project management',
+      eyebrow: '// DOCUMENTI',
+    },
+    references: {
+      sectionTitle: 'Referenze',
+      eyebrow: '// REFERENZE',
+      linkedin: 'Profilo LinkedIn',
+    },
+    techSkills: {
+      sectionTitle: 'Competenze tecniche',
+      eyebrow: '// COMPETENZE TECNICHE',
+      intro: 'Le tecnologie che ho usato, dove le ho usate e dove si vede il lavoro.',
+      contextWork: 'in azienda',
+      contextPersonal: 'in progetti personali',
+      contextBoth: 'in azienda e in progetti personali',
     },
     hero: {
       scaricaCv: 'Scarica CV Tecnico',
@@ -24,8 +51,13 @@ export const strings = {
     },
     languageSwitch: { label: 'Cambia lingua' },
     projects: {
-      sectionTitle: 'Progetti',
+      sectionTitle: 'Progetti tecnici realizzati',
+      eyebrow: '// PROGETTI',
+      intro:
+        'Cosa so fare in prima persona. Questi progetti personali mi servono a conoscere da vicino il lavoro dei tecnici con cui collaboro.',
       problem: 'Problema',
+      choice: 'Scelta fatta',
+      result: 'Risultato',
       solution: 'Cosa ho fatto',
       results: 'Risultati',
       limits: 'Limiti noti',
@@ -43,7 +75,7 @@ export const strings = {
     },
     experience: {
       sectionTitle: 'Esperienza e formazione',
-      eyebrow: '// 03 — ESPERIENZA',
+      eyebrow: '// ESPERIENZA',
       workTitle: 'Esperienza lavorativa',
       educationTitle: 'Formazione',
       languagesTitle: 'Lingue',
@@ -52,7 +84,7 @@ export const strings = {
     },
     certifications: {
       sectionTitle: 'Certificazioni',
-      eyebrow: '// 04 — CERTIFICAZIONI',
+      eyebrow: '// CERTIFICAZIONI',
       openPdf: 'Apri il PDF',
       download: 'Scarica',
       verify: 'Verifica',
@@ -61,15 +93,9 @@ export const strings = {
       expires: 'Scadenza:',
       inPreparation: 'In preparazione',
     },
-    howIWork: {
-      sectionTitle: 'Come lavoro',
-      eyebrow: '// 05 — METODO',
-      linkLabel: 'Vedi su GitHub',
-      linkMissing: 'Link da fornire',
-    },
     contact: {
       sectionTitle: 'Contatti',
-      eyebrow: '// 07 — CONTATTI',
+      eyebrow: '// CONTATTI',
       intro: 'Scrivimi per una posizione, una collaborazione o solo per dire ciao.',
       name: 'Nome',
       email: 'Email',
@@ -92,14 +118,41 @@ export const strings = {
   },
   en: {
     nav: {
-      progetti: 'Projects',
+      'chi-sono': 'About',
       esperienza: 'Experience',
-      certificazioni: 'Certifications',
       competenze: 'Skills',
-      comeLavoro: 'How I work',
+      documenti: 'Documents',
+      progetti: 'Projects',
+      certificazioni: 'Certifications',
+      referenze: 'References',
       contatti: 'Contact',
       menuApri: 'Open menu',
       menuChiudi: 'Close menu',
+    },
+    about: {
+      sectionTitle: 'About me',
+      eyebrow: '// ABOUT',
+    },
+    pmSkills: {
+      sectionTitle: 'Project & Release Manager skills',
+      eyebrow: '// SKILLS',
+    },
+    pmDocuments: {
+      sectionTitle: 'Project management documents',
+      eyebrow: '// DOCUMENTS',
+    },
+    references: {
+      sectionTitle: 'References',
+      eyebrow: '// REFERENCES',
+      linkedin: 'LinkedIn profile',
+    },
+    techSkills: {
+      sectionTitle: 'Technical skills',
+      eyebrow: '// TECHNICAL SKILLS',
+      intro: 'The technologies I have used, where I used them and where the work can be seen.',
+      contextWork: 'at work',
+      contextPersonal: 'in personal projects',
+      contextBoth: 'at work and in personal projects',
     },
     hero: {
       scaricaCv: 'Download CV – Technical',
@@ -115,8 +168,13 @@ export const strings = {
     },
     languageSwitch: { label: 'Switch language' },
     projects: {
-      sectionTitle: 'Projects',
+      sectionTitle: 'Technical projects',
+      eyebrow: '// PROJECTS',
+      intro:
+        'What I can do hands-on. These personal projects help me understand the work of the engineers I collaborate with.',
       problem: 'Problem',
+      choice: 'Choice made',
+      result: 'Result',
       solution: 'What I did',
       results: 'Results',
       limits: 'Known limits',
@@ -134,7 +192,7 @@ export const strings = {
     },
     experience: {
       sectionTitle: 'Experience and education',
-      eyebrow: '// 03 — EXPERIENCE',
+      eyebrow: '// EXPERIENCE',
       workTitle: 'Work experience',
       educationTitle: 'Education',
       languagesTitle: 'Languages',
@@ -143,7 +201,7 @@ export const strings = {
     },
     certifications: {
       sectionTitle: 'Certifications',
-      eyebrow: '// 04 — CERTIFICATIONS',
+      eyebrow: '// CERTIFICATIONS',
       openPdf: 'Open PDF',
       download: 'Download',
       verify: 'Verify',
@@ -152,15 +210,9 @@ export const strings = {
       expires: 'Expires:',
       inPreparation: 'In preparation',
     },
-    howIWork: {
-      sectionTitle: 'How I work',
-      eyebrow: '// 05 — METHOD',
-      linkLabel: 'See on GitHub',
-      linkMissing: 'Link to be provided',
-    },
     contact: {
       sectionTitle: 'Contact',
-      eyebrow: '// 07 — CONTACT',
+      eyebrow: '// CONTACT',
       intro: 'Reach out about a role, a collaboration, or just to say hi.',
       name: 'Name',
       email: 'Email',

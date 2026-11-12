@@ -24,6 +24,11 @@ export function getAllProjects() {
   return projects
 }
 
+/** Progetti mostrati in home: solo quelli realizzati (online). */
+export function getCompletedProjects() {
+  return projects.filter((project) => project.status === 'online')
+}
+
 export function getFeaturedProject() {
   return projects.find((project) => project.featured) ?? null
 }

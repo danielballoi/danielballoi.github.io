@@ -1,10 +1,16 @@
 import { pick, useLanguage } from '../i18n/LanguageContext'
+import { useStrings } from '../i18n/strings'
 import SkillIcon from './SkillIcon'
-import StarRating from './StarRating'
 import './SkillItem.css'
 
 export default function SkillItem({ skill }) {
   const lang = useLanguage()
+  const t = useStrings(lang)
+  const contextLabels = {
+    work: t.techSkills.contextWork,
+    personal: t.techSkills.contextPersonal,
+    both: t.techSkills.contextBoth,
+  }
 
   return (
     <li className="skill-item">
@@ -16,7 +22,7 @@ export default function SkillItem({ skill }) {
         )}
       </div>
       <span className="skill-item__name">{pick(skill.name, lang)}</span>
-      <StarRating level={skill.level} />
+      <span className="skill-item__context">{contextLabels[skill.context]}</span>
       <span className="skill-item__evidence">
         {skill.evidence.map((ev, i) => (
           <span key={ev.href}>

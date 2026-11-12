@@ -10,13 +10,15 @@ const GRID = 24
 const COPY = {
   it: {
     name: 'Daniel Balloi',
-    title: 'DevOps &amp; Release Engineer · AWS Certified Solutions Architect',
-    tagline: '3 anni e mezzo di rilasci in produzione per clienti Enterprise',
+    title: 'IT Project &amp; Release Manager',
+    tagline: 'Oltre 3 anni di rilasci in progetti bancari e di pagamento',
+    badge: 'CAPM (PMI) · AWS Certified Solutions Architect – Associate',
   },
   en: {
     name: 'Daniel Balloi',
-    title: 'DevOps &amp; Release Engineer · AWS Certified Solutions Architect',
-    tagline: '3.5 years of production releases for enterprise clients',
+    title: 'IT Project &amp; Release Manager',
+    tagline: 'Over 3 years of releases in banking and payments projects',
+    badge: 'CAPM (PMI) · AWS Certified Solutions Architect – Associate',
   },
 }
 
@@ -44,7 +46,7 @@ function buildSvg(lang) {
     <text x="90" y="380" font-family="Arial, sans-serif" font-size="24" fill="#5a6a86">${copy.tagline}</text>
     <text x="90" y="560" font-family="Courier New, monospace" font-size="22" fill="#5a6a86">// danielballoi.github.io</text>
     <rect x="90" y="460" width="14" height="14" fill="#e0582f"/>
-    <text x="116" y="472" font-family="Courier New, monospace" font-size="20" fill="#16213a">AWS Certified Solutions Architect</text>
+    <text x="116" y="472" font-family="Courier New, monospace" font-size="20" fill="#16213a">${copy.badge}</text>
   </svg>`
 }
 

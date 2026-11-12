@@ -1,20 +1,23 @@
 import { useLanguage } from '../i18n/LanguageContext'
 import SeoHead from '../components/SeoHead'
 import Hero from '../components/Hero'
-import ProjectsSection from '../components/ProjectsSection'
+import AboutSection from '../components/AboutSection'
 import Timeline from '../components/Timeline'
+import PmSkillsSection from '../components/PmSkillsSection'
+import PmDocumentsSection from '../components/PmDocumentsSection'
+import ProjectsSection from '../components/ProjectsSection'
 import CertificationsSection from '../components/CertificationsSection'
 import SkillsSection from '../components/SkillsSection'
-import HowIWorkSection from '../components/HowIWorkSection'
+import ReferencesSection from '../components/ReferencesSection'
 import ContactSection from '../components/ContactSection'
 
 export default function Home() {
   const lang = useLanguage()
-  const title = 'Daniel Balloi — DevOps & Release Engineer'
+  const title = 'Daniel Balloi — IT Project & Release Manager'
   const description =
     lang === 'en'
-      ? 'DevOps & Release Engineer, AWS Certified Solutions Architect. 3 years of production releases for enterprise clients.'
-      : 'DevOps & Release Engineer, AWS Certified Solutions Architect. 3 anni di rilasci in produzione per clienti Enterprise.'
+      ? 'IT Project & Release Manager with over 3 years of releases in banking and payments projects. CAPM (PMI) and AWS Certified Solutions Architect – Associate.'
+      : 'IT Project & Release Manager con oltre 3 anni di rilasci in progetti bancari e di pagamento. Certificato CAPM (PMI) e AWS Solutions Architect – Associate.'
   const path = lang === 'en' ? '/en/' : '/'
 
   return (
@@ -22,11 +25,14 @@ export default function Home() {
       <SeoHead title={title} description={description} path={path} />
       <main>
         <Hero />
-        <ProjectsSection />
+        <AboutSection />
         <Timeline />
+        <PmSkillsSection />
+        <PmDocumentsSection />
+        <ProjectsSection />
         <CertificationsSection />
         <SkillsSection />
-        <HowIWorkSection />
+        <ReferencesSection />
         <ContactSection />
       </main>
     </>
