@@ -11,10 +11,15 @@
   background: var(--color-grid);
 }
 
+/* Stessa altezza per tutte le anteprime: quelle verticali (A4) mostrano
+   la parte alta del documento. */
 .certification-card__preview img {
   display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 480 / 371;
+  object-fit: cover;
+  object-position: top;
 }
 
 .certification-card__preview-placeholder {

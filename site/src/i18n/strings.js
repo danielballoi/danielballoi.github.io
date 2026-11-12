@@ -4,7 +4,6 @@ export const strings = {
       'chi-sono': 'Chi sono',
       esperienza: 'Esperienza',
       competenze: 'Competenze',
-      documenti: 'Documenti',
       progetti: 'Progetti',
       certificazioni: 'Certificazioni',
       referenze: 'Referenze',
@@ -14,15 +13,9 @@ export const strings = {
     },
     about: {
       sectionTitle: 'Chi sono',
-      eyebrow: '// CHI SONO',
     },
     pmSkills: {
       sectionTitle: 'Competenze da Project & Release Manager',
-      eyebrow: '// COMPETENZE',
-    },
-    pmDocuments: {
-      sectionTitle: 'Documenti di project management',
-      eyebrow: '// DOCUMENTI',
     },
     references: {
       sectionTitle: 'Referenze',
@@ -51,8 +44,10 @@ export const strings = {
     },
     languageSwitch: { label: 'Cambia lingua' },
     projects: {
-      sectionTitle: 'Progetti tecnici realizzati',
+      sectionTitle: 'Progetti',
       eyebrow: '// PROGETTI',
+      pmDocumentsTitle: 'Documenti da PM sui miei progetti',
+      technicalTitle: 'Progetti tecnici',
       intro:
         'Cosa so fare in prima persona. Questi progetti personali mi servono a conoscere da vicino il lavoro dei tecnici con cui collaboro.',
       problem: 'Problema',
@@ -121,7 +116,6 @@ export const strings = {
       'chi-sono': 'About',
       esperienza: 'Experience',
       competenze: 'Skills',
-      documenti: 'Documents',
       progetti: 'Projects',
       certificazioni: 'Certifications',
       referenze: 'References',
@@ -131,15 +125,9 @@ export const strings = {
     },
     about: {
       sectionTitle: 'About me',
-      eyebrow: '// ABOUT',
     },
     pmSkills: {
       sectionTitle: 'Project & Release Manager skills',
-      eyebrow: '// SKILLS',
-    },
-    pmDocuments: {
-      sectionTitle: 'Project management documents',
-      eyebrow: '// DOCUMENTS',
     },
     references: {
       sectionTitle: 'References',
@@ -168,8 +156,10 @@ export const strings = {
     },
     languageSwitch: { label: 'Switch language' },
     projects: {
-      sectionTitle: 'Technical projects',
+      sectionTitle: 'Projects',
       eyebrow: '// PROJECTS',
+      pmDocumentsTitle: 'PM documents on my projects',
+      technicalTitle: 'Technical projects',
       intro:
         'What I can do hands-on. These personal projects help me understand the work of the engineers I collaborate with.',
       problem: 'Problem',

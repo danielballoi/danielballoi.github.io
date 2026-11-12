@@ -91,13 +91,6 @@
   color: var(--color-text-secondary);
 }
 
-.hero__value-prop {
-  margin: 0.5rem 0 0;
-  font-size: 1.05rem;
-  line-height: 1.6;
-  max-width: 62ch;
-}
-
 .hero__actions {
   display: flex;
   flex-wrap: wrap;

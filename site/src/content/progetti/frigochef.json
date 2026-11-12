@@ -10,9 +10,9 @@
     "en": "A mobile web app: take photos of your fridge shelves, a vision model recognises the ingredients and the app suggests recipes. Deployed on local Kubernetes with GitOps and Argo CD."
   },
   "card": {
-    "problem": { "it": "Rilasciare in modo ripetibile un'app web per telefono con frontend, backend e un modello di visione.", "en": null },
-    "choice": { "it": "Immagini Docker, release da tag su GHCR, Kubernetes in locale (k3d) e GitOps con Argo CD.", "en": null },
-    "result": { "it": "Backend a 2 repliche con probe e limiti di risorse, rollback GitOps provato con git revert.", "en": null }
+    "problem": { "it": "Rilasciare in modo ripetibile un'app web per telefono con frontend, backend e un modello di visione.", "en": "Release a mobile web app with frontend, backend and a vision model in a repeatable way." },
+    "choice": { "it": "Immagini Docker, release da tag su GHCR, Kubernetes in locale (k3d) e GitOps con Argo CD.", "en": "Docker images, tag-based releases on GHCR, local Kubernetes (k3d) and GitOps with Argo CD." },
+    "result": { "it": "Backend a 2 repliche con probe e limiti di risorse, rollback GitOps provato con git revert.", "en": "Backend with 2 replicas, probes and resource limits; GitOps rollback tested with git revert." }
   },
   "problem": {
     "it": "Un'app web per telefono che fotografa i ripiani del frigo, riconosce gli ingredienti con un modello di visione (Gemini) e propone ricette da un archivio locale: da impacchettare, testare e rilasciare in modo ripetibile, con Kubernetes e GitOps.",

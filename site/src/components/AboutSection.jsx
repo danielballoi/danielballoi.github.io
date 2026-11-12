@@ -11,14 +11,15 @@ export default function AboutSection() {
 
   return (
     <section id="chi-sono" className="card-section">
-      <h2 className="section-title">{t.about.sectionTitle}</h2>
-      <p className="card-section__eyebrow">{t.about.eyebrow}</p>
+      <h2 className="section-title card-section__title">{t.about.sectionTitle}</h2>
       <p className="about-section__intro">{pick(about.intro, lang)}</p>
+      <p className="about-section__lead">{pick(about.highlightsLead, lang)}</p>
       <ul className="about-section__highlights">
         {highlights.map((line) => (
           <li key={line}>{line}</li>
         ))}
       </ul>
+      <p className="about-section__closing">{pick(about.closing, lang)}</p>
     </section>
   )
 }

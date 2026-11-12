@@ -4,7 +4,6 @@ import Hero from '../components/Hero'
 import AboutSection from '../components/AboutSection'
 import Timeline from '../components/Timeline'
 import PmSkillsSection from '../components/PmSkillsSection'
-import PmDocumentsSection from '../components/PmDocumentsSection'
 import ProjectsSection from '../components/ProjectsSection'
 import CertificationsSection from '../components/CertificationsSection'
 import SkillsSection from '../components/SkillsSection'
@@ -28,7 +27,6 @@ export default function Home() {
         <AboutSection />
         <Timeline />
         <PmSkillsSection />
-        <PmDocumentsSection />
         <ProjectsSection />
         <CertificationsSection />
         <SkillsSection />
