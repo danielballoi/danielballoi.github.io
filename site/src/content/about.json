@@ -1,11 +1,11 @@
 {
   "intro": {
-    "it": "Release & Delivery Manager con oltre 3 anni di esperienza in progetti bancari e di pagamento. Ho guidato il rollout di una nuova piattaforma su una rete di decine di migliaia di punti vendita e la gestione di oltre 1.000 rilasci fino alla messa a regime, coordinando team tecnici, business e stakeholder. Vengo dallo sviluppo software (qualifica regionale di Tecnico di Sviluppo Software, stage backend in Java e Spring).",
-    "en": "Release & Delivery Manager with over 3 years of experience in banking and payments projects. I led the rollout of a new platform across a network of tens of thousands of points of sale and the management of over 1,000 releases through to steady state, coordinating technical teams, business and stakeholders. I come from software development (regional vocational qualification as \"Tecnico di Sviluppo Software\", Software Development Technician, and a backend internship in Java and Spring)."
+    "it": "Release & Delivery Manager con oltre 3 anni di esperienza in progetti bancari e di pagamento. Ho guidato il rollout di una nuova piattaforma su una rete di decine di migliaia di punti vendita e la gestione di oltre 1.000 rilasci fino alla messa a regime, coordinando team tecnici, business e stakeholder.",
+    "en": "Release & Delivery Manager with over 3 years of experience in banking and payments projects. I led the rollout of a new platform across a network of tens of thousands of points of sale and the management of over 1,000 releases through to steady state, coordinating technical teams, business and stakeholders."
   },
   "highlightsLead": {
-    "it": "Cosa ho fatto in questi anni:",
-    "en": "What I have done over these years:"
+    "it": "Cosa ho fatto in concreto in questi anni:",
+    "en": "What I have done in practice over these years:"
   },
   "highlights": {
     "it": [
@@ -24,7 +24,7 @@
     ]
   },
   "closing": {
-    "it": "Ho la certificazione CAPM del PMI e AWS Certified Solutions Architect – Associate. Per conoscere da vicino il lavoro dei tecnici con cui collaboro ho realizzato progetti pratici su Kubernetes, GitHub Actions, Docker, Terraform, AWS e Argo CD.",
-    "en": "I hold the PMI CAPM certification and AWS Certified Solutions Architect – Associate. To understand first-hand the work of the engineers I collaborate with, I have built hands-on projects with Kubernetes, GitHub Actions, Docker, Terraform, AWS and Argo CD."
+    "it": "Vengo dallo sviluppo software e penso che per essere un buon manager serva conoscere \"hands-on\" le tecnologie su cui lavorano i team. Per questo ho realizzato progetti personali con AWS, Docker, Terraform, Kubernetes e Argo CD, che trovi nella sezione Progetti: mi permettono di capire con chiarezza ciò che dicono gli sviluppatori e di tradurlo per il business, gli stakeholder e i team non tecnici. Ho la certificazione CAPM del PMI e AWS Certified Solutions Architect – Associate.",
+    "en": "I come from software development, and I believe that being a good manager means knowing \"hands-on\" the technologies your teams work with. That is why I have built personal projects with AWS, Docker, Terraform, Kubernetes and Argo CD, which you can find in the Projects section: they help me clearly understand what developers are saying and translate it for the business, stakeholders and non-technical teams. I hold the PMI CAPM certification and the AWS Certified Solutions Architect – Associate certification."
   }
 }
