@@ -29,7 +29,7 @@
     "eslint": "^8.57.1",
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^4.6.2",
-    "sharp": "^0.33.5",
+    "sharp": "^0.35.5",
     "vite": "^6.0.7",
     "vitest": "^2.1.8"
   }
