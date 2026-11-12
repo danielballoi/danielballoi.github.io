@@ -2,7 +2,7 @@
   "work": [
     {
       "id": "stackhouse",
-      "role": { "it": "Release Specialist | Software Developer", "en": "Release Specialist | Software Developer" },
+      "role": { "it": "Release Manager | Software Developer", "en": "Release Manager | Software Developer" },
       "company": { "it": "Stackhouse S.r.l. (gruppo Spindox)", "en": "Stackhouse S.r.l. (Spindox group)" },
       "location": { "it": "Cagliari", "en": "Cagliari, Italy" },
       "period": { "it": "gen 2023 – giu 2026 (3 anni e 6 mesi)", "en": "Jan 2023 – Jun 2026 (3 years 6 months)" },
@@ -14,8 +14,8 @@
           "role": { "it": "Release Manager", "en": "Release Manager" },
           "period": { "it": "apr 2023 – mag 2026", "en": "Apr 2023 – May 2026" },
           "description": {
-            "it": "Release Manager su una piattaforma bancaria e di pagamento con una rete di decine di migliaia di punti vendita, con oltre 1.000 rilasci gestiti. Ho seguito end-to-end il ciclo di vita dei bug fix (ServiceNow, Jira, CAB, rilascio con DevOps e DBA, monitoraggio post-rilascio), pianificato i rilasci su più ambienti per backend, frontend e firmware POS con rollout graduali e piani di mitigazione dei rischi, e fatto da raccordo tra team tecnici, business, stakeholder e supporto L1/L2 con pianificazione waterfall. Report Excel per gli stakeholder e collaborazione con i DevOps sulle pipeline CI/CD, integrate con change management e Jira.",
-            "en": "Release Manager on a banking and payments platform serving a network of tens of thousands of points of sale, with over 1,000 releases managed. I owned the bug fix lifecycle end to end (ServiceNow, Jira, CAB, release with DevOps and DBAs, post-release monitoring), planned releases across multiple environments for backend, frontend and POS firmware with gradual rollouts and risk mitigation plans, and acted as the link between technical teams, business, stakeholders and L1/L2 support with waterfall planning. Excel reporting for stakeholders and close work with DevOps on CI/CD pipelines, integrated with change management and Jira."
+            "it": "Release Manager su una piattaforma bancaria e di pagamento con una rete di decine di migliaia di punti vendita, con migliaia di rilasci gestiti. Ho seguito end-to-end il ciclo di vita dei bug fix (ServiceNow, Jira, CAB, rilascio con DevOps e DBA, monitoraggio post-rilascio), pianificato i rilasci su più ambienti per backend, frontend e firmware POS con rollout graduali e piani di mitigazione dei rischi, e fatto da raccordo tra team tecnici, business, stakeholder e supporto L1/L2 con pianificazione waterfall. Report Excel per gli stakeholder e collaborazione con i DevOps sulle pipeline CI/CD, integrate con change management e Jira.",
+            "en": "Release Manager on a banking and payments platform serving a network of tens of thousands of points of sale, with thousands of releases managed. I owned the bug fix lifecycle end to end (ServiceNow, Jira, CAB, release with DevOps and DBAs, post-release monitoring), planned releases across multiple environments for backend, frontend and POS firmware with gradual rollouts and risk mitigation plans, and acted as the link between technical teams, business, stakeholders and L1/L2 support with waterfall planning. Excel reporting for stakeholders and close work with DevOps on CI/CD pipelines, integrated with change management and Jira."
           }
         },
         {
