@@ -32,5 +32,25 @@
       "it": "Codice di convalida: 0db041925ffa4c3ba6b39006d739b0f5",
       "en": "Validation code: 0db041925ffa4c3ba6b39006d739b0f5"
     }
+  },
+  {
+    "id": "qualifica-sviluppo-software",
+    "name": {
+      "it": "Qualifica professionale \"Tecnico di Sviluppo Software\" (EQF 5)",
+      "en": "Vocational qualification \"Tecnico di Sviluppo Software\" (Software Development Technician, EQF 5)"
+    },
+    "issuer": {
+      "it": "Regione Autonoma della Sardegna (agenzia formativa ABACONS)",
+      "en": "Autonomous Region of Sardinia (training agency ABACONS)"
+    },
+    "issued": { "it": "7 dic 2022", "en": "Dec 7, 2022" },
+    "expires": null,
+    "status": "issued",
+    "pdf": "/certificazioni/qualifica-tecnico-sviluppo-software.pdf",
+    "preview": "/certificazioni/qualifica-tecnico-sviluppo-software-preview.jpg",
+    "previewWidth": 480,
+    "previewHeight": 679,
+    "verifyUrl": null,
+    "verifyNote": { "it": null, "en": null }
   }
 ]

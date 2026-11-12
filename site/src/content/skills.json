@@ -147,7 +147,7 @@
           "context": "both",
           "icons": ["javascript", "react"],
           "evidence": [
-            { "label": { "it": "Stackhouse", "en": "Stackhouse" }, "href": "/#esperienza-stackhouse" },
+            { "label": { "it": "Stackhouse, settore energia", "en": "Stackhouse, energy sector" }, "href": "/#esperienza-stackhouse" },
             { "label": { "it": "Balloi", "en": "Balloi" }, "href": "/progetti/balloi-immobiliare" }
           ]
         },

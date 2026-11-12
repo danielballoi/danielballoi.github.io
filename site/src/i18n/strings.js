@@ -4,7 +4,6 @@ export const strings = {
       'chi-sono': 'Chi sono',
       esperienza: 'Esperienza',
       competenze: 'Competenze',
-      documenti: 'Documenti',
       progetti: 'Progetti',
       certificazioni: 'Certificazioni',
       referenze: 'Referenze',
@@ -14,24 +13,16 @@ export const strings = {
     },
     about: {
       sectionTitle: 'Chi sono',
-      eyebrow: '// CHI SONO',
     },
     pmSkills: {
       sectionTitle: 'Competenze da Project & Release Manager',
-      eyebrow: '// COMPETENZE',
-    },
-    pmDocuments: {
-      sectionTitle: 'Documenti di project management',
-      eyebrow: '// DOCUMENTI',
     },
     references: {
       sectionTitle: 'Referenze',
-      eyebrow: '// REFERENZE',
       linkedin: 'Profilo LinkedIn',
     },
     techSkills: {
       sectionTitle: 'Competenze tecniche',
-      eyebrow: '// COMPETENZE TECNICHE',
       intro: 'Le tecnologie che ho usato, dove le ho usate e dove si vede il lavoro.',
       contextWork: 'in azienda',
       contextPersonal: 'in progetti personali',
@@ -51,8 +42,9 @@ export const strings = {
     },
     languageSwitch: { label: 'Cambia lingua' },
     projects: {
-      sectionTitle: 'Progetti tecnici realizzati',
-      eyebrow: '// PROGETTI',
+      sectionTitle: 'Progetti',
+      pmDocumentsTitle: 'Documenti da PM sui miei progetti',
+      technicalTitle: 'Progetti tecnici',
       intro:
         'Cosa so fare in prima persona. Questi progetti personali mi servono a conoscere da vicino il lavoro dei tecnici con cui collaboro.',
       problem: 'Problema',
@@ -75,7 +67,6 @@ export const strings = {
     },
     experience: {
       sectionTitle: 'Esperienza e formazione',
-      eyebrow: '// ESPERIENZA',
       workTitle: 'Esperienza lavorativa',
       educationTitle: 'Formazione',
       languagesTitle: 'Lingue',
@@ -84,7 +75,6 @@ export const strings = {
     },
     certifications: {
       sectionTitle: 'Certificazioni',
-      eyebrow: '// CERTIFICAZIONI',
       openPdf: 'Apri il PDF',
       download: 'Scarica',
       verify: 'Verifica',
@@ -95,7 +85,6 @@ export const strings = {
     },
     contact: {
       sectionTitle: 'Contatti',
-      eyebrow: '// CONTATTI',
       intro: 'Scrivimi per una posizione, una collaborazione o solo per dire ciao.',
       name: 'Nome',
       email: 'Email',
@@ -121,7 +110,6 @@ export const strings = {
       'chi-sono': 'About',
       esperienza: 'Experience',
       competenze: 'Skills',
-      documenti: 'Documents',
       progetti: 'Projects',
       certificazioni: 'Certifications',
       referenze: 'References',
@@ -131,24 +119,16 @@ export const strings = {
     },
     about: {
       sectionTitle: 'About me',
-      eyebrow: '// ABOUT',
     },
     pmSkills: {
       sectionTitle: 'Project & Release Manager skills',
-      eyebrow: '// SKILLS',
-    },
-    pmDocuments: {
-      sectionTitle: 'Project management documents',
-      eyebrow: '// DOCUMENTS',
     },
     references: {
       sectionTitle: 'References',
-      eyebrow: '// REFERENCES',
       linkedin: 'LinkedIn profile',
     },
     techSkills: {
       sectionTitle: 'Technical skills',
-      eyebrow: '// TECHNICAL SKILLS',
       intro: 'The technologies I have used, where I used them and where the work can be seen.',
       contextWork: 'at work',
       contextPersonal: 'in personal projects',
@@ -168,8 +148,9 @@ export const strings = {
     },
     languageSwitch: { label: 'Switch language' },
     projects: {
-      sectionTitle: 'Technical projects',
-      eyebrow: '// PROJECTS',
+      sectionTitle: 'Projects',
+      pmDocumentsTitle: 'PM documents on my projects',
+      technicalTitle: 'Technical projects',
       intro:
         'What I can do hands-on. These personal projects help me understand the work of the engineers I collaborate with.',
       problem: 'Problem',
@@ -192,7 +173,6 @@ export const strings = {
     },
     experience: {
       sectionTitle: 'Experience and education',
-      eyebrow: '// EXPERIENCE',
       workTitle: 'Work experience',
       educationTitle: 'Education',
       languagesTitle: 'Languages',
@@ -201,7 +181,6 @@ export const strings = {
     },
     certifications: {
       sectionTitle: 'Certifications',
-      eyebrow: '// CERTIFICATIONS',
       openPdf: 'Open PDF',
       download: 'Download',
       verify: 'Verify',
@@ -212,7 +191,6 @@ export const strings = {
     },
     contact: {
       sectionTitle: 'Contact',
-      eyebrow: '// CONTACT',
       intro: 'Reach out about a role, a collaboration, or just to say hi.',
       name: 'Name',
       email: 'Email',

@@ -2,16 +2,26 @@ import pmDocuments from '../content/pmDocuments.json'
 import references from '../content/references.json'
 
 /**
- * Progetti con almeno un documento pubblicato. Un documento conta solo se
- * ha un link: le voci ancora da preparare restano nel JSON ma non compaiono.
+ * Documenti di PM per progetto, pronti per le schede in "Progetti".
+ * Un documento ha un link solo se è "disponibile" e ha un href: un link
+ * scritto su un documento ancora in preparazione o in revisione viene ignorato.
+ * Gli stati sconosciuti diventano "in preparazione".
  */
-export function getPublishedPmDocuments(data = pmDocuments) {
-  return data.projects
-    .map((project) => ({
-      ...project,
-      documents: project.documents.filter((doc) => Boolean(doc.href)),
-    }))
-    .filter((project) => project.documents.length > 0)
+export function getPmDocumentCards(data = pmDocuments) {
+  return data.projects.map((project) => ({
+    ...project,
+    documents: project.documents.map((doc) => {
+      const status = data.statuses[doc.status] ? doc.status : 'in-preparazione'
+      const href = status === 'disponibile' && doc.href ? doc.href : null
+      return {
+        type: doc.type,
+        label: data.types[doc.type] ?? { it: doc.type, en: doc.type },
+        status,
+        statusLabel: data.statuses[status],
+        href,
+      }
+    }),
+  }))
 }
 
 /** Referenze complete: senza autore e testo non vengono mostrate. */
@@ -20,15 +30,14 @@ export function getPublishedReferences(data = references) {
 }
 
 /**
- * Voci del menu nell'ordine della pagina. Le sezioni senza contenuto
- * (documenti di PM, referenze) non compaiono finché restano vuote.
+ * Voci del menu nell'ordine della pagina. Le referenze non compaiono finché
+ * restano vuote; i documenti di PM stanno dentro "Progetti".
  */
 export function getNavSections() {
   return [
     'chi-sono',
     'esperienza',
     'competenze',
-    getPublishedPmDocuments().length > 0 && 'documenti',
     'progetti',
     'certificazioni',
     getPublishedReferences().length > 0 && 'referenze',

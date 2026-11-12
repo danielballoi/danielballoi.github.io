@@ -13,7 +13,6 @@ export default function ContactSection() {
   return (
     <section id="contatti" className="contact-section">
       <h2 className="section-title">{t.contact.sectionTitle}</h2>
-      <p className="contact-section__eyebrow">{t.contact.eyebrow}</p>
       <p className="contact-section__intro">{t.contact.intro}</p>
 
       {apiUrl ? (

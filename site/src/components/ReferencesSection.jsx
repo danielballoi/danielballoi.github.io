@@ -13,7 +13,6 @@ export default function ReferencesSection() {
   return (
     <section id="referenze" className="card-section">
       <h2 className="section-title">{t.references.sectionTitle}</h2>
-      <p className="card-section__eyebrow">{t.references.eyebrow}</p>
       <ul className="card-grid">
         {references.map((ref) => (
           <li key={ref.author} className="card-grid__card">

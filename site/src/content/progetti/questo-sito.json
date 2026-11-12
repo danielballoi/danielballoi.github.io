@@ -10,13 +10,13 @@
     "en": "Event-driven, serverless portfolio: videos and certifications published automatically through events, queues and Lambda."
   },
   "card": {
-    "problem": { "it": "Un CV online in italiano e inglese, da aggiornare senza toccare il codice e da pubblicare in automatico.", "en": null },
-    "choice": { "it": "React e Vite con pre-rendering statico di ogni pagina, contenuti in file JSON, pubblicazione su GitHub Pages e video su CloudFront.", "en": null },
-    "result": { "it": "Ogni push su main esegue test, build e pubblicazione; un nuovo progetto si aggiunge con un solo file JSON.", "en": null }
+    "problem": { "it": "Un CV online in italiano e inglese, da aggiornare senza toccare il codice e da pubblicare in automatico.", "en": "An online CV in Italian and English, to be updated without touching the code and published automatically." },
+    "choice": { "it": "React e Vite con pre-rendering statico di ogni pagina, contenuti in file JSON, pubblicazione su GitHub Pages e video su CloudFront.", "en": "React and Vite with static pre-rendering of every page, content in JSON files, publishing on GitHub Pages and videos on CloudFront." },
+    "result": { "it": "Ogni push su main esegue test, build e pubblicazione; un nuovo progetto si aggiunge con un solo file JSON.", "en": "Every push to main runs tests, build and deploy; a new project is added with a single JSON file." }
   },
   "problem": {
     "it": "Un CV online in italiano e inglese, da aggiornare senza toccare il codice e da pubblicare in automatico.",
-    "en": null
+    "en": "An online CV in Italian and English, to be updated without touching the code and published automatically."
   },
   "solution": {
     "it": "React e Vite con pre-rendering statico: ogni pagina e ogni lingua diventa un file HTML completo al momento della build. I contenuti stanno in file JSON separati dal codice. GitHub Actions pubblica il sito su GitHub Pages a ogni push su main. Video e copertine sono serviti da CloudFront, con un bucket S3 privato gestito in Terraform.",

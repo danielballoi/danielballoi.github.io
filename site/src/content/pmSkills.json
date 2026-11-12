@@ -4,7 +4,7 @@
     "title": { "it": "Release management", "en": "Release management" },
     "description": {
       "it": "Pianificazione e coordinamento dei rilasci su test, pre-produzione e produzione per backend, frontend, app mobile e firmware.",
-      "en": null
+      "en": "Planning and coordination of releases to test, pre-production and production for backend, frontend, mobile app and firmware."
     }
   },
   {
@@ -12,7 +12,7 @@
     "title": { "it": "Change management (CAB)", "en": "Change management (CAB)" },
     "description": {
       "it": "Richieste di rilascio al CAB e rilascio coordinato con DevOps e DBA.",
-      "en": null
+      "en": "Release requests to the CAB and coordinated releases with DevOps and DBAs."
     }
   },
   {
@@ -20,7 +20,7 @@
     "title": { "it": "Gestione dei rischi", "en": "Risk management" },
     "description": {
       "it": "Rollout graduali (canary release) e piani di mitigazione dei rischi.",
-      "en": null
+      "en": "Gradual rollouts (canary releases) and risk mitigation plans."
     }
   },
   {
@@ -28,7 +28,7 @@
     "title": { "it": "Stakeholder management", "en": "Stakeholder management" },
     "description": {
       "it": "Raccordo tra team tecnici, business, stakeholder e supporto L1/L2.",
-      "en": null
+      "en": "Link between technical teams, business, stakeholders and L1/L2 support."
     }
   },
   {
@@ -36,7 +36,7 @@
     "title": { "it": "Pianificazione waterfall", "en": "Waterfall planning" },
     "description": {
       "it": "Scadenze e milestone rispettate con una pianificazione waterfall.",
-      "en": null
+      "en": "Deadlines and milestones met through waterfall planning."
     }
   },
   {
@@ -44,7 +44,7 @@
     "title": { "it": "Incident e bug fix", "en": "Incidents and bug fixes" },
     "description": {
       "it": "Ciclo di vita completo: segnalazione, task, rilascio e monitoraggio nei giorni successivi tramite control room.",
-      "en": null
+      "en": "Full lifecycle: report, task, release and monitoring in the following days through the control room."
     }
   },
   {
@@ -52,7 +52,7 @@
     "title": { "it": "Reporting con Excel", "en": "Reporting with Excel" },
     "description": {
       "it": "Report e grafici per gli stakeholder sull'andamento delle fix e sulla qualità dei rilasci.",
-      "en": null
+      "en": "Reports and charts for stakeholders on fix trends and release quality."
     }
   },
   {
@@ -60,7 +60,7 @@
     "title": { "it": "Jira e ServiceNow", "en": "Jira and ServiceNow" },
     "description": {
       "it": "Segnalazioni su ServiceNow, task su Jira e integrazione con il change management.",
-      "en": null
+      "en": "Reports on ServiceNow, tasks on Jira and integration with change management."
     }
   },
   {
@@ -68,7 +68,7 @@
     "title": { "it": "Processi ITIL-like", "en": "ITIL-like processes" },
     "description": {
       "it": "Change, incident e rilasci gestiti con processi ispirati a ITIL.",
-      "en": null
+      "en": "Changes, incidents and releases managed with ITIL-inspired processes."
     }
   }
 ]

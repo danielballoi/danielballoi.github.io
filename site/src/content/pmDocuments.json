@@ -1,29 +1,49 @@
 {
   "types": {
-    "charter": { "it": "Charter e perimetro", "en": "Charter and scope" },
-    "analisi-funzionale": { "it": "Analisi funzionale", "en": "Functional analysis" },
-    "roadmap": { "it": "Roadmap e Gantt", "en": "Roadmap and Gantt" },
-    "rischi": { "it": "Registro dei rischi", "en": "Risk register" },
-    "previsioni": { "it": "Previsioni", "en": "Forecasts" },
-    "lessons-learned": { "it": "Lessons learned", "en": "Lessons learned" },
-    "adr": { "it": "Decisioni (ADR)", "en": "Decisions (ADR)" },
-    "runbook": { "it": "Runbook", "en": "Runbook" }
+    "charter": { "it": "Project charter", "en": "Project charter" },
+    "roadmap-gantt": { "it": "Roadmap e Gantt", "en": "Roadmap and Gantt" },
+    "registro-rischi": { "it": "Registro dei rischi", "en": "Risk register" },
+    "piano-rilascio": { "it": "Piano di rilascio", "en": "Release plan" },
+    "lezioni-apprese": { "it": "Lezioni apprese", "en": "Lessons learned" }
+  },
+  "statuses": {
+    "disponibile": { "it": "disponibile", "en": "available" },
+    "in-revisione": { "it": "in revisione", "en": "under review" },
+    "in-preparazione": { "it": "in preparazione", "en": "in preparation" }
   },
   "projects": [
     {
-      "id": "balloi-immobiliare",
-      "title": { "it": "Balloi immobiliare", "en": "Balloi real estate" },
-      "documents": []
-    },
-    {
-      "id": "frigochef",
+      "slug": "frigochef",
       "title": { "it": "FrigoChef", "en": "FrigoChef" },
-      "documents": []
+      "documents": [
+        { "type": "charter", "status": "in-revisione", "href": null },
+        { "type": "roadmap-gantt", "status": "in-preparazione", "href": null },
+        { "type": "registro-rischi", "status": "in-preparazione", "href": null },
+        { "type": "piano-rilascio", "status": "in-preparazione", "href": null },
+        { "type": "lezioni-apprese", "status": "in-preparazione", "href": null }
+      ]
     },
     {
-      "id": "questo-sito",
+      "slug": "balloi-immobiliare",
+      "title": { "it": "Balloi immobiliare", "en": "Balloi real estate" },
+      "documents": [
+        { "type": "charter", "status": "in-preparazione", "href": null },
+        { "type": "roadmap-gantt", "status": "in-preparazione", "href": null },
+        { "type": "registro-rischi", "status": "in-preparazione", "href": null },
+        { "type": "piano-rilascio", "status": "in-preparazione", "href": null },
+        { "type": "lezioni-apprese", "status": "in-preparazione", "href": null }
+      ]
+    },
+    {
+      "slug": "questo-sito",
       "title": { "it": "Questo sito", "en": "This site" },
-      "documents": []
+      "documents": [
+        { "type": "charter", "status": "in-preparazione", "href": null },
+        { "type": "roadmap-gantt", "status": "in-preparazione", "href": null },
+        { "type": "registro-rischi", "status": "in-preparazione", "href": null },
+        { "type": "piano-rilascio", "status": "in-preparazione", "href": null },
+        { "type": "lezioni-apprese", "status": "in-preparazione", "href": null }
+      ]
     }
   ]
 }

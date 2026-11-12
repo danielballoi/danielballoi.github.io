@@ -28,7 +28,7 @@ export default function ProjectCard({ project }) {
       <p className="project-card__status" data-status={project.status}>
         {statusLabel}
       </p>
-      <h3 className="project-card__title">{pick(project.title, lang)}</h3>
+      <h4 className="project-card__title">{pick(project.title, lang)}</h4>
       <p className="project-card__type">{pick(project.type, lang)}</p>
       {card.length > 0 ? (
         <dl className="project-card__story">

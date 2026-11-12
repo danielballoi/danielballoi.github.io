@@ -3,7 +3,7 @@
     {
       "id": "stackhouse",
       "role": { "it": "Release Specialist | Software Developer", "en": "Release Specialist | Software Developer" },
-      "company": "Stackhouse S.r.l. (gruppo Spindox)",
+      "company": { "it": "Stackhouse S.r.l. (gruppo Spindox)", "en": "Stackhouse S.r.l. (Spindox group)" },
       "location": { "it": "Cagliari", "en": "Cagliari, Italy" },
       "period": { "it": "gen 2023 – giu 2026 (3 anni e 6 mesi)", "en": "Jan 2023 – Jun 2026 (3 years 6 months)" },
       "open": true,
@@ -14,8 +14,8 @@
           "role": { "it": "Release Manager", "en": "Release Manager" },
           "period": { "it": "apr 2023 – mag 2026", "en": "Apr 2023 – May 2026" },
           "description": {
-            "it": "Ho eseguito in prima persona i rilasci negli ambienti di test e preprod: lancio e monitoraggio delle pipeline CI/CD, rilasci su database MySQL e verifica post-rilascio, mantenendo gli ambienti inferiori allineati alla produzione. Ho gestito end-to-end i bug fix, dall'analisi con i team Dev e QA fino al rilascio in produzione, e il processo di rilascio in produzione per un cliente banking enterprise: censimento e monitoraggio dei rilasci, Change Request e partecipazione attiva al CAB (Change Advisory Board). Pianificavo le attività con Jira e ServiceNow e coordinavo le attività di sviluppo software con i team tecnici.",
-            "en": "I personally carried out releases to test and pre-production environments: running and monitoring CI/CD pipelines, MySQL database releases and post-release checks, keeping lower environments aligned with production. I managed bug fixes end to end, from analysis with Dev and QA teams to production release, and the production release process for a banking enterprise client: release tracking and monitoring, Change Requests and active participation in the CAB (Change Advisory Board). I planned activities with Jira and ServiceNow and coordinated software development activities with the technical teams."
+            "it": "Release Manager su una piattaforma bancaria e di pagamento con una rete di decine di migliaia di punti vendita, con oltre 1.000 rilasci gestiti. Ho seguito end-to-end il ciclo di vita dei bug fix (ServiceNow, Jira, CAB, rilascio con DevOps e DBA, monitoraggio post-rilascio), pianificato i rilasci su più ambienti per backend, frontend e firmware POS con rollout graduali e piani di mitigazione dei rischi, e fatto da raccordo tra team tecnici, business, stakeholder e supporto L1/L2 con pianificazione waterfall. Report Excel per gli stakeholder e collaborazione con i DevOps sulle pipeline CI/CD, integrate con change management e Jira.",
+            "en": "Release Manager on a banking and payments platform serving a network of tens of thousands of points of sale, with over 1,000 releases managed. I owned the bug fix lifecycle end to end (ServiceNow, Jira, CAB, release with DevOps and DBAs, post-release monitoring), planned releases across multiple environments for backend, frontend and POS firmware with gradual rollouts and risk mitigation plans, and acted as the link between technical teams, business, stakeholders and L1/L2 support with waterfall planning. Excel reporting for stakeholders and close work with DevOps on CI/CD pipelines, integrated with change management and Jira."
           }
         },
         {
@@ -23,26 +23,17 @@
           "role": { "it": "Project Manager", "en": "Project Manager" },
           "period": { "it": "dic 2024 – giu 2025", "en": "Dec 2024 – Jun 2025" },
           "description": {
-            "it": "Gestione della realizzazione di un software end-to-end: pianificazione, monitoraggio dell'avanzamento e coordinamento del team.",
-            "en": null
+            "it": "Project Manager su un progetto software interno per un cliente del settore energia, svolto in parallelo all'attività di consulenza: project charter, pianificazione con diagramma di Gantt, SAL periodici verso gli stakeholder, epic e task su Jira, roadmap, controllo dell'avanzamento e supporto agli sviluppatori nello sbloccare gli impedimenti. Software JavaScript/React con MongoDB.",
+            "en": "Project Manager on an internal software project for an energy sector client, run alongside my consulting work: project charter, Gantt chart planning, regular progress reports to stakeholders, epics and tasks on Jira, roadmap, progress tracking and helping developers remove blockers. JavaScript/React software with MongoDB."
           }
         },
         {
-          "name": { "it": "Progetto per un cliente esterno", "en": "Project for an external client" },
+          "name": { "it": "Cliente del settore scommesse", "en": "Betting sector client" },
           "role": { "it": "Developer", "en": "Developer" },
-          "period": { "it": "feb 2026 – giu 2026", "en": "Feb 2026 – Jun 2026" },
-          "description": {
-            "it": "Sviluppo di un software end-to-end in JavaScript e React con MongoDB, con sviluppo assistito da AI.",
-            "en": null
-          }
-        },
-        {
-          "name": { "it": "Cliente del settore gaming", "en": "Gaming sector client" },
-          "role": { "it": "Backend Developer Junior", "en": "Backend Developer Junior" },
           "period": { "it": "feb 2023 – mag 2023", "en": "Feb 2023 – May 2023" },
           "description": {
-            "it": "Analisi e risoluzione di bug su applicazioni Java / Spring Boot con database MySQL, dalla riproduzione del problema alla correzione del codice.",
-            "en": "Analysed and fixed bugs in Java / Spring Boot applications backed by MySQL, from reproducing the issue to fixing the code."
+            "it": "Analisi del codice, bug fixing e manutenzione applicativa di app per il settore delle scommesse, in Java e Spring Boot.",
+            "en": "Code analysis, bug fixing and application maintenance for betting apps, in Java and Spring Boot."
           }
         },
         {

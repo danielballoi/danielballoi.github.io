@@ -1,17 +1,10 @@
-/* Sezioni a schede (competenze PM, documenti, referenze): stesso stile
-   della vecchia sezione "Come lavoro". */
+/* Sezioni a schede (chi sono, competenze PM, referenze) e schede dei
+   documenti di PM dentro Progetti. */
 .card-section {
   max-width: var(--container-max);
   margin: 0 auto;
   background: var(--color-paper);
   padding: 3.5rem 1.5rem;
-}
-
-.card-section__eyebrow {
-  margin: 0.35rem 0 1rem;
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--color-text-secondary);
 }
 
 .card-section__intro {

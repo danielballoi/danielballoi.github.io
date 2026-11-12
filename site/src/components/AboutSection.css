@@ -4,6 +4,12 @@
   max-width: 70ch;
 }
 
+.about-section__lead {
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
 .about-section__highlights {
   margin: 0;
   padding-left: 1.2rem;
@@ -11,4 +17,9 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.about-section__closing {
+  margin: 1rem 0 0;
+  max-width: 70ch;
 }

@@ -9,9 +9,9 @@
     "en": "A real-estate investment dashboard for Cagliari, to be taken to production professionally at near-zero cost."
   },
   "card": {
-    "problem": { "it": "Portare in produzione una dashboard di investimenti immobiliari in modo professionale, a costo quasi zero.", "en": null },
-    "choice": { "it": "Container Docker, CI/CD con GitHub Actions, release versionate e infrastruttura AWS in Terraform.", "en": null },
-    "result": { "it": "Nuovo server online da solo in 2 minuti, vulnerabilità da 93 a 0, 2 incidenti reali risolti.", "en": null }
+    "problem": { "it": "Portare in produzione una dashboard di investimenti immobiliari in modo professionale, a costo quasi zero.", "en": "Take a real-estate investment dashboard to production professionally, at near-zero cost." },
+    "choice": { "it": "Container Docker, CI/CD con GitHub Actions, release versionate e infrastruttura AWS in Terraform.", "en": "Docker containers, CI/CD with GitHub Actions, versioned releases and AWS infrastructure in Terraform." },
+    "result": { "it": "Nuovo server online da solo in 2 minuti, vulnerabilità da 93 a 0, 2 incidenti reali risolti.", "en": "A new server comes online on its own in 2 minutes, vulnerabilities down from 93 to 0, 2 real incidents resolved." }
   },
   "problem": {
     "it": "Una dashboard di investimenti immobiliari su Cagliari da portare in produzione in modo professionale, a costo quasi zero.",

@@ -51,7 +51,6 @@ export default function Hero() {
 
       <p className="hero__experience">{pick(profile.experienceLine, lang)}</p>
       <p className="hero__availability">{pick(profile.availability, lang)}</p>
-      <p className="hero__value-prop">{pick(profile.valueProp, lang)}</p>
 
       <div className="hero__actions">
         <a className="hero__cta hero__cta--primary" href={pick(profile.cvPm, lang)} download>

@@ -10,7 +10,6 @@ export default function PmSkillsSection() {
   return (
     <section id="competenze" className="card-section">
       <h2 className="section-title">{t.pmSkills.sectionTitle}</h2>
-      <p className="card-section__eyebrow">{t.pmSkills.eyebrow}</p>
       <ul className="card-grid">
         {pmSkills.map((skill) => (
           <li key={skill.id} className="card-grid__card">

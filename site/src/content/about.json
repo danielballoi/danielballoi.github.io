@@ -1,22 +1,30 @@
 {
   "intro": {
-    "it": "Release & Delivery Manager con oltre 3 anni di esperienza in progetti bancari e di pagamento. Ho guidato il rollout di una nuova piattaforma su una rete nazionale di oltre 25.000 punti vendita e la gestione di oltre 1.000 rilasci fino alla messa a regime, coordinando team tecnici, business e stakeholder. Vengo dallo sviluppo software (qualifica regionale di Tecnico di Sviluppo Software).",
-    "en": "Release & Delivery Manager with over 3 years of experience in banking and payments projects. I led the rollout of a new platform across a national network of over 25,000 points of sale and the management of over 1,000 releases through to steady state, coordinating technical teams, business and stakeholders. I come from software development (regional vocational qualification as \"Tecnico di Sviluppo Software\", Software Development Technician)."
+    "it": "Release & Delivery Manager con oltre 3 anni di esperienza in progetti bancari e di pagamento. Ho guidato il rollout di una nuova piattaforma su una rete di decine di migliaia di punti vendita e la gestione di oltre 1.000 rilasci fino alla messa a regime, coordinando team tecnici, business e stakeholder. Vengo dallo sviluppo software (qualifica regionale di Tecnico di Sviluppo Software, stage backend in Java e Spring).",
+    "en": "Release & Delivery Manager with over 3 years of experience in banking and payments projects. I led the rollout of a new platform across a network of tens of thousands of points of sale and the management of over 1,000 releases through to steady state, coordinating technical teams, business and stakeholders. I come from software development (regional vocational qualification as \"Tecnico di Sviluppo Software\", Software Development Technician, and a backend internship in Java and Spring)."
+  },
+  "highlightsLead": {
+    "it": "Cosa ho fatto in questi anni:",
+    "en": "What I have done over these years:"
   },
   "highlights": {
     "it": [
       "Gestito end-to-end il ciclo di vita dei bug fix: dalla segnalazione su ServiceNow ai task su Jira, alla richiesta di rilascio al CAB, fino al rilascio con DevOps e DBA e al monitoraggio nei giorni successivi tramite control room.",
-      "Pianificato e seguito i rilasci su più ambienti (test, pre-produzione, produzione) per backend, frontend, app mobile e firmware, con rollout graduali (canary release) e piani di mitigazione dei rischi.",
-      "Fatto da raccordo tra team tecnici, business, stakeholder e supporto L1/L2, rispettando scadenze e milestone con pianificazione waterfall.",
+      "Pianificato e seguito i rilasci su più ambienti (test, pre-produzione, produzione) per microservizi backend, componenti frontend e firmware POS, con rollout graduali (canary release) e piani di mitigazione dei rischi.",
+      "Fatto da raccordo tra team tecnici, business, stakeholder e supporto L1/L2, rispettando scadenze e milestone con una pianificazione dettagliata di tipo waterfall.",
       "Preparato report e grafici in Excel per gli stakeholder, per analizzare l'andamento delle fix e la qualità dei rilasci.",
-      "Lavorato a stretto contatto con i DevOps, interpretando in prima persona le pipeline CI/CD e l'integrazione con change management e Jira."
+      "Lavorato a stretto contatto con i DevOps, interpretando in prima persona le pipeline CI/CD e l'integrazione tra pipeline, change management (ServiceNow) e Jira."
     ],
     "en": [
-      "Managed the bug fix lifecycle end to end: from the ticket on ServiceNow to tasks on Jira, the release request to the CAB, the release with DevOps and DBAs and monitoring in the following days through the control room.",
-      "Planned and tracked releases across multiple environments (test, pre-production, production) for backend, frontend, mobile app and firmware, with gradual rollouts (canary releases) and risk mitigation plans.",
-      "Acted as the link between technical teams, business, stakeholders and L1/L2 support, meeting deadlines and milestones with waterfall planning.",
+      "Managed the bug fix lifecycle end to end: from the report on ServiceNow to tasks on Jira, the release request to the CAB, the release with DevOps and DBAs and monitoring in the following days through the control room.",
+      "Planned and tracked releases across multiple environments (test, pre-production, production) for backend microservices, frontend components and POS firmware, with gradual rollouts (canary releases) and risk mitigation plans.",
+      "Acted as the link between technical teams, business, stakeholders and L1/L2 support, meeting deadlines and milestones through detailed waterfall planning.",
       "Prepared Excel reports and charts for stakeholders to analyse fix trends and release quality.",
-      "Worked closely with DevOps, reading CI/CD pipelines first-hand and their integration with change management and Jira."
+      "Worked closely with DevOps, reading CI/CD pipelines first-hand and the integration between pipelines, change management (ServiceNow) and Jira."
     ]
+  },
+  "closing": {
+    "it": "Ho la certificazione CAPM del PMI e AWS Certified Solutions Architect – Associate. Per conoscere da vicino il lavoro dei tecnici con cui collaboro ho realizzato progetti pratici su Kubernetes, GitHub Actions, Docker, Terraform, AWS e Argo CD.",
+    "en": "I hold the PMI CAPM certification and AWS Certified Solutions Architect – Associate. To understand first-hand the work of the engineers I collaborate with, I have built hands-on projects with Kubernetes, GitHub Actions, Docker, Terraform, AWS and Argo CD."
   }
 }
