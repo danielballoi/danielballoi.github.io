@@ -53,11 +53,11 @@ export default function Hero() {
       <p className="hero__availability">{pick(profile.availability, lang)}</p>
 
       <div className="hero__actions">
-        <a className="hero__cta hero__cta--primary" href={pick(profile.cvPm, lang)} download>
-          <Icon name="download" className="hero__cta-icon" />
-          {t.hero.scaricaCvPm}
-        </a>
-        <a className="hero__cta" href={pick(profile.cv, lang)} download>
+        <a
+          className="hero__cta hero__cta--primary"
+          href={pick(profile.cv.href, lang)}
+          download={pick(profile.cv.fileName, lang)}
+        >
           <Icon name="download" className="hero__cta-icon" />
           {t.hero.scaricaCv}
         </a>

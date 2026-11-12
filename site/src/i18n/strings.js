@@ -29,8 +29,7 @@ export const strings = {
       contextBoth: 'in azienda e in progetti personali',
     },
     hero: {
-      scaricaCv: 'Scarica CV Tecnico',
-      scaricaCvPm: 'Scarica CV Project Manager',
+      scaricaCv: 'Scarica CV',
       email: 'Email',
       copiaEmail: 'Copia indirizzo',
       emailCopiata: 'Copiato',
@@ -135,8 +134,7 @@ export const strings = {
       contextBoth: 'at work and in personal projects',
     },
     hero: {
-      scaricaCv: 'Download CV – Technical',
-      scaricaCvPm: 'Download CV – Project Manager',
+      scaricaCv: 'Download CV',
       email: 'Email',
       copiaEmail: 'Copy address',
       emailCopiata: 'Copied',
