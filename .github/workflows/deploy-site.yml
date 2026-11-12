@@ -44,7 +44,7 @@ jobs:
         run: npm run build
 
       - name: Prepara GitHub Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Carica l'artefatto
         uses: actions/upload-pages-artifact@v3
