@@ -29,12 +29,14 @@
     "alt": { "it": "Ritratto di Daniel Balloi", "en": "Portrait of Daniel Balloi" }
   },
   "cv": {
-    "it": "/cv/cv-daniel-balloi-it.pdf",
-    "en": "/cv/cv-daniel-balloi-it.pdf"
-  },
-  "cvPm": {
-    "it": "/cv/cv-daniel-balloi-pm-it.pdf",
-    "en": "/cv/cv-daniel-balloi-pm-it.pdf"
+    "href": {
+      "it": "/cv/cv-daniel-balloi-pm-it.pdf",
+      "en": "/cv/cv-daniel-balloi-pm-en.pdf"
+    },
+    "fileName": {
+      "it": "CV-Daniel-Balloi-IT.pdf",
+      "en": "CV-Daniel-Balloi-EN.pdf"
+    }
   },
   "links": {
     "github": "https://github.com/danielballoi",
