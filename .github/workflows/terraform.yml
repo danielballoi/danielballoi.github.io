@@ -33,7 +33,7 @@ jobs:
         working-directory: infra/main
     steps:
       - name: Scarica il codice
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Entra in AWS con OIDC
         uses: aws-actions/configure-aws-credentials@v4
